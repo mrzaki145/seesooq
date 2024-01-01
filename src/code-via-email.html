@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seesooq</title>
+
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/preline@2.0.3/dist/preline.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <div class="h-full">
+      <div class="grid h-full grid-cols-1 md:grid-cols-2">
+        <main
+          class="mx-auto flex w-full max-w-lg flex-col items-center justify-center space-y-10 px-4 py-16 md:space-y-12"
+        >
+          <div class="text-center">
+            <p
+              class="mb-4 text-xl font-medium leading-7 text-violet-900 md:text-3xl"
+            >
+              افتح بريدك الإلكتروني
+            </p>
+            <p
+              class="text-neutral-500 text-opacity-70 sm:text-2xl sm:leading-9"
+            >
+              قمنا بإرسال الكود إلى بريدك الإلكتروني may34****@gmail.com
+              <a
+                href="./forget-password.html"
+                class="text-secondary-900 hover:underline"
+                >جرب بريد آخر</a
+              >
+            </p>
+          </div>
+
+          <div
+            class="flex h-[165px] w-[165px] items-center justify-center rounded-full bg-violet-900 bg-opacity-5"
+          >
+            <img src="./assets/images/icons/mail-lg.png" class="w-28" alt="" />
+          </div>
+
+          <button
+            type="submit"
+            class="block h-16 w-full rounded-[20px] bg-gradient-to-b from-violet-900 to-violet-900/50 py-4 text-lg font-bold text-white transition-colors hover:to-violet-900"
+          >
+            تأكيد الكود
+          </button>
+
+          <p class="text-lg text-neutral-500 text-opacity-70">
+            لم تتسلم كود؟
+            <button
+              type="button"
+              class="font-medium text-red-500 hover:underline"
+            >
+              إعادة إرساله
+            </button>
+          </p>
+        </main>
+
+        <div class="bg-gradient-to-b from-violet-900 to-violet-900/50"></div>
+      </div>
+    </div>
+  </body>
+</html>

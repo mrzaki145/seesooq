@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seesooq</title>
+
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/preline@2.0.3/dist/preline.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <div class="h-full">
+      <div class="grid h-full grid-cols-1 md:grid-cols-2">
+        <main
+          class="mx-auto flex w-full max-w-lg flex-col items-center justify-center space-y-10 px-4 py-16 md:space-y-12"
+        >
+          <div class="text-center">
+            <p
+              class="mb-4 text-xl font-medium leading-7 text-violet-900 md:text-3xl"
+            >
+              تأكيد الكود
+            </p>
+            <p
+              class="text-neutral-500 text-opacity-70 sm:text-2xl sm:leading-9"
+            >
+              قم بإدخال بريدك الإلكتروني كي نتمكن من إرسال كود لتغيير كلمة السر
+            </p>
+          </div>
+
+          <div
+            class="flex h-[165px] w-[165px] items-center justify-center rounded-full bg-violet-900 bg-opacity-5"
+          >
+            <img src="./assets/images/icons/key-lg.png" class="w-28" alt="" />
+          </div>
+
+          <form action="#" class="space-y-8 self-stretch">
+            <div class="flex items-center justify-center gap-6">
+              <input
+                type="text"
+                autofocus
+                class="h-20 w-full rounded-[20px] bg-neutral-100 bg-opacity-60 text-center text-xl text-slate-900 outline-none focus:border-primary-900"
+                id="input1"
+              />
+              <input
+                type="text"
+                class="h-20 w-full rounded-[20px] bg-neutral-100 bg-opacity-60 text-center text-xl text-slate-900 outline-none focus:border-primary-900"
+                id="input2"
+              />
+              <input
+                type="text"
+                class="h-20 w-full rounded-[20px] bg-neutral-100 bg-opacity-60 text-center text-xl text-slate-900 outline-none focus:border-primary-900"
+                id="input3"
+              />
+              <input
+                type="text"
+                class="h-20 w-full rounded-[20px] bg-neutral-100 bg-opacity-60 text-center text-xl text-slate-900 outline-none focus:border-primary-900"
+                id="input4"
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="block h-16 w-full rounded-[20px] bg-gradient-to-b from-violet-900 to-violet-900/50 py-4 text-lg font-bold text-white transition-colors hover:to-violet-900"
+            >
+              تأكيد الكود
+            </button>
+          </form>
+        </main>
+
+        <div class="bg-gradient-to-b from-violet-900 to-violet-900/50"></div>
+      </div>
+    </div>
+
+    <script>
+      const inputs = ["input1", "input2", "input3", "input4"];
+
+      inputs.map((id) => {
+        const input = document.getElementById(id);
+        addListener(input);
+      });
+
+      function addListener(input) {
+        input.addEventListener("keyup", () => {
+          const code = parseInt(input.value);
+          if (code >= 0 && code <= 9) {
+            const n = input.nextElementSibling;
+            if (n) n.focus();
+          } else {
+            input.value = "";
+          }
+
+          const key = event.key;
+          if (key === "Backspace" || key === "Delete") {
+            const prev = input.previousElementSibling;
+            if (prev) prev.focus();
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seesooq</title>
+
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/preline@2.0.3/dist/preline.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <div class="h-full">
+      <div class="grid h-full grid-cols-1 md:grid-cols-2">
+        <main
+          class="mx-auto flex w-full max-w-lg flex-col items-center justify-center space-y-10 px-4 py-16 md:space-y-12"
+        >
+          <img src="./assets/images/logo.png" class="w-36" alt="" />
+          <p class="text-xl font-medium leading-7 text-violet-900 md:text-3xl">
+            مرحبًا عميلنا العزيز ، سجل دخولك
+          </p>
+
+          <form action="#" class="space-y-8 self-stretch">
+            <!-- email -->
+            <div>
+              <label
+                for="email"
+                class="mb-3 inline-block font-medium text-slate-900 md:text-lg md:leading-7"
+                >البريد الإلكتروني</label
+              >
+
+              <div
+                class="flex h-16 items-center gap-4 rounded-[20px] border border-transparent bg-neutral-100 bg-opacity-60 px-5 transition-colors duration-200 focus-within:border-violet-900"
+              >
+                <img
+                  src="./assets/images/icons/mail.png"
+                  class="h-[15px] shrink-0"
+                  alt=""
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="flex-1 border-none bg-transparent text-slate-900 outline-none placeholder:text-neutral-500 placeholder:text-opacity-70"
+                  placeholder="أدخل بريدك الإلكتروني "
+                />
+              </div>
+            </div>
+            <!-- /email -->
+
+            <!-- password-1 -->
+            <div>
+              <label
+                for="email"
+                class="mb-3 inline-block font-medium text-slate-900 md:text-lg md:leading-7"
+                >كلمة السر</label
+              >
+
+              <div
+                class="flex h-16 items-center gap-4 rounded-[20px] border border-transparent bg-neutral-100 bg-opacity-60 px-5 transition-colors duration-200 focus-within:border-violet-900"
+              >
+                <img
+                  src="./assets/images/icons/lock.png"
+                  class="h-4 shrink-0"
+                  alt=""
+                />
+                <div class="relative flex flex-1 items-center">
+                  <input
+                    type="password"
+                    name="password"
+                    id="password-1"
+                    class="block flex-1 border-none bg-transparent text-slate-900 outline-none placeholder:text-neutral-500 placeholder:text-opacity-70"
+                    placeholder="أدخل كلمة السر "
+                  />
+
+                  <button
+                    type="button"
+                    data-hs-toggle-password='{ "target": "#password-1" }'
+                    class="absolute end-0"
+                  >
+                    <img
+                      src="./assets/images/icons/eye.png"
+                      class="w-4 hs-password-active:hidden"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/images/icons/eye-slash.png"
+                      class="hidden w-4 hs-password-active:inline-block"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- /password-1 -->
+
+            <div class="flex items-center justify-between">
+              <p class="flex text-neutral-500 text-opacity-70">
+                <input
+                  type="checkbox"
+                  class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
+                  id="remember-me"
+                />
+                <label
+                  for="remember-me"
+                  class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
+                  >تذكرني</label
+                >
+              </p>
+
+              <a
+                href="./forget-password.html"
+                class="text-red-500 hover:underline"
+                >نسيت كلمة السر؟</a
+              >
+            </div>
+
+            <button
+              type="submit"
+              class="block h-16 w-full rounded-[20px] bg-gradient-to-b from-violet-900 to-violet-900/50 py-4 text-lg font-bold text-white transition-colors hover:to-violet-900"
+            >
+              سجل دخولي
+            </button>
+          </form>
+
+          <div class="w-full">
+            <p class="mb-7 text-center text-sm font-medium text-violet-900">
+              أو سجل دخولك بواسطة
+            </p>
+
+            <div class="flex gap-5">
+              <button
+                type="button"
+                class="flex h-16 grow items-center justify-center rounded-xl bg-neutral-100 bg-opacity-60 transition-colors hover:bg-opacity-100"
+                aria-label="register using apple"
+              >
+                <img
+                  src="./assets/images/icons/apple.png"
+                  class="w-[34px]"
+                  alt=""
+                />
+              </button>
+              <button
+                type="button"
+                class="flex h-16 grow items-center justify-center rounded-xl bg-neutral-100 bg-opacity-60 transition-colors hover:bg-opacity-100"
+                aria-label="register using google"
+              >
+                <img
+                  src="./assets/images/icons/google.png"
+                  class="w-[34px]"
+                  alt=""
+                />
+              </button>
+              <button
+                type="button"
+                class="flex h-16 grow items-center justify-center rounded-xl bg-neutral-100 bg-opacity-60 transition-colors hover:bg-opacity-100"
+                aria-label="register using facebook"
+              >
+                <img
+                  src="./assets/images/icons/facebook.png"
+                  class="w-[34px]"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+
+          <p class="text-lg text-neutral-500 text-opacity-70">
+            ليس لديك حساب؟
+            <a
+              href="./signup.html"
+              class="font-medium text-red-500 hover:underline"
+              >أنشيء حساب</a
+            >
+          </p>
+        </main>
+
+        <div class="bg-gradient-to-b from-violet-900 to-violet-900/50"></div>
+      </div>
+    </div>
+  </body>
+</html>
