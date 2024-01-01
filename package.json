@@ -1,0 +1,24 @@
+{
+  "name": "seesooq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/assets/styles/tailwind.css -o ./src/assets/styles/styles.css --minify",
+    "dev": "tailwindcss -i ./src/assets/styles/tailwind.css -o ./src/assets/styles/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.10",
+    "tailwindcss": "^3.4.0"
+  },
+  "dependencies": {
+    "preline": "^2.0.3"
+  }
+}
