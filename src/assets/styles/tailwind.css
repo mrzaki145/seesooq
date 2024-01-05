@@ -76,7 +76,7 @@
   }
 
   .footer {
-    @apply mt-32 pb-8 pt-12  text-neutral-500 text-opacity-70;
+    @apply mt-20 pb-8 pt-12  text-neutral-500 text-opacity-70;
     box-shadow:
       0px 0px 5.27px 0px rgba(0, 0, 0, 0.04),
       0px 0px 37px 0px rgba(0, 0, 0, 0.05);
