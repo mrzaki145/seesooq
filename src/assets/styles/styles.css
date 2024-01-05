@@ -1510,6 +1510,10 @@ body {
   width: 100%;
 }
 
+.w-6{
+  width: 1.5rem;
+}
+
 .min-w-\[10rem\]{
   min-width: 10rem;
 }
@@ -2240,6 +2244,10 @@ select:focus {
 
 .hover\:bg-opacity-100:hover{
   --tw-bg-opacity: 1;
+}
+
+.hover\:bg-opacity-65:hover{
+  --tw-bg-opacity: 0.65;
 }
 
 .hover\:to-violet-900:hover{
