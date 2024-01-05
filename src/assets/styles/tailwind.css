@@ -139,7 +139,7 @@
 
 @layer utilities {
   .wrapper {
-    @apply mx-auto max-w-[1240px] px-4;
+    @apply mx-auto max-w-[1600px] px-4;
   }
 
   .bg-gradient {
