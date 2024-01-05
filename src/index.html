@@ -467,7 +467,7 @@
       <main class="mb-32 space-y-16 sm:space-y-28">
         <!-- banners -->
         <section class="banner wrapper space-y-12">
-          <div class="swiper ad-full">
+          <div class="swiper banner-full">
             <div class="swiper-wrapper w-full">
               <div class="swiper-slide">
                 <div class="bg-gradient h-[420px] rounded-3xl"></div>
@@ -486,7 +486,7 @@
           <div class="-mx-3 flex flex-col max-sm:gap-6 sm:flex-row">
             <div class="w-full sm:w-1/2">
               <div class="px-3">
-                <div class="swiper ad-1-2">
+                <div class="swiper banner-1-2">
                   <div class="swiper-wrapper w-full">
                     <div class="swiper-slide">
                       <div class="bg-gradient h-[420px] rounded-3xl"></div>
@@ -505,7 +505,7 @@
             </div>
             <div class="w-full sm:w-1/2">
               <div class="px-3">
-                <div class="swiper ad-2-2">
+                <div class="swiper banner-2-2">
                   <div class="swiper-wrapper w-full">
                     <div class="swiper-slide">
                       <div class="bg-gradient h-[420px] rounded-3xl"></div>
@@ -2066,31 +2066,31 @@
         },
       });
 
-      // ad-1
-      new Swiper(".swiper.ad-full", {
+      // banner-1
+      new Swiper(".swiper.banner-full", {
         slidesPerView: 1,
         spaceBetween: 20,
 
         pagination: {
-          el: ".swiper.ad-full .swiper-pagination",
+          el: ".swiper.banner-full .swiper-pagination",
         },
       });
 
-      // ad-2
-      new Swiper(".swiper.ad-1-2", {
+      // banner-2
+      new Swiper(".swiper.banner-1-2", {
         slidesPerView: 1,
         spaceBetween: 20,
 
         pagination: {
-          el: ".swiper.ad-1-2 .swiper-pagination",
+          el: ".swiper.banner-1-2 .swiper-pagination",
         },
       });
-      new Swiper(".swiper.ad-2-2", {
+      new Swiper(".swiper.banner-2-2", {
         slidesPerView: 1,
         spaceBetween: 20,
 
         pagination: {
-          el: ".swiper.ad-2-2 .swiper-pagination",
+          el: ".swiper.banner-2-2 .swiper-pagination",
         },
       });
     </script>
