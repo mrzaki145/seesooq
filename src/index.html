@@ -20,7 +20,7 @@
   <body>
     <div id="app">
       <header class="header">
-        <div class="bg-gradient py-4 text-white">
+        <div class="bg-gradient px-10 py-4 text-white">
           <div class="wrapper flex items-center justify-between">
             <nav class="flex gap-14">
               <a href="index.html" class="header__nav-link" aria-current="true"
@@ -128,7 +128,7 @@
           </div>
         </div>
 
-        <div class="bg-white py-4 shadow">
+        <div class="bg-white px-10 py-4 shadow">
           <div
             class="wrapper flex items-center justify-between gap-6 max-sm:flex-wrap"
           >
@@ -147,7 +147,7 @@
 
             <form
               action="#"
-              class="flex h-12 w-full max-w-[600px] items-center overflow-hidden rounded-3xl bg-stone-50 py-3 ps-5 max-sm:order-1 max-sm:w-full"
+              class="flex h-12 w-full max-w-[600px] items-center overflow-hidden rounded-full bg-stone-50 py-3 ps-5 max-sm:order-1 max-sm:w-full"
             >
               <img
                 src="./assets/images/icons/search.svg"
@@ -191,7 +191,7 @@
                 />
               </button>
               <button
-                class="bg-gradient h-12 rounded-3xl px-8 py-2 text-sm font-semibold text-white"
+                class="h-12 rounded-full bg-secondary-900 px-8 py-2 text-sm font-semibold text-white"
               >
                 إضافة إعلان
               </button>
@@ -211,7 +211,7 @@
                   <a href="#" class="block rounded-full bg-white">
                     <img
                       class="h-20 w-20 rounded-full sm:h-24 sm:w-24"
-                      src="https://via.placeholder.com/96x96"
+                      src="./assets/images/reel.png"
                       alt=""
                     />
                   </a>
@@ -234,7 +234,7 @@
                   >
                     <img
                       class="h-16 w-16 rounded-full transition-transform group-hover:scale-105 sm:h-20 sm:w-20"
-                      src="https://via.placeholder.com/96x96"
+                      src="./assets/images/reel.png"
                       alt=""
                     />
                   </a>
@@ -249,67 +249,6 @@
       <!-- /reels -->
 
       <main class="mb-32 space-y-16 sm:space-y-28">
-        <!-- banners -->
-        <section class="banner wrapper space-y-12">
-          <div class="swiper banner-full">
-            <div class="swiper-wrapper w-full">
-              <div class="swiper-slide">
-                <div class="bg-gradient h-[420px] rounded-3xl"></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bg-gradient h-[420px] rounded-3xl"></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bg-gradient h-[420px] rounded-3xl"></div>
-              </div>
-            </div>
-
-            <div class="swiper-pagination static mt-6 sm:mt-8"></div>
-          </div>
-
-          <div class="-mx-3 flex flex-col max-sm:gap-6 sm:flex-row">
-            <div class="w-full sm:w-1/2">
-              <div class="px-3">
-                <div class="swiper banner-1-2">
-                  <div class="swiper-wrapper w-full">
-                    <div class="swiper-slide">
-                      <div class="bg-gradient h-[420px] rounded-3xl"></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="bg-gradient h-[420px] rounded-3xl"></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="bg-gradient h-[420px] rounded-3xl"></div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-pagination static mt-6 sm:mt-8"></div>
-                </div>
-              </div>
-            </div>
-            <div class="w-full sm:w-1/2">
-              <div class="px-3">
-                <div class="swiper banner-2-2">
-                  <div class="swiper-wrapper w-full">
-                    <div class="swiper-slide">
-                      <div class="bg-gradient h-[420px] rounded-3xl"></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="bg-gradient h-[420px] rounded-3xl"></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="bg-gradient h-[420px] rounded-3xl"></div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-pagination static mt-6 sm:mt-8"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- /banners -->
-
         <section class="wrapper">
           <header class="mb-6 flex items-start justify-between sm:mb-11">
             <div class="">
@@ -340,63 +279,295 @@
           </header>
 
           <div
-            class="grid grid-flow-row grid-cols-[repeat(auto-fit,_minmax(145px,_1fr))] gap-x-8 gap-y-11 text-center"
+            class="grid grid-flow-row grid-cols-[repeat(auto-fill,_minmax(145px,_1fr))] gap-x-8 gap-y-11 text-center"
           >
             <div class="space-y-4">
-              <div class="bg-gradient h-32 rounded-3xl"></div>
-              <p class="text-lg font-medium sm:text-lg">سيارات</p>
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/smart-watch.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >ساعات</a
+              >
             </div>
             <div class="space-y-4">
-              <div class="bg-gradient h-32 rounded-3xl"></div>
-              <p class="text-lg font-medium sm:text-lg">سيارات</p>
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/laptops.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >أجهزة</a
+              >
             </div>
             <div class="space-y-4">
-              <div class="bg-gradient h-32 rounded-3xl"></div>
-              <p class="text-lg font-medium sm:text-lg">سيارات</p>
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/cars.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >سيارات</a
+              >
             </div>
             <div class="space-y-4">
-              <div class="bg-gradient h-32 rounded-3xl"></div>
-              <p class="text-lg font-medium sm:text-lg">سيارات</p>
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/chair.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >أثاث</a
+              >
             </div>
             <div class="space-y-4">
-              <div class="bg-gradient h-32 rounded-3xl"></div>
-              <p class="text-lg font-medium sm:text-lg">سيارات</p>
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/smart-watch.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >ساعات</a
+              >
             </div>
             <div class="space-y-4">
-              <div class="bg-gradient h-32 rounded-3xl"></div>
-              <p class="text-lg font-medium sm:text-lg">سيارات</p>
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/laptops.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >أجهزة</a
+              >
             </div>
             <div class="space-y-4">
-              <div class="bg-gradient h-32 rounded-3xl"></div>
-              <p class="text-lg font-medium sm:text-lg">سيارات</p>
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/cars.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >سيارات</a
+              >
             </div>
             <div class="space-y-4">
-              <div class="bg-gradient h-32 rounded-3xl"></div>
-              <p class="text-lg font-medium sm:text-lg">سيارات</p>
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/chair.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >أثاث</a
+              >
             </div>
             <div class="space-y-4">
-              <div class="bg-gradient h-32 rounded-3xl"></div>
-              <p class="text-lg font-medium sm:text-lg">سيارات</p>
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/smart-watch.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >ساعات</a
+              >
             </div>
             <div class="space-y-4">
-              <div class="bg-gradient h-32 rounded-3xl"></div>
-              <p class="text-lg font-medium sm:text-lg">سيارات</p>
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/laptops.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >أجهزة</a
+              >
             </div>
             <div class="space-y-4">
-              <div class="bg-gradient h-32 rounded-3xl"></div>
-              <p class="text-lg font-medium sm:text-lg">سيارات</p>
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/cars.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >سيارات</a
+              >
             </div>
             <div class="space-y-4">
-              <div class="bg-gradient h-32 rounded-3xl"></div>
-              <p class="text-lg font-medium sm:text-lg">سيارات</p>
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/chair.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >أثاث</a
+              >
             </div>
             <div class="space-y-4">
-              <div class="bg-gradient h-32 rounded-3xl"></div>
-              <p class="text-lg font-medium sm:text-lg">سيارات</p>
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/smart-watch.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >ساعات</a
+              >
             </div>
             <div class="space-y-4">
-              <div class="bg-gradient h-32 rounded-3xl"></div>
-              <p class="text-lg font-medium sm:text-lg">سيارات</p>
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/laptops.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >أجهزة</a
+              >
+            </div>
+            <div class="space-y-4">
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/cars.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >سيارات</a
+              >
+            </div>
+            <div class="space-y-4">
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/chair.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >أثاث</a
+              >
+            </div>
+            <div class="space-y-4">
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/smart-watch.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >ساعات</a
+              >
+            </div>
+            <div class="space-y-4">
+              <div
+                class="bg-gradient group flex h-32 items-center justify-center rounded-3xl"
+              >
+                <img
+                  class="transition-transform group-hover:scale-105"
+                  src="./assets/images/categories/laptops.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="#"
+                class="inline-block font-medium hover:underline sm:text-lg"
+                >أجهزة</a
+              >
             </div>
           </div>
         </section>
@@ -437,503 +608,7 @@
                   <div class="card__thumbnail h-[225px]">
                     <img
                       class="card__img"
-                      src="https://via.placeholder.com/270x225"
-                    />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="https://via.placeholder.com/270x225"
-                    />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="https://via.placeholder.com/270x225"
-                    />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="https://via.placeholder.com/270x225"
-                    />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="https://via.placeholder.com/270x225"
-                    />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="https://via.placeholder.com/270x225"
-                    />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="https://via.placeholder.com/270x225"
-                    />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="https://via.placeholder.com/270x225"
-                    />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="https://via.placeholder.com/270x225"
+                      src="assets/images/products/chairpng.png"
                     />
                     <button type="button" class="card__action">
                       <img src="./assets/images/icons/card-heart.png" alt="" />
@@ -1032,503 +707,7 @@
                   <div class="card__thumbnail h-[225px]">
                     <img
                       class="card__img"
-                      src="https://via.placeholder.com/270x225"
-                    />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="https://via.placeholder.com/270x225"
-                    />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="https://via.placeholder.com/270x225"
-                    />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="https://via.placeholder.com/270x225"
-                    />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="https://via.placeholder.com/270x225"
-                    />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="https://via.placeholder.com/270x225"
-                    />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="https://via.placeholder.com/270x225"
-                    />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="https://via.placeholder.com/270x225"
-                    />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="https://via.placeholder.com/270x225"
+                      src="./assets/images/products/car.png"
                     />
                     <button type="button" class="card__action">
                       <img src="./assets/images/icons/card-heart.png" alt="" />
@@ -1590,6 +769,67 @@
             <div class="swiper-pagination static mt-7"></div>
           </div>
         </section>
+
+        <!-- banners -->
+        <section class="banner wrapper space-y-12">
+          <div class="swiper banner-full">
+            <div class="swiper-wrapper w-full">
+              <div class="swiper-slide">
+                <div class="bg-gradient h-[420px] rounded-3xl"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-gradient h-[420px] rounded-3xl"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-gradient h-[420px] rounded-3xl"></div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination static mt-6 sm:mt-8"></div>
+          </div>
+
+          <div class="-mx-3 flex flex-col max-sm:gap-6 sm:flex-row">
+            <div class="w-full sm:w-1/2">
+              <div class="px-3">
+                <div class="swiper banner-1-2">
+                  <div class="swiper-wrapper w-full">
+                    <div class="swiper-slide">
+                      <div class="bg-gradient h-[420px] rounded-3xl"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="bg-gradient h-[420px] rounded-3xl"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="bg-gradient h-[420px] rounded-3xl"></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-pagination static mt-6 sm:mt-8"></div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2">
+              <div class="px-3">
+                <div class="swiper banner-2-2">
+                  <div class="swiper-wrapper w-full">
+                    <div class="swiper-slide">
+                      <div class="bg-gradient h-[420px] rounded-3xl"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="bg-gradient h-[420px] rounded-3xl"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="bg-gradient h-[420px] rounded-3xl"></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-pagination static mt-6 sm:mt-8"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /banners -->
       </main>
 
       <!-- cta -->
@@ -1636,11 +876,11 @@
       <!-- /cta -->
 
       <footer class="footer">
-        <div class="wrapper">
+        <div class="mx-auto max-w-[1360px] px-4">
           <div class="flex flex-col gap-20 sm:flex-row">
             <div class="w-full space-y-6 lg:w-4/12 lg:space-y-7">
               <img src="./assets/images/logo.png" class="w-28" alt="" />
-              <p class="text-lg text-neutral-500 text-opacity-70">
+              <p class="text-neutral-500 text-opacity-70">
                 هذا مثال لنص يمكن أن يستبدل في في نفس المساحة هذا مثال لنص يمكن
                 أن يستبدل في نفس
               </p>
@@ -1650,7 +890,7 @@
                   <a href="#">
                     <img
                       src="./assets/images/icons/facebook.svg"
-                      class="w-8 sm:w-10"
+                      class="w-8"
                       alt=""
                     />
                   </a>
@@ -1659,7 +899,7 @@
                   <a href="#">
                     <img
                       src="./assets/images/icons/twitter.svg"
-                      class="w-8 sm:w-10"
+                      class="w-8"
                       alt=""
                     />
                   </a>
@@ -1668,7 +908,7 @@
                   <a href="#">
                     <img
                       src="./assets/images/icons/Instagram.svg"
-                      class="w-8 sm:w-10"
+                      class="w-8"
                       alt=""
                     />
                   </a>
@@ -1678,11 +918,13 @@
 
             <div class="w-full lg:w-7/12">
               <div class="flex flex-wrap justify-between gap-y-6">
-                <div class="w-1/2 md:w-1/4">
-                  <h4 class="text-lg font-medium text-slate-900">عنوان هنا</h4>
+                <div class="w-1/2 pe-4 md:w-1/4">
+                  <h4 class="text-lg font-medium leading-none text-slate-900">
+                    عنوان هنا
+                  </h4>
                   <span class="bg-gradient-l inline-block h-1 w-11"></span>
 
-                  <ul class="mt-6 space-y-4 sm:mt-8 md:mt-10">
+                  <ul class="mt-6 space-y-3 sm:mt-8 md:mt-10">
                     <li>
                       <a href="#" class="footer__link">رابط هنا</a>
                     </li>
@@ -1697,11 +939,13 @@
                     </li>
                   </ul>
                 </div>
-                <div class="w-1/2 md:w-1/4">
-                  <h4 class="text-lg font-medium text-slate-900">عنوان هنا</h4>
+                <div class="w-1/2 pe-4 md:w-1/4">
+                  <h4 class="text-lg font-medium leading-none text-slate-900">
+                    عنوان هنا
+                  </h4>
                   <span class="bg-gradient-l inline-block h-1 w-11"></span>
 
-                  <ul class="mt-6 space-y-4 sm:mt-8 md:mt-10">
+                  <ul class="mt-6 space-y-3 sm:mt-8 md:mt-10">
                     <li>
                       <a href="#" class="footer__link">رابط هنا</a>
                     </li>
@@ -1716,11 +960,13 @@
                     </li>
                   </ul>
                 </div>
-                <div class="w-1/2 md:w-1/4">
-                  <h4 class="text-lg font-medium text-slate-900">عنوان هنا</h4>
+                <div class="w-1/2 pe-4 md:w-1/4">
+                  <h4 class="text-lg font-medium leading-none text-slate-900">
+                    عنوان هنا
+                  </h4>
                   <span class="bg-gradient-l inline-block h-1 w-11"></span>
 
-                  <ul class="mt-6 space-y-4 sm:mt-8 md:mt-10">
+                  <ul class="mt-6 space-y-3 sm:mt-8 md:mt-10">
                     <li>
                       <a href="#" class="footer__link">رابط هنا</a>
                     </li>
@@ -1735,11 +981,13 @@
                     </li>
                   </ul>
                 </div>
-                <div class="w-1/2 md:w-1/4">
-                  <h4 class="text-lg font-medium text-slate-900">عنوان هنا</h4>
+                <div class="w-1/2 pe-4 md:w-1/4">
+                  <h4 class="text-lg font-medium leading-none text-slate-900">
+                    عنوان هنا
+                  </h4>
                   <span class="bg-gradient-l inline-block h-1 w-11"></span>
 
-                  <ul class="mt-6 space-y-4 sm:mt-8 md:mt-10">
+                  <ul class="mt-6 space-y-3 sm:mt-8 md:mt-10">
                     <li>
                       <a href="#" class="footer__link">رابط هنا</a>
                     </li>
@@ -1759,10 +1007,12 @@
 
             <div class="w-full lg:w-3/12">
               <div>
-                <h4 class="text-lg font-medium text-slate-900">تواصل معنا</h4>
+                <h4 class="text-lg font-medium leading-none text-slate-900">
+                  تواصل معنا
+                </h4>
                 <span class="bg-gradient-l inline-block h-1 w-11"></span>
 
-                <ul class="mt-6 space-y-4 sm:mt-8 md:mt-10">
+                <ul class="mt-6 space-y-3 sm:mt-8 md:mt-10">
                   <li class="flex items-center gap-3">
                     <img
                       src="./assets/images/icons/footer-mail.svg"
@@ -1797,7 +1047,7 @@
           <div
             class="flex flex-col items-center justify-between gap-4 sm:flex-row"
           >
-            <p class="order-2 flex items-center gap-1 sm:order-1 sm:text-lg">
+            <p class="order-2 flex items-center gap-1 sm:order-1">
               جميع الحقوق محفوظة
               <img
                 src="./assets/images/icons/copyrights.svg"
