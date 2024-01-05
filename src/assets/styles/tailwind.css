@@ -12,6 +12,7 @@
 
   body {
     font-family: "Tajawal", sans-serif;
+    font-size: theme(fontSize.sm);
     color: theme(colors.slate.900);
   }
 
@@ -64,10 +65,10 @@
     @apply self-center lg:-mt-20;
   }
   .cta h2 {
-    @apply text-2xl font-medium sm:text-4xl sm:leading-7;
+    @apply text-2xl font-medium  sm:leading-7;
   }
   .cta p {
-    @apply max-w-[35ch] text-lg sm:text-2xl;
+    @apply max-w-[35ch] text-lg;
   }
 
   .cta__img {
@@ -75,7 +76,7 @@
   }
 
   .footer {
-    @apply mt-32 py-12 text-base text-neutral-500 text-opacity-70 sm:text-lg;
+    @apply mt-32 pb-8 pt-12  text-neutral-500 text-opacity-70;
     box-shadow:
       0px 0px 5.27px 0px rgba(0, 0, 0, 0.04),
       0px 0px 37px 0px rgba(0, 0, 0, 0.05);
@@ -118,16 +119,16 @@
     @apply w-3 sm:w-4;
   }
   .card__body {
-    @apply space-y-3 p-2.5 text-[10px] text-neutral-500 text-opacity-70 sm:p-0 sm:text-xs md:text-base;
+    @apply space-y-3 p-2.5 text-[10px] text-neutral-500 text-opacity-70 sm:p-0 sm:text-xs md:text-sm;
   }
   .card__title {
-    @apply text-sm font-medium text-slate-900 md:text-base lg:text-lg;
+    @apply text-sm font-medium text-slate-900 md:text-base;
   }
   /* .card__disc {
     @apply text-neutral-500 text-opacity-70;
   } */
   .card__price {
-    @apply text-base font-bold leading-none text-violet-900 sm:text-xl sm:leading-none;
+    @apply text-base font-bold leading-none text-violet-900 sm:leading-none;
   }
   .card__btn {
     @apply flex h-7 flex-1 items-center justify-center gap-1.5 rounded-full bg-neutral-100 text-[10px] text-slate-900 transition-colors hover:bg-neutral-200 sm:h-10 sm:text-sm;
