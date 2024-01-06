@@ -65,7 +65,7 @@
     @apply self-center lg:-mt-20;
   }
   .cta h2 {
-    @apply text-2xl font-medium  sm:leading-7;
+    @apply text-2xl font-medium sm:text-3xl  sm:leading-7;
   }
   .cta p {
     @apply max-w-[35ch] text-lg;
@@ -93,7 +93,7 @@
 
 @layer components {
   .card {
-    @apply relative rounded-3xl bg-white p-1 shadow sm:p-3.5;
+    @apply relative rounded-3xl bg-white p-1 shadow-md sm:p-3.5;
   }
   .card__badge {
     @apply absolute left-0 top-0 rounded-br-xl rounded-tl-xl  bg-secondary-900 bg-gradient-to-b from-red-500 to-red-500 px-2 py-4 text-sm text-white [writing-mode:tb-rl];
@@ -122,13 +122,13 @@
     @apply space-y-3 p-2.5 text-[10px] text-neutral-500 text-opacity-70 sm:p-0 sm:text-xs md:text-sm;
   }
   .card__title {
-    @apply text-sm font-medium text-slate-900 md:text-base;
+    @apply text-xs font-medium text-slate-900 sm:text-sm md:text-base;
   }
   /* .card__disc {
     @apply text-neutral-500 text-opacity-70;
   } */
   .card__price {
-    @apply text-base font-bold leading-none text-violet-900 sm:leading-none;
+    @apply text-sm font-bold leading-none text-violet-900 sm:text-lg;
   }
   .card__btn {
     @apply flex h-7 flex-1 items-center justify-center gap-1.5 rounded-full bg-neutral-100 text-[10px] text-slate-900 transition-colors hover:bg-neutral-200 sm:h-10 sm:text-sm;
@@ -200,4 +200,19 @@ select:focus {
   border: 1px solid theme(colors.primary.900);
 }
 .swiper-pagination-bullet-active {
+}
+
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after {
+  content: none;
+}
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
+  content: none;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  width: auto;
 }
