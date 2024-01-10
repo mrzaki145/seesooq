@@ -1,0 +1,1478 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seesooq</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/preline@2.0.3/dist/preline.min.js"
+    ></script>
+    <script defer src="./assets/scripts/main.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <header class="header">
+        <!-- navbar desktop -->
+        <div class="hidden sm:block">
+          <div class="bg-gradient px-10 py-4 text-white">
+            <div class="wrapper flex items-center justify-between">
+              <nav class="flex gap-14">
+                <a
+                  href="index.html"
+                  class="header__nav-link"
+                  aria-current="true"
+                  >الرئيسية</a
+                >
+                <a href="bookings.html" class="header__nav-link">الحجوزات</a>
+                <a href="auctions.html" class="header__nav-link">المزادات</a>
+                <a href="reels.html" class="header__nav-link">فيديو ريلز</a>
+              </nav>
+
+              <div class="flex items-center border-white">
+                <div
+                  class="hs-dropdown relative inline-flex border-e border-white/50 px-6 text-sm [--auto-close:inside] [--placement:bottom-right]"
+                >
+                  <button
+                    type="button"
+                    class="hs-dropdown-toggle flex items-center gap-x-2"
+                  >
+                    <img
+                      src="./assets/images/icons/profile.svg"
+                      class="h-4 w-4"
+                      alt=""
+                    />
+                    دخول
+                    <img
+                      src="./assets/images/icons/arrow_down.svg"
+                      class="h-2 w-2 transition-transform hs-dropdown-open:rotate-180"
+                      alt=""
+                    />
+                  </button>
+
+                  <!-- <div
+                    class="hs-dropdown-menu duration z-10 mt-3 hidden w-40 min-w-[10rem] rounded-lg bg-white p-2 opacity-0 shadow-md transition-[opacity,margin] hs-dropdown-open:opacity-100"
+                  >
+                    <a
+                      class="flex items-center gap-2 px-3 py-2 text-sm text-slate-900 hover:underline"
+                      href="#"
+                    >
+                      <img
+                        src="./assets/images/icons/register.png"
+                        class="h-4 w-4"
+                        alt=""
+                      />
+                      إنشاء حساب
+                    </a>
+                    <a
+                      class="flex items-center gap-2 px-3 py-2 text-sm text-slate-900 hover:underline"
+                      href="#"
+                    >
+                      <img
+                        src="./assets/images/icons/login.svg"
+                        class="h-4 w-4"
+                        alt=""
+                      />
+                      تسجيل دخول
+                    </a>
+                  </div> -->
+                  <div
+                    class="hs-dropdown-menu duration z-10 mt-3 hidden w-[292px] min-w-[10rem] rounded-lg bg-white p-5 opacity-0 shadow-md transition-[opacity,margin] hs-dropdown-open:opacity-100"
+                  >
+                    <div
+                      class="bg-gradient mb-6 flex items-center gap-4 rounded-xl p-4 text-white shadow"
+                    >
+                      <img
+                        src="./assets/images/reel.png"
+                        class="h-12 w-12 rounded-full object-cover object-center"
+                        alt=""
+                      />
+
+                      <div class="">
+                        <p class="mb-1 font-medium">آدم يوسف</p>
+                        <p class="text-xs">رقم الحساب هنا</p>
+                      </div>
+                    </div>
+
+                    <a
+                      class="flex items-center justify-between gap-2 py-2 text-sm text-slate-900 hover:underline"
+                      href="#"
+                    >
+                      <div class="inline-flex items-center gap-2">
+                        <img
+                          src="./assets/images/icons/commercials.png"
+                          class="h-9 w-9"
+                          alt=""
+                        />
+                        إعلاناتي
+                      </div>
+                      <img
+                        src="./assets/images/icons/arrow-left.svg"
+                        class="h-2.5 w-2.5 ltr:rotate-180"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      class="flex items-center justify-between gap-2 py-2 text-sm text-slate-900 hover:underline"
+                      href="#"
+                    >
+                      <div class="inline-flex items-center gap-2">
+                        <img
+                          src="./assets/images/icons/reels.png"
+                          class="h-9 w-9"
+                          alt=""
+                        />
+                        فيديو ريلز
+                      </div>
+                      <img
+                        src="./assets/images/icons/arrow-left.svg"
+                        class="h-2.5 w-2.5 ltr:rotate-180"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      class="flex items-center justify-between gap-2 py-2 text-sm text-slate-900 hover:underline"
+                      href="#"
+                    >
+                      <div class="inline-flex items-center gap-2">
+                        <img
+                          src="./assets/images/icons/bookings.png"
+                          class="h-9 w-9"
+                          alt=""
+                        />
+                        حجوزاتي
+                      </div>
+                      <img
+                        src="./assets/images/icons/arrow-left.svg"
+                        class="h-2.5 w-2.5 ltr:rotate-180"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      class="flex items-center justify-between gap-2 py-2 text-sm text-slate-900 hover:underline"
+                      href="#"
+                    >
+                      <div class="inline-flex items-center gap-2">
+                        <img
+                          src="./assets/images/icons/favorites.png"
+                          class="h-9 w-9"
+                          alt=""
+                        />
+                        المفضلة
+                      </div>
+                      <img
+                        src="./assets/images/icons/arrow-left.svg"
+                        class="h-2.5 w-2.5 ltr:rotate-180"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      class="flex items-center justify-between gap-2 py-2 text-sm text-slate-900 hover:underline"
+                      href="#"
+                    >
+                      <div class="inline-flex items-center gap-2">
+                        <img
+                          src="./assets/images/icons/wallet.png"
+                          class="h-9 w-9"
+                          alt=""
+                        />
+                        المحفظة
+                      </div>
+                      <img
+                        src="./assets/images/icons/arrow-left.svg"
+                        class="h-2.5 w-2.5 ltr:rotate-180"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      class="flex items-center justify-between gap-2 py-2 text-sm text-slate-900 hover:underline"
+                      href="#"
+                    >
+                      <div class="inline-flex items-center gap-2">
+                        <img
+                          src="./assets/images/icons/subscriptions.png"
+                          class="h-9 w-9"
+                          alt=""
+                        />
+                        الاشتراكات
+                      </div>
+                      <img
+                        src="./assets/images/icons/arrow-left.svg"
+                        class="h-2.5 w-2.5 ltr:rotate-180"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      class="flex items-center justify-between gap-2 py-2 text-sm text-slate-900 hover:underline"
+                      href="#"
+                    >
+                      <div class="inline-flex items-center gap-2">
+                        <img
+                          src="./assets/images/icons/help.png"
+                          class="h-9 w-9"
+                          alt=""
+                        />
+                        مساعدة
+                      </div>
+                      <img
+                        src="./assets/images/icons/arrow-left.svg"
+                        class="h-2.5 w-2.5 ltr:rotate-180"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      class="flex items-center justify-between gap-2 py-2 text-sm text-slate-900 hover:underline"
+                      href="#"
+                    >
+                      <div class="inline-flex items-center gap-2">
+                        <img
+                          src="./assets/images/icons/settings.png"
+                          class="h-9 w-9"
+                          alt=""
+                        />
+                        الإعدادات
+                      </div>
+                      <img
+                        src="./assets/images/icons/arrow-left.svg"
+                        class="h-2.5 w-2.5 ltr:rotate-180"
+                        alt=""
+                      />
+                    </a>
+                    <label
+                      class="flex cursor-pointer items-center justify-between gap-2 py-2 text-sm text-slate-900 hover:underline"
+                    >
+                      <div class="inline-flex items-center gap-2">
+                        <img
+                          src="./assets/images/icons/dark-mode.png"
+                          class="h-9 w-9"
+                          alt=""
+                        />
+                        الوضع الليلي
+                      </div>
+
+                      <input
+                        data-hs-theme-switch
+                        class="relative h-7 w-[3.25rem] cursor-pointer appearance-none rounded-full border-2 border-transparent bg-gray-100 ring-1 ring-transparent transition-colors duration-200 ease-in-out before:inline-block before:h-6 before:w-6 before:-translate-x-full before:transform before:rounded-full before:bg-white before:shadow before:ring-0 before:transition before:duration-200 before:ease-in-out after:absolute after:end-1.5 after:top-[calc(50%-0.40625rem)] after:h-[.8125rem] after:w-[.8125rem] after:transform after:opacity-70 after:transition-all after:duration-200 after:ease-in-out checked:bg-primary-900 checked:bg-none checked:before:translate-x-0 checked:after:end-auto checked:after:start-1.5 hover:checked:bg-primary-900 focus:border-slate-700 focus:outline-none focus:checked:bg-primary-900 ltr:before:translate-x-full"
+                        type="checkbox"
+                        id="darkSwitch"
+                      />
+                    </label>
+                    <a
+                      class="flex items-center justify-between gap-2 py-2 text-sm text-slate-900 hover:underline"
+                      href="#"
+                    >
+                      <div class="inline-flex items-center gap-2">
+                        <img
+                          src="./assets/images/icons/logout.png"
+                          class="h-9 w-9"
+                          alt=""
+                        />
+                        تسجيل خروج
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="hs-dropdown relative inline-flex border-e border-white/50 px-6 text-sm [--placement:bottom-right]"
+                >
+                  <button
+                    type="button"
+                    class="hs-dropdown-toggle flex items-center gap-x-2"
+                  >
+                    <img
+                      src="./assets/images/jordan-circle.png"
+                      class="h-4 w-4"
+                      alt=""
+                    />
+                    الأردن
+                    <img
+                      src="./assets/images/icons/arrow_down.svg"
+                      class="h-2 w-2 transition-transform hs-dropdown-open:rotate-180"
+                      alt=""
+                    />
+                  </button>
+
+                  <div
+                    class="hs-dropdown-menu duration z-10 mt-3 hidden w-40 min-w-[10rem] rounded-lg bg-white p-2 opacity-0 shadow-md transition-[opacity,margin] hs-dropdown-open:opacity-100"
+                  >
+                    <a
+                      class="flex items-center gap-2 px-3 py-2 text-sm text-slate-900 hover:underline"
+                      href="#"
+                    >
+                      <img
+                        src="./assets/images/jordan-circle.png"
+                        class="h-4 w-4"
+                        alt=""
+                      />
+                      الأردن
+                    </a>
+                    <a
+                      class="flex items-center gap-2 px-3 py-2 text-sm text-slate-900 hover:underline"
+                      href="#"
+                    >
+                      <img
+                        src="./assets/images/egypt-circle.png"
+                        class="h-4 w-4"
+                        alt=""
+                      />
+                      مصر
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="hs-dropdown relative inline-flex border-e border-white/50 px-6 text-sm [--placement:bottom-right]"
+                >
+                  <button
+                    type="button"
+                    class="hs-dropdown-toggle flex items-center gap-x-2"
+                  >
+                    العربية
+                    <img
+                      src="./assets/images/icons/arrow_down.svg"
+                      class="h-2 w-2 transition-transform hs-dropdown-open:rotate-180"
+                      alt=""
+                    />
+                  </button>
+                  <div
+                    class="hs-dropdown-menu duration z-10 mt-3 hidden w-40 min-w-[10rem] rounded-lg bg-white p-2 opacity-0 shadow-md transition-[opacity,margin] hs-dropdown-open:opacity-100 lg:end-auto lg:start-0"
+                  >
+                    <a
+                      class="flex items-center gap-2 px-3 py-2 text-sm text-slate-900 hover:underline"
+                      href="#"
+                    >
+                      <img
+                        src="./assets/images/egypt-circle.png"
+                        class="h-4 w-4"
+                        alt=""
+                      />
+                      العربية
+                    </a>
+                    <a
+                      class="flex items-center gap-2 px-3 py-2 text-sm text-slate-900 hover:underline"
+                      href="#"
+                    >
+                      <img
+                        src="./assets/images/usa-circle.png"
+                        class="h-4 w-4"
+                        alt=""
+                      />
+                      الإنجليزية
+                    </a>
+                  </div>
+                </div>
+                <a href="#" class="flex items-center gap-2 ps-6 text-sm">
+                  <img
+                    src="./assets/images/icons/phone.svg"
+                    class="h-4 w-4"
+                    alt=""
+                  />
+                  اتصل بنا
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white px-10 py-2 shadow">
+            <div
+              class="wrapper flex items-center justify-between gap-6 max-sm:flex-wrap"
+            >
+              <div>
+                <img
+                  src="./assets/images/logo.png"
+                  class="w-20 sm:w-28"
+                  alt=""
+                />
+              </div>
+
+              <form
+                action="#"
+                class="flex h-12 w-full max-w-[450px] items-center overflow-hidden rounded-2xl bg-stone-50 py-3 ps-5 max-sm:order-1 max-sm:w-full"
+              >
+                <img
+                  src="./assets/images/icons/search.svg"
+                  class="me-3 h-5 w-5 shrink-0"
+                  alt=""
+                />
+
+                <input
+                  type="text"
+                  placeholder="ابحث عن سيارات، عقارات، متاجر."
+                  class="flex-1 bg-transparent p-0 text-primary-900 placeholder:text-neutral-500 placeholder:text-opacity-70"
+                />
+
+                <button
+                  type="button"
+                  class="bg-gradient px-6 py-4 text-sm font-semibold text-white"
+                >
+                  بحث
+                </button>
+              </form>
+
+              <div class="flex items-center gap-5">
+                <button
+                  class="group flex h-8 w-8 items-center justify-center rounded-full bg-stone-50 sm:h-14 sm:w-14"
+                  aria-label="messages"
+                >
+                  <img
+                    src="./assets/images/icons/notification.png"
+                    class="w-6 group-hover:scale-105"
+                    alt=""
+                  />
+                </button>
+                <button
+                  class="group flex h-8 w-8 items-center justify-center rounded-full bg-stone-50 sm:h-14 sm:w-14"
+                  aria-label="messages"
+                >
+                  <img
+                    src="./assets/images/icons/messages.png"
+                    class="w-7 group-hover:scale-105"
+                    alt=""
+                  />
+                </button>
+                <button
+                  class="h-12 rounded-2xl bg-secondary-900 px-8 py-2 text-sm font-semibold text-white transition-colors hover:bg-opacity-65"
+                >
+                  إضافة إعلان
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- navbar mobile -->
+        <div class="sm:hidden">
+          <div>
+            <div class="bg-gradient px-4 py-3">
+              <div class="flex items-center justify-between">
+                <img src="./assets/images/logo-white.png" class="w-16" alt="" />
+
+                <button data-hs-overlay="#hs-overlay-example">
+                  <img
+                    src="./assets/images/icons/menu.svg"
+                    class="w-5"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="hs-overlay-example"
+            class="hs-overlay fixed start-0 top-0 z-[60] hidden h-full w-full -translate-x-full transform overflow-y-auto bg-primary-900 px-4 py-4 text-white transition-all duration-300 hs-overlay-open:translate-x-0"
+            tabindex="-1"
+          >
+            <div class="mb-6 flex items-center justify-between">
+              <img src="./assets/images/logo-white.png" class="w-16" alt="" />
+
+              <button data-hs-overlay="#hs-overlay-example">
+                <img src="./assets/images/icons/x.png" class="w-3" alt="" />
+              </button>
+            </div>
+
+            <form
+              action="#"
+              class="mb-7 flex h-10 items-center overflow-hidden rounded-lg bg-stone-50 p-1 py-3 ps-5"
+            >
+              <img
+                src="./assets/images/icons/search.svg"
+                class="me-3 h-5 w-5 shrink-0"
+                alt=""
+              />
+
+              <input
+                type="text"
+                placeholder="ابحث عن سيارات، عقارات، متاجر."
+                class="flex-1 bg-transparent p-0 text-sm text-primary-900 placeholder:text-neutral-500 placeholder:text-opacity-70"
+              />
+
+              <button
+                type="button"
+                class="bg-gradient h-8 rounded-lg px-4 text-xs font-semibold text-white"
+              >
+                بحث
+              </button>
+            </form>
+
+            <ul class="space-y-6">
+              <li>
+                <a
+                  aria-current="page"
+                  href="#"
+                  class="text-lg text-white text-opacity-75 transition-colors hover:text-opacity-100 aria-[current]:text-opacity-100"
+                  >الرئيسية</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-lg text-white text-opacity-75 transition-colors hover:text-opacity-100 aria-[current]:text-opacity-100"
+                  >إضافة إعلان</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-lg text-white text-opacity-75 transition-colors hover:text-opacity-100 aria-[current]:text-opacity-100"
+                  >الحجوزات</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-lg text-white text-opacity-75 transition-colors hover:text-opacity-100 aria-[current]:text-opacity-100"
+                  >المزادات</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-lg text-white text-opacity-75 transition-colors hover:text-opacity-100 aria-[current]:text-opacity-100"
+                  >فيديو ريلز</a
+                >
+              </li>
+
+              <li>
+                <ul class="hs-accordion-group space-y-6">
+                  <li class="hs-accordion" id="hs-accorion-one">
+                    <button
+                      class="hs-accordion-toggle inline-flex w-full items-center justify-between text-start"
+                      aria-controls="hs-collapse-one"
+                    >
+                      <span
+                        class="text-lg text-white text-opacity-75 transition-colors hover:text-opacity-100 aria-[current]:text-opacity-100"
+                        >دخول</span
+                      >
+
+                      <img
+                        src="./assets/images/icons/arrow_down.svg"
+                        class="w-3 hs-dropdown-open:rotate-180"
+                        alt=""
+                      />
+                    </button>
+                    <div
+                      id="hs-collapse-one"
+                      class="hs-accordion-content mt-6 hidden w-full overflow-hidden transition-[height] duration-300"
+                      aria-labelledby="hs-accorion-one"
+                    >
+                      <ul class="space-y-4">
+                        <li>
+                          <a
+                            href="#"
+                            class="inline-flex items-center gap-1 text-lg text-white text-opacity-75 transition-colors hover:text-opacity-100 aria-[current]:text-opacity-100"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                              class="h-3 w-3"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M4.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L6.31 10l3.72-3.72a.75.75 0 1 0-1.06-1.06L4.72 9.47Zm9.25-4.25L9.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L11.31 10l3.72-3.72a.75.75 0 0 0-1.06-1.06Z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                            إنشاء حساب
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="inline-flex items-center gap-1 text-lg text-white text-opacity-75 transition-colors hover:text-opacity-100 aria-[current]:text-opacity-100"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                              class="h-3 w-3"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M4.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L6.31 10l3.72-3.72a.75.75 0 1 0-1.06-1.06L4.72 9.47Zm9.25-4.25L9.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L11.31 10l3.72-3.72a.75.75 0 0 0-1.06-1.06Z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                            تسجيل دخول
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="hs-accordion" id="hs-accorion-two">
+                    <button
+                      class="hs-accordion-toggle inline-flex w-full items-center justify-between text-start"
+                      aria-controls="hs-collapse-two"
+                    >
+                      <span
+                        class="text-lg text-white text-opacity-75 transition-colors hover:text-opacity-100 aria-[current]:text-opacity-100"
+                        >الأردن</span
+                      >
+
+                      <img
+                        src="./assets/images/icons/arrow_down.svg"
+                        class="w-3 hs-dropdown-open:rotate-180"
+                        alt=""
+                      />
+                    </button>
+                    <div
+                      id="hs-collapse-two"
+                      class="hs-accordion-content mt-6 hidden w-full overflow-hidden transition-[height] duration-300"
+                      aria-labelledby="hs-accorion-two"
+                    >
+                      <ul class="space-y-4">
+                        <li>
+                          <a
+                            href="#"
+                            class="inline-flex items-center gap-1 text-lg text-white text-opacity-75 transition-colors hover:text-opacity-100 aria-[current]:text-opacity-100"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                              class="h-3 w-3"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M4.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L6.31 10l3.72-3.72a.75.75 0 1 0-1.06-1.06L4.72 9.47Zm9.25-4.25L9.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L11.31 10l3.72-3.72a.75.75 0 0 0-1.06-1.06Z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                            مصر
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="inline-flex items-center gap-1 text-lg text-white text-opacity-75 transition-colors hover:text-opacity-100 aria-[current]:text-opacity-100"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                              class="h-3 w-3"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M4.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L6.31 10l3.72-3.72a.75.75 0 1 0-1.06-1.06L4.72 9.47Zm9.25-4.25L9.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L11.31 10l3.72-3.72a.75.75 0 0 0-1.06-1.06Z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                            اليمن
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-lg text-white text-opacity-75 transition-colors hover:text-opacity-100 aria-[current]:text-opacity-100"
+                  >اتصل بنا</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- /header -->
+
+      <main class="wrapper mb-20 pt-12">
+        <ol
+          class="mb-12 flex items-center whitespace-nowrap"
+          aria-label="Breadcrumb"
+        >
+          <li class="inline-flex items-center">
+            <a
+              class="flex items-center text-sm text-neutral-500 text-opacity-70 hover:text-neutral-700"
+              href="./index.html"
+            >
+              الصفحة الرئيسية
+              <svg
+                class="mx-2 h-4 w-4 flex-shrink-0 overflow-visible text-neutral-400 rtl:rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </a>
+          </li>
+          <li
+            class="inline-flex items-center truncate text-sm font-semibold text-secondary-900"
+            aria-current="page"
+          >
+            إضافة إعلان
+          </li>
+        </ol>
+
+        <section>
+          <header class="mb-12 flex items-start justify-between">
+            <div class="">
+              <h2 class="leading-none sm:text-lg">اختر القسم الرئيسي</h2>
+              <span
+                class="bg-gradient-l inline-block h-px w-10 rounded-full sm:h-1 sm:w-20"
+              ></span>
+            </div>
+          </header>
+
+          <!-- Stepper -->
+          <ul class="relative mb-12 flex flex-row gap-x-2">
+            <li class="group flex-1 shrink basis-0 max-sm:hidden">
+              <div
+                class="inline-flex min-h-[28px] w-full min-w-[28px] items-center align-middle text-xs"
+              >
+                <span
+                  class="bg-gradient flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Group 47722">
+                      <path
+                        id="Vector"
+                        d="M5.15 10.4H7.25C9.35 10.4 10.4 9.35 10.4 7.25V5.15C10.4 3.05 9.35 2 7.25 2H5.15C3.05 2 2 3.05 2 5.15V7.25C2 9.35 3.05 10.4 5.15 10.4Z"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        id="Vector_2"
+                        d="M17.7501 10.4H19.8501C21.9501 10.4 23.0001 9.35 23.0001 7.25V5.15C23.0001 3.05 21.9501 2 19.8501 2H17.7501C15.6501 2 14.6001 3.05 14.6001 5.15V7.25C14.6001 9.35 15.6501 10.4 17.7501 10.4Z"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        id="Vector_3"
+                        d="M17.7501 23.0016H19.8501C21.9501 23.0016 23.0001 21.9516 23.0001 19.8516V17.7516C23.0001 15.6516 21.9501 14.6016 19.8501 14.6016H17.7501C15.6501 14.6016 14.6001 15.6516 14.6001 17.7516V19.8516C14.6001 21.9516 15.6501 23.0016 17.7501 23.0016Z"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        id="Vector_4"
+                        d="M5.15 23.0016H7.25C9.35 23.0016 10.4 21.9516 10.4 19.8516V17.7516C10.4 15.6516 9.35 14.6016 7.25 14.6016H5.15C3.05 14.6016 2 15.6516 2 17.7516V19.8516C2 21.9516 3.05 23.0016 5.15 23.0016Z"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </span>
+                <div
+                  class="ms-2 h-0.5 w-full flex-1 bg-primary-900 group-last:hidden"
+                ></div>
+              </div>
+              <div class="mt-3">
+                <span class="block text-sm font-medium text-primary-900">
+                  القسم الرئيسي
+                </span>
+              </div>
+            </li>
+            <li class="group flex-1 shrink basis-0 max-sm:hidden">
+              <div
+                class="inline-flex min-h-[28px] w-full min-w-[28px] items-center align-middle text-xs"
+              >
+                <span
+                  class="bg-gradient flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full"
+                >
+                  <svg
+                    class="text-white"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Group 47722">
+                      <path
+                        id="Vector"
+                        d="M5.15 10.4H7.25C9.35 10.4 10.4 9.35 10.4 7.25V5.15C10.4 3.05 9.35 2 7.25 2H5.15C3.05 2 2 3.05 2 5.15V7.25C2 9.35 3.05 10.4 5.15 10.4Z"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        id="Vector_2"
+                        d="M17.7501 10.4H19.8501C21.9501 10.4 23.0001 9.35 23.0001 7.25V5.15C23.0001 3.05 21.9501 2 19.8501 2H17.7501C15.6501 2 14.6001 3.05 14.6001 5.15V7.25C14.6001 9.35 15.6501 10.4 17.7501 10.4Z"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        id="Vector_3"
+                        d="M17.7501 23.0016H19.8501C21.9501 23.0016 23.0001 21.9516 23.0001 19.8516V17.7516C23.0001 15.6516 21.9501 14.6016 19.8501 14.6016H17.7501C15.6501 14.6016 14.6001 15.6516 14.6001 17.7516V19.8516C14.6001 21.9516 15.6501 23.0016 17.7501 23.0016Z"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        id="Vector_4"
+                        d="M5.15 23.0016H7.25C9.35 23.0016 10.4 21.9516 10.4 19.8516V17.7516C10.4 15.6516 9.35 14.6016 7.25 14.6016H5.15C3.05 14.6016 2 15.6516 2 17.7516V19.8516C2 21.9516 3.05 23.0016 5.15 23.0016Z"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </span>
+                <div
+                  class="ms-2 h-0.5 w-full flex-1 bg-primary-900 group-last:hidden"
+                ></div>
+              </div>
+              <div class="mt-3">
+                <span class="block text-sm font-medium text-primary-900">
+                  القسم الفرعي
+                </span>
+              </div>
+            </li>
+            <li class="group flex-1 shrink basis-0 max-sm:hidden">
+              <div
+                class="inline-flex min-h-[28px] w-full min-w-[28px] items-center align-middle text-xs"
+              >
+                <span
+                  class="bg-gradient flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full"
+                >
+                  <svg
+                    class="text-white"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Group 47741">
+                      <path
+                        id="Vector"
+                        d="M11.5874 26.3857L8.99324 24.2224C6.80204 22.3951 5.70634 21.4814 5.22884 20.1945C4.75126 18.9078 4.97175 17.463 5.41251 14.5732L5.66676 12.9067C6.03757 10.4756 6.22297 9.26006 6.97295 8.36071C7.72294 7.46137 8.8854 7.06062 11.2104 6.25907L12.804 5.70963C15.5676 4.75691 16.9493 4.28047 18.301 4.51906C19.6526 4.75765 20.7483 5.67138 22.9395 7.49867L25.5337 9.66199C29.3461 12.8412 31.2523 14.4309 31.4155 16.6431C31.5787 18.8554 29.9351 20.8263 26.6479 24.7681C23.3608 28.7099 21.7172 30.6808 19.5116 30.9177C17.306 31.1546 15.3998 29.565 11.5874 26.3857Z"
+                        stroke="currentColor"
+                        stroke-width="2.1"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        id="Vector_2"
+                        d="M25.4248 16.2344L18.0375 25.0929"
+                        stroke="currentColor"
+                        stroke-width="2.1"
+                        stroke-linecap="round"
+                      />
+                    </g>
+                  </svg>
+                </span>
+                <div
+                  class="ms-2 h-0.5 w-full flex-1 bg-primary-900 group-last:hidden"
+                ></div>
+              </div>
+              <div class="mt-3">
+                <span class="block text-sm font-medium text-primary-900">
+                  العلامة التجارية
+                </span>
+              </div>
+            </li>
+            <li class="group flex-1 shrink basis-0 max-sm:hidden">
+              <div
+                class="inline-flex min-h-[28px] w-full min-w-[28px] items-center align-middle text-xs"
+              >
+                <span
+                  class="bg-gradient flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full"
+                >
+                  <svg
+                    class="text-white"
+                    width="29"
+                    height="26"
+                    viewBox="0 0 29 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Vector">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.97245 3.75281C9.30752 2.14065 10.7713 1 12.4484 1H16.5516C18.2286 1 19.6924 2.14065 20.0276 3.75281C20.1049 4.12497 20.4489 4.39798 20.8067 4.39798H20.8273L20.8479 4.39886C22.6103 4.47439 23.9641 4.68636 25.0943 5.41302C25.8063 5.87086 26.4188 6.4599 26.8961 7.14725C27.49 8.00242 27.7519 8.98393 27.8774 10.171C28 11.3308 28 12.7846 28 14.626V14.7307C28 16.5721 28 18.0258 27.8774 19.1856C27.7519 20.3727 27.49 21.3542 26.8961 22.2094C26.4188 22.8967 25.8063 23.4858 25.0943 23.9436C24.2108 24.5116 23.198 24.7621 21.9696 24.8823C20.7669 25 19.2583 25 17.3424 25H11.6576C9.7417 25 8.23307 25 7.03037 24.8823C5.80197 24.7621 4.78918 24.5116 3.90577 23.9436C3.19368 23.4858 2.58113 22.8967 2.10385 22.2094C1.51001 21.3542 1.2481 20.3727 1.12259 19.1856C0.999975 18.0258 0.999988 16.5721 1 14.7307V14.626C0.999988 12.7846 0.999975 11.3308 1.12259 10.171C1.2481 8.98393 1.51001 8.00242 2.10385 7.14725C2.58113 6.4599 3.19368 5.87086 3.90577 5.41302C5.03597 4.68636 6.3897 4.47439 8.15215 4.39886L8.17272 4.39798H8.1933C8.55106 4.39798 8.89509 4.12498 8.97245 3.75281ZM12.4484 2.84615C11.6433 2.84615 10.97 3.39137 10.8183 4.12132C10.5725 5.3035 9.50312 6.23306 8.21632 6.24404C6.52272 6.31777 5.61557 6.52167 4.93904 6.95665C4.43225 7.28249 3.99828 7.70043 3.66115 8.18593C3.31435 8.68535 3.10595 9.324 2.99628 10.3613C2.8849 11.4149 2.88372 12.773 2.88372 14.6783C2.88372 16.5836 2.8849 17.9418 2.99628 18.9953C3.10595 20.0326 3.31435 20.6713 3.66115 21.1707C3.99828 21.6562 4.43225 22.0742 4.93904 22.4C5.46338 22.7371 6.13432 22.9392 7.21759 23.0453C8.31573 23.1527 9.73033 23.1538 11.7093 23.1538H17.2907C19.2697 23.1538 20.6843 23.1527 21.7825 23.0453C22.8657 22.9392 23.5366 22.7371 24.061 22.4C24.5677 22.0742 25.0017 21.6562 25.3388 21.1707C25.6857 20.6713 25.894 20.0326 26.0038 18.9953C26.1151 17.9418 26.1163 16.5836 26.1163 14.6783C26.1163 12.773 26.1151 11.4149 26.0038 10.3613C25.894 9.324 25.6857 8.68535 25.3388 8.18593C25.0017 7.70043 24.5677 7.28249 24.061 6.95665C23.3844 6.52167 22.4773 6.31777 20.7837 6.24404C19.4969 6.23306 18.4274 5.3035 18.1818 4.12132C18.03 3.39137 17.3567 2.84615 16.5516 2.84615H12.4484ZM14.5 11.4615C12.9395 11.4615 11.6744 12.7014 11.6744 14.2308C11.6744 15.7601 12.9395 17 14.5 17C16.0605 17 17.3256 15.7601 17.3256 14.2308C17.3256 12.7014 16.0605 11.4615 14.5 11.4615ZM9.7907 14.2308C9.7907 11.6817 11.8991 9.61539 14.5 9.61539C17.1009 9.61539 19.2093 11.6817 19.2093 14.2308C19.2093 16.7798 17.1009 18.8462 14.5 18.8462C11.8991 18.8462 9.7907 16.7798 9.7907 14.2308ZM21.093 10.5385C21.093 10.0287 21.5147 9.61539 22.0349 9.61539H23.2907C23.8109 9.61539 24.2326 10.0287 24.2326 10.5385C24.2326 11.0482 23.8109 11.4615 23.2907 11.4615H22.0349C21.5147 11.4615 21.093 11.0482 21.093 10.5385Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        d="M20.8294 4.34803L20.8294 4.34798H20.8273H20.8067C20.4728 4.34798 20.1491 4.0918 20.0765 3.74264C19.7363 2.106 18.251 0.95 16.5516 0.95H12.4484C10.749 0.95 9.26366 2.10599 8.92349 3.74264C8.85092 4.09181 8.52716 4.34798 8.1933 4.34798H8.17272V4.34794L8.1706 4.34803L8.15003 4.3489L8.15001 4.3489C6.38609 4.4245 5.0208 4.63668 3.87872 5.37096C3.16121 5.83229 2.54386 6.42591 2.06278 7.11873C1.46222 7.98359 1.19882 8.97449 1.07287 10.1658C0.949978 11.3282 0.949988 12.7841 0.95 14.623L0.95 14.626V14.7307L0.95 14.7337C0.949988 16.5726 0.949978 18.0285 1.07287 19.1909C1.19882 20.3821 1.46222 21.373 2.06278 22.2379C2.54386 22.9307 3.16121 23.5243 3.87872 23.9857C4.77161 24.5598 5.79335 24.8115 7.0255 24.9321C8.23063 25.05 9.74123 25.05 11.6549 25.05H11.6576H17.3424H17.3451C19.2587 25.05 20.7693 25.05 21.9744 24.9321C23.2066 24.8115 24.2284 24.5598 25.1213 23.9857C25.8388 23.5243 26.4561 22.9307 26.9372 22.2379C27.5378 21.373 27.8011 20.3821 27.9272 19.1909C28.05 18.0285 28.05 16.5725 28.05 14.7335V14.7307V14.626V14.6231C28.05 12.7841 28.05 11.3282 27.9272 10.1658C27.8011 8.9745 27.5378 7.98359 26.9372 7.11873C26.4561 6.42591 25.8388 5.83229 25.1213 5.37097L25.0943 5.41302L25.1213 5.37096C23.9792 4.63668 22.6139 4.4245 20.85 4.3489L20.85 4.3489L20.8294 4.34803ZM4.96608 22.3579L4.93904 22.4L4.96607 22.3579C4.46473 22.0357 4.03555 21.6223 3.70222 21.1422C3.36215 20.6524 3.15523 20.0232 3.046 18.9901C2.93497 17.9398 2.93372 16.5847 2.93372 14.6783C2.93372 12.772 2.93497 11.4169 3.046 10.3665C3.15523 9.33343 3.36215 8.70418 3.70221 8.21445C4.03555 7.73442 4.46473 7.32105 4.96608 6.99871C5.63063 6.57143 6.52602 6.36773 8.21762 6.29403C9.5281 6.28243 10.6169 5.33591 10.8672 4.13149C11.0139 3.42592 11.6658 2.89615 12.4484 2.89615H16.5516C17.3343 2.89615 17.9861 3.42592 18.1328 4.13149C18.3831 5.33591 19.4719 6.28243 20.7824 6.29403C22.474 6.36773 23.3693 6.57143 24.034 6.99871C24.5353 7.32105 24.9645 7.73442 25.2977 8.21445L25.3388 8.18593L25.2977 8.21445C25.6379 8.70419 25.8447 9.33343 25.954 10.3665C26.0651 11.4169 26.0663 12.7719 26.0663 14.6783C26.0663 16.5847 26.0651 17.9398 25.954 18.9901C25.8447 20.0232 25.6379 20.6524 25.2977 21.1422L25.3388 21.1707L25.2977 21.1422C24.9645 21.6223 24.5353 22.0357 24.034 22.3579C23.519 22.689 22.8571 22.8898 21.7776 22.9955C20.6824 23.1027 19.2707 23.1038 17.2907 23.1038H11.7093C9.72932 23.1038 8.3176 23.1027 7.22246 22.9955C6.14293 22.8898 5.48095 22.689 4.96608 22.3579ZM11.7244 14.2308C11.7244 12.73 12.9662 11.5115 14.5 11.5115C16.0338 11.5115 17.2756 12.73 17.2756 14.2308C17.2756 15.7316 16.0338 16.95 14.5 16.95C12.9662 16.95 11.7244 15.7316 11.7244 14.2308ZM14.5 9.56538C11.8725 9.56538 9.7407 11.6532 9.7407 14.2308C9.7407 16.8084 11.8725 18.8962 14.5 18.8962C17.1276 18.8962 19.2593 16.8084 19.2593 14.2308C19.2593 11.6532 17.1276 9.56538 14.5 9.56538ZM22.0349 9.56538C21.4881 9.56538 21.043 10.0001 21.043 10.5385C21.043 11.0768 21.4881 11.5115 22.0349 11.5115H23.2907C23.8375 11.5115 24.2826 11.0768 24.2826 10.5385C24.2826 10.0001 23.8375 9.56538 23.2907 9.56538H22.0349Z"
+                        stroke="currentColor"
+                        stroke-width="0.1"
+                      />
+                    </g>
+                  </svg>
+                </span>
+                <div
+                  class="ms-2 h-0.5 w-full flex-1 bg-primary-900 group-last:hidden"
+                ></div>
+              </div>
+              <div class="mt-3">
+                <span
+                  class="block text-sm font-medium text-primary-900 text-opacity-70"
+                >
+                  صور الإعلان
+                </span>
+              </div>
+            </li>
+            <li class="group flex-1 shrink basis-0 max-sm:hidden">
+              <div
+                class="inline-flex min-h-[28px] w-full min-w-[28px] items-center align-middle text-xs"
+              >
+                <span
+                  class="bg-gradient flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full"
+                >
+                  <svg
+                    class="text-white"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Group 1087">
+                      <path
+                        id="Vector"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9.70082 10.7117C10.2161 10.3767 10.91 10.3156 11.5158 10.6877L15.3046 13.014C15.9083 13.3848 16.174 14.0256 16.174 14.6075C16.174 15.1894 15.9083 15.8303 15.3046 16.2009L11.5158 18.5274C10.91 18.8993 10.2161 18.8384 9.70082 18.5032C9.19439 18.1739 8.86963 17.594 8.86963 16.9339V12.2811C8.86963 11.6211 9.19439 11.0411 9.70082 10.7117ZM10.6259 12.1074C10.6053 12.1208 10.5552 12.1701 10.5552 12.2811V16.9339C10.5552 17.0448 10.6053 17.0941 10.6259 17.1076L10.6274 17.1085L14.4164 14.7819C14.4403 14.7674 14.4884 14.7169 14.4884 14.6075C14.4884 14.498 14.4403 14.4476 14.4164 14.433L10.6277 12.1067L10.6259 12.1074Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        id="Vector_2"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.31554 8.11639e-06C8.07013 -5.88604e-05 7.88197 -0.000114693 7.71748 0.0175337C6.20587 0.179763 5.04887 1.42106 4.97865 2.92473C3.6493 3.32159 2.70204 4.55162 2.68496 5.96238C2.01427 6.16369 1.43577 6.48118 0.962184 6.99273C0.234383 7.77887 0.00883869 8.74771 0.000254519 9.8794C-0.00800594 10.9674 0.185869 12.3424 0.426628 14.0498L0.916663 17.5255C1.10488 18.8606 1.25777 19.9452 1.49569 20.7952C1.74458 21.6844 2.11146 22.416 2.79073 22.9785C3.46461 23.5364 4.2641 23.777 5.20907 23.8904C6.12279 24 7.27226 24 8.70341 24H15.2965C16.7276 24 17.8772 24 18.7909 23.8904C19.7359 23.777 20.5354 23.5364 21.2093 22.9785C21.8885 22.416 22.2553 21.6844 22.5043 20.7952C22.7421 19.9452 22.8951 18.8606 23.0833 17.5255L23.5733 14.0498C23.8141 12.3424 24.008 10.9674 23.9997 9.8794C23.9911 8.74771 23.7656 7.77887 23.0377 6.99273C22.5641 6.48106 21.9854 6.16354 21.3145 5.96224C21.2973 4.55162 20.3503 3.32172 19.021 2.92479C18.9508 1.4211 17.7938 0.179763 16.2822 0.0175337C16.1177 -0.000114693 15.9296 -5.88604e-05 15.6841 8.11639e-06H8.31554ZM19.6024 5.66825C19.4494 4.98996 18.8434 4.46512 18.0968 4.46512H5.90273C5.15604 4.46512 4.55015 4.98998 4.39704 5.66829C5.43048 5.58138 6.69736 5.58139 8.22243 5.5814H15.7775C17.3023 5.58139 18.5691 5.58138 19.6024 5.66825ZM17.3221 2.79071C17.2031 2.20613 16.7177 1.74831 16.1035 1.6824C16.0407 1.67565 15.9512 1.67443 15.6377 1.67443H8.36202C8.0485 1.67443 7.95898 1.67565 7.89616 1.6824C7.28197 1.74831 6.79659 2.20613 6.67768 2.79071H17.3221ZM2.19088 8.13026C2.529 7.76503 3.03746 7.52279 4.02543 7.39138C5.03135 7.25759 6.37793 7.25582 8.28545 7.25582H15.7145C17.622 7.25582 18.9686 7.25759 19.9746 7.39138C20.9625 7.52279 21.4709 7.76503 21.809 8.13026C22.1394 8.48699 22.3184 8.97245 22.3253 9.89213C22.3326 10.8411 22.1583 12.0924 21.9056 13.8846L21.4335 17.2334C21.2351 18.6409 21.0961 19.6141 20.8918 20.3439C20.6951 21.0465 20.4636 21.422 20.1414 21.6887C19.8138 21.96 19.3739 22.134 18.5914 22.2279C17.7891 22.3242 16.7403 22.3256 15.2423 22.3256H8.7576C7.25968 22.3256 6.21089 22.3242 5.40858 22.2279C4.62604 22.134 4.1862 21.96 3.85857 21.6887C3.53631 21.422 3.30483 21.0465 3.10813 20.3439C2.90388 19.6141 2.76491 18.6409 2.56647 17.2334L2.09431 13.8846C1.84164 12.0924 1.66742 10.8411 1.67462 9.89213C1.6816 8.97245 1.86062 8.48699 2.19088 8.13026Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </svg>
+                </span>
+                <div
+                  class="ms-2 h-0.5 w-full flex-1 bg-primary-900 group-last:hidden"
+                ></div>
+              </div>
+              <div class="mt-3">
+                <span
+                  class="block text-sm font-medium text-primary-900 text-opacity-70"
+                >
+                  فيديو الإعلان
+                </span>
+              </div>
+            </li>
+            <li class="group flex-1 shrink basis-0 max-sm:hidden">
+              <div
+                class="inline-flex min-h-[28px] w-full min-w-[28px] items-center align-middle text-xs"
+              >
+                <span
+                  class="bg-gradient flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full"
+                >
+                  <svg
+                    class="text-white"
+                    width="26"
+                    height="19"
+                    viewBox="0 0 26 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Group">
+                      <path
+                        id="Vector"
+                        d="M17.1502 0.836314C17.0877 0.643662 16.9511 0.483797 16.7707 0.391849C16.5901 0.299799 16.3807 0.283406 16.1879 0.346028L12.993 1.38423C12.592 1.51457 12.3723 1.94539 12.5028 2.34648L12.6624 2.83809L4.53569 8.80757L1.32994 9.84913C1.13728 9.91175 0.97742 10.0483 0.885472 10.2287C0.793524 10.4092 0.777029 10.6188 0.839651 10.8115L2.78746 16.8051C2.89234 17.1278 3.1917 17.3329 3.51357 17.3329C3.59187 17.3329 3.6714 17.3208 3.7498 17.2954L6.95504 16.2538L8.60186 16.2625C8.93258 17.824 10.3215 18.9995 11.98 18.9995C13.6259 18.9995 15.0056 17.8417 15.3499 16.298L17.0389 16.3069L17.1985 16.7986C17.261 16.9912 17.3976 17.1511 17.5781 17.243C17.6865 17.2982 17.8054 17.3262 17.9248 17.3262C18.0043 17.3262 18.084 17.3138 18.1608 17.2889L21.3557 16.2508C21.7568 16.1204 21.9764 15.6896 21.8461 15.2885L17.1502 0.836314ZM4.00396 15.6067L2.52831 11.0656L4.39822 10.458L5.87366 14.9991L4.00396 15.6067ZM11.9799 17.4721C11.1743 17.4721 10.4837 16.9745 10.1966 16.2709L13.7562 16.2896C13.4647 16.9836 12.7785 17.4721 11.9799 17.4721ZM7.39167 14.7287L6.58847 12.2567L5.78528 9.78468L13.1593 4.36821L15.4208 11.3278L16.5414 14.7769L7.39167 14.7287ZM18.415 15.6003L18.3212 15.3118C18.3211 15.3113 18.321 15.3107 18.3208 15.3101L16.3032 9.10052L14.1913 2.60073L15.9336 2.03449L20.1573 15.0339L18.415 15.6003Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        id="Vector_2"
+                        d="M19.7217 4.54756C19.8329 4.60418 19.9512 4.63096 20.0679 4.63096C20.3459 4.63096 20.614 4.47863 20.7489 4.21388L22.1195 1.52469C22.3112 1.14896 22.1618 0.689013 21.7861 0.497481C21.4103 0.30605 20.9504 0.455224 20.7589 0.831059L19.3882 3.52025C19.1966 3.89609 19.3459 4.35603 19.7217 4.54756Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        id="Vector_3"
+                        d="M25.4617 11.8088L22.7721 10.4388C22.3963 10.2474 21.9365 10.3968 21.745 10.7727C21.5535 11.1485 21.7031 11.6083 22.0788 11.7998L24.7684 13.1698C24.8795 13.2263 24.9978 13.2531 25.1144 13.2531C25.3924 13.2531 25.6606 13.1007 25.7955 12.8359C25.987 12.4602 25.8376 12.0004 25.4617 11.8088Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        id="Vector_4"
+                        d="M21.5981 7.38176C21.703 7.70444 22.0024 7.90962 22.3242 7.90962C22.4025 7.90962 22.4821 7.8975 22.5605 7.87204L25.4307 6.93933C25.8317 6.80899 26.0513 6.37817 25.9209 5.97698C25.7906 5.57579 25.3597 5.35667 24.9586 5.4867L22.0883 6.41941C21.6873 6.54985 21.4678 6.98067 21.5981 7.38176Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </svg>
+                </span>
+                <div
+                  class="ms-2 h-0.5 w-full flex-1 bg-primary-900 group-last:hidden"
+                ></div>
+              </div>
+              <div class="mt-3">
+                <span class="block text-sm font-medium text-primary-900">
+                  تفاصيل الإعلان
+                </span>
+              </div>
+            </li>
+            <li class="group flex-1 shrink basis-0">
+              <div
+                class="inline-flex min-h-[28px] w-full min-w-[28px] items-center align-middle text-xs"
+              >
+                <span
+                  class="bg-gradient flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full"
+                >
+                  <svg
+                    class="text-white"
+                    width="24"
+                    height="29"
+                    viewBox="0 0 24 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Group 47728">
+                      <path
+                        id="Vector"
+                        d="M11.6504 16.5898C14.1712 16.5898 16.2148 14.5699 16.2148 12.0781C16.2148 9.58637 14.1712 7.56641 11.6504 7.56641C9.12954 7.56641 7.08594 9.58637 7.08594 12.0781C7.08594 14.5699 9.12954 16.5898 11.6504 16.5898Z"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                      />
+                      <path
+                        id="Vector_2"
+                        d="M1.29984 9.84912C3.73307 -1.22385 19.5799 -1.21107 22.0008 9.86191C23.4212 16.3574 19.5182 21.8555 16.0968 25.2567C13.6142 27.7372 9.68644 27.7372 7.19147 25.2567C3.78247 21.8555 -0.120576 16.3446 1.29984 9.84912Z"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                      />
+                    </g>
+                  </svg>
+                </span>
+                <div
+                  class="ms-2 h-0.5 w-full flex-1 bg-gray-300 group-last:hidden"
+                ></div>
+              </div>
+              <div class="mt-3">
+                <span class="block text-sm font-medium text-primary-900">
+                  تفاصيل الموقع
+                </span>
+              </div>
+            </li>
+            <li class="group flex-1 shrink basis-0">
+              <div
+                class="inline-flex min-h-[28px] w-full min-w-[28px] items-center align-middle text-xs"
+              >
+                <span
+                  class="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full border border-neutral-300"
+                >
+                  <svg
+                    class="text-neutral-500"
+                    width="18"
+                    height="25"
+                    viewBox="0 0 18 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Group 47726">
+                      <g id="Group 47725">
+                        <path
+                          id="Vector"
+                          d="M8.85123 11.1553C8.73602 11.144 8.59778 11.144 8.47105 11.1553C5.72913 11.0642 3.55176 8.84369 3.55176 6.11071C3.55176 3.32079 5.83281 1.05469 8.6669 1.05469C11.4894 1.05469 13.782 3.32079 13.782 6.11071C13.7705 8.84369 11.5931 11.0642 8.85123 11.1553Z"
+                          stroke="currentColor"
+                          stroke-opacity="0.7"
+                          stroke-width="1.7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          id="Vector_2"
+                          d="M3.09097 15.3559C0.30301 17.2007 0.30301 20.2069 3.09097 22.0403C6.2591 24.1356 11.4549 24.1356 14.623 22.0403C17.411 20.1956 17.411 17.1893 14.623 15.3559C11.4664 13.272 6.27062 13.272 3.09097 15.3559Z"
+                          stroke="currentColor"
+                          stroke-opacity="0.7"
+                          stroke-width="1.7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+                <div
+                  class="ms-2 h-0.5 w-full flex-1 bg-gray-300 group-last:hidden"
+                ></div>
+              </div>
+              <div class="mt-3">
+                <span
+                  class="block text-sm font-medium text-neutral-500 text-opacity-70"
+                >
+                  البيانات الشخصية
+                </span>
+              </div>
+            </li>
+            <li class="group flex-1 shrink basis-0 max-sm:hidden">
+              <div
+                class="inline-flex min-h-[28px] w-full min-w-[28px] items-center align-middle text-xs"
+              >
+                <span
+                  class="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full border border-neutral-300"
+                >
+                  <svg
+                    class="text-neutral-500"
+                    width="29"
+                    height="23"
+                    viewBox="0 0 29 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.558 6.37109C11.9363 6.37109 9.81104 8.47185 9.81104 11.0633C9.81104 13.6547 11.9363 15.7554 14.558 15.7554C17.1798 15.7554 19.305 13.6547 19.305 11.0633C19.305 8.47185 17.1798 6.37109 14.558 6.37109ZM11.7098 11.0633C11.7098 9.50847 12.9851 8.24796 14.558 8.24796C16.131 8.24796 17.4062 9.50847 17.4062 11.0633C17.4062 12.6181 16.131 13.8786 14.558 13.8786C12.9851 13.8786 11.7098 12.6181 11.7098 11.0633Z"
+                      fill="currentColor"
+                      fill-opacity="0.7"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.5585 0.0546875C8.80843 0.0546875 4.93536 3.45689 2.68748 6.34134L2.64694 6.39335C2.13857 7.04547 1.67035 7.64608 1.3527 8.35627C1.01254 9.1168 0.865234 9.94565 0.865234 11.0632C0.865234 12.1808 1.01254 13.0097 1.3527 13.7702C1.67035 14.4804 2.13857 15.081 2.64695 15.7331L2.68748 15.7851C4.93536 18.6696 8.80843 22.0718 14.5585 22.0718C20.3085 22.0718 24.1816 18.6696 26.4295 15.7851L26.47 15.7331C26.9785 15.081 27.4466 14.4804 27.7643 13.7702C28.1045 13.0097 28.2517 12.1808 28.2517 11.0632C28.2517 9.94565 28.1045 9.1168 27.7643 8.35627C27.4466 7.64607 26.9785 7.04546 26.47 6.39332L26.4295 6.34134C24.1816 3.45689 20.3085 0.0546875 14.5585 0.0546875ZM4.20157 7.49244C6.27711 4.82915 9.65485 1.94187 14.5585 1.94187C19.4621 1.94187 22.8399 4.82915 24.9154 7.49244C25.4741 8.2093 25.8013 8.63771 26.0165 9.11881C26.2177 9.56859 26.341 10.1183 26.341 11.0632C26.341 12.0082 26.2177 12.5579 26.0165 13.0077C25.8013 13.4888 25.4741 13.9172 24.9154 14.634C22.8399 17.2973 19.4621 20.1846 14.5585 20.1846C9.65485 20.1846 6.27711 17.2973 4.20157 14.634C3.64291 13.9172 3.31568 13.4888 3.10043 13.0077C2.89927 12.5579 2.77592 12.0082 2.77592 11.0632C2.77592 10.1183 2.89927 9.56859 3.10043 9.11881C3.31568 8.63771 3.6429 8.2093 4.20157 7.49244Z"
+                      fill="currentColor"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                </span>
+                <div
+                  class="ms-2 h-0.5 w-full flex-1 bg-gray-300 group-last:hidden"
+                ></div>
+              </div>
+              <div class="mt-3">
+                <span
+                  class="block text-sm font-medium text-neutral-500 text-opacity-70"
+                >
+                  عرض الإعلان
+                </span>
+              </div>
+            </li>
+          </ul>
+          <!-- End Stepper -->
+
+          <form action="#" class="space-y-8">
+            <div>
+              <label
+                for="title"
+                class="mb-3 inline-block font-medium text-slate-900 md:text-lg md:leading-7"
+                >المحافظة</label
+              >
+
+              <div
+                class="flex h-16 items-center gap-4 rounded-3xl border border-transparent bg-neutral-100 bg-opacity-60 px-5 transition-colors duration-200 focus-within:border-violet-900"
+              >
+                <img
+                  src="./assets/images/icons/location-colored.svg"
+                  class="h-[22px] shrink-0"
+                  alt=""
+                />
+                <select
+                  class="block flex-1 appearance-none border-none bg-transparent outline-none"
+                >
+                  <option value="null" hidden>اختر المحافظة</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label
+                for="title"
+                class="mb-3 inline-block font-medium text-slate-900 md:text-lg md:leading-7"
+                >المنطقة</label
+              >
+
+              <div
+                class="flex h-16 items-center gap-4 rounded-3xl border border-transparent bg-neutral-100 bg-opacity-60 px-5 transition-colors duration-200 focus-within:border-violet-900"
+              >
+                <img
+                  src="./assets/images/icons/location-colored.svg"
+                  class="h-[22px] shrink-0"
+                  alt=""
+                />
+                <select
+                  class="block flex-1 appearance-none border-none bg-transparent outline-none"
+                >
+                  <option value="null" hidden>اختر المحافظة</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="relative flex items-center justify-center">
+              <iframe
+                class="block w-full rounded-3xl"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3491699.675045647!2d37.12262705!3d31.27988555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15006f476664de99%3A0x8d285b0751264e99!2z2KfZhNij2LHYr9mG!5e0!3m2!1sar!2seg!4v1704911144606!5m2!1sar!2seg"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+
+              <button
+                type="button"
+                class="absolute h-16 rounded-3xl bg-gradient-to-b from-violet-900 to-violet-400 px-6 py-4 text-lg font-bold text-white transition-colors hover:to-violet-900"
+              >
+                حدد موقعي على الخريطة
+              </button>
+            </div>
+          </form>
+
+          <button
+            type="button"
+            class="ms-auto mt-11 block h-16 w-64 rounded-3xl bg-gradient-to-b from-violet-900 to-violet-900/50 py-4 text-lg font-bold text-white transition-colors hover:to-violet-900"
+          >
+            التالي
+          </button>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="mx-auto max-w-[1360px] px-4">
+          <div class="flex flex-col gap-20 sm:flex-row">
+            <div class="w-full space-y-6 lg:w-4/12 lg:space-y-7">
+              <img src="./assets/images/logo.png" class="w-28" alt="" />
+              <p class="text-neutral-500 text-opacity-70">
+                هذا مثال لنص يمكن أن يستبدل في في نفس المساحة هذا مثال لنص يمكن
+                أن يستبدل في نفس
+              </p>
+
+              <ul class="flex gap-4">
+                <li>
+                  <a href="#">
+                    <img
+                      src="./assets/images/icons/facebook.svg"
+                      class="w-8"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./assets/images/icons/twitter.svg"
+                      class="w-8"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./assets/images/icons/Instagram.svg"
+                      class="w-8"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="w-full lg:w-7/12">
+              <div class="flex flex-wrap justify-between gap-y-6">
+                <div class="w-1/2 pe-4 md:w-1/4">
+                  <h4 class="font-medium leading-none text-slate-900">
+                    عنوان هنا
+                  </h4>
+                  <span class="bg-gradient-l inline-block h-1 w-11"></span>
+
+                  <ul class="mt-4 space-y-3 sm:mt-8 md:mt-6">
+                    <li>
+                      <a href="#" class="footer__link">رابط هنا</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__link">رابط هنا</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__link">رابط هنا</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__link">رابط هنا</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="w-1/2 pe-4 md:w-1/4">
+                  <h4 class="font-medium leading-none text-slate-900">
+                    عنوان هنا
+                  </h4>
+                  <span class="bg-gradient-l inline-block h-1 w-11"></span>
+
+                  <ul class="mt-4 space-y-3 sm:mt-8 md:mt-6">
+                    <li>
+                      <a href="#" class="footer__link">رابط هنا</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__link">رابط هنا</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__link">رابط هنا</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__link">رابط هنا</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="w-1/2 pe-4 md:w-1/4">
+                  <h4 class="font-medium leading-none text-slate-900">
+                    عنوان هنا
+                  </h4>
+                  <span class="bg-gradient-l inline-block h-1 w-11"></span>
+
+                  <ul class="mt-4 space-y-3 sm:mt-8 md:mt-6">
+                    <li>
+                      <a href="#" class="footer__link">رابط هنا</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__link">رابط هنا</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__link">رابط هنا</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__link">رابط هنا</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="w-1/2 pe-4 md:w-1/4">
+                  <h4 class="font-medium leading-none text-slate-900">
+                    عنوان هنا
+                  </h4>
+                  <span class="bg-gradient-l inline-block h-1 w-11"></span>
+
+                  <ul class="mt-4 space-y-3 sm:mt-8 md:mt-6">
+                    <li>
+                      <a href="#" class="footer__link">رابط هنا</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__link">رابط هنا</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__link">رابط هنا</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer__link">رابط هنا</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full lg:w-3/12">
+              <div>
+                <h4 class="font-medium leading-none text-slate-900">
+                  تواصل معنا
+                </h4>
+                <span class="bg-gradient-l inline-block h-1 w-11"></span>
+
+                <ul class="mt-4 space-y-3 sm:mt-8 md:mt-6">
+                  <li class="flex items-center gap-3">
+                    <img
+                      src="./assets/images/icons/footer-mail.svg"
+                      class="w-5"
+                      alt=""
+                    />
+                    <p class="">البريد الإلكتروني هنا</p>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <img
+                      src="./assets/images/icons/footer-phone.svg"
+                      class="w-5"
+                      alt=""
+                    />
+                    <p class="">رقم الهاتف هنا</p>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <img
+                      src="./assets/images/icons/footer-location.svg"
+                      class="w-5"
+                      alt=""
+                    />
+                    <p class="">الموقع هنا</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-8 border-black border-opacity-10" />
+
+          <div
+            class="flex flex-col items-center justify-between gap-4 sm:flex-row"
+          >
+            <p class="order-2 flex items-center gap-1 sm:order-1">
+              جميع الحقوق محفوظة
+              <img
+                src="./assets/images/icons/copyrights.svg"
+                class="h-4 w-4"
+                alt=""
+              />
+              <span class="text-primary-900">شوف السوق</span>
+            </p>
+
+            <div class="order-1 flex items-center gap-3 sm:order-2">
+              <div
+                class="flex h-10 items-center justify-center rounded-3xl bg-neutral-100 bg-opacity-60 px-4 sm:px-6"
+              >
+                <img src="./assets/images/apple-pay.svg" class="h-10" alt="" />
+              </div>
+              <div
+                class="flex h-10 items-center justify-center rounded-3xl bg-neutral-100 bg-opacity-60 px-4 sm:px-6"
+              >
+                <img src="./assets/images/paypal.svg" class="h-12" alt="" />
+              </div>
+              <div
+                class="flex h-10 items-center justify-center rounded-3xl bg-neutral-100 bg-opacity-60 px-4 sm:px-6"
+              >
+                <img src="./assets/images/mastercard.svg" class="h-8" alt="" />
+              </div>
+              <div
+                class="flex h-10 items-center justify-center rounded-3xl bg-neutral-100 bg-opacity-60 px-4 sm:px-6"
+              >
+                <img src="./assets/images/visa.svg" class="h-10" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <a href="#" class="whatsapp">
+        <img src="./assets/images/icons/whatsapp.svg" alt="" />
+      </a>
+    </div>
+  </body>
+</html>

@@ -96,3 +96,26 @@ window.addEventListener("load", () => {
     });
   });
 });
+
+// video
+(function () {
+  const playBtns = document.querySelectorAll(".ply-btn");
+
+  playBtns.forEach((btn) => {
+    const video = document.querySelector(btn.getAttribute("aria-controls"));
+
+    btn.addEventListener("click", () => {
+      if (video.paused || video.ended) video.play();
+      else video.pause();
+    });
+
+    video.addEventListener("playing", () => {
+      btn.setAttribute("aria-pressed", "true");
+      video.controls = true;
+    });
+    video.addEventListener("pause", () => {
+      btn.setAttribute("aria-pressed", "false");
+      video.controls = false;
+    });
+  });
+})();

@@ -190,6 +190,13 @@ select:focus {
   --tw-ring-color: transparent;
 }
 
+select {
+  background-position: left 0.5rem center;
+}
+[dir="ltr"] select {
+  background-position: right 0.5rem center;
+}
+
 /* swiper */
 
 .swiper-pagination-bullet {
