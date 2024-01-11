@@ -727,7 +727,9 @@
         <section>
           <header class="mb-12 flex items-start justify-between">
             <div class="">
-              <h2 class="leading-none text-lg md:text-xl font-semibold">أدخل تفاصيل الموقع</h2>
+              <h2 class="leading-none text-lg md:text-xl font-semibold">
+                عرض الإعلان
+              </h2>
               <span
                 class="bg-gradient-l inline-block h-px w-10 rounded-full sm:h-1 sm:w-20"
               ></span>
@@ -1045,7 +1047,7 @@
                 </span>
               </div>
             </li>
-            <li class="group flex-1 shrink basis-0">
+            <li class="group flex-1 shrink basis-0 max-sm:hidden">
               <div
                 class="inline-flex min-h-[28px] w-full min-w-[28px] items-center align-middle text-xs"
               >
@@ -1077,7 +1079,7 @@
                   </svg>
                 </span>
                 <div
-                  class="ms-2 h-0.5 w-full flex-1 bg-gray-300 group-last:hidden"
+                  class="ms-2 h-0.5 w-full flex-1 bg-primary-900 group-last:hidden"
                 ></div>
               </div>
               <div class="mt-3">
@@ -1091,10 +1093,10 @@
                 class="inline-flex min-h-[28px] w-full min-w-[28px] items-center align-middle text-xs"
               >
                 <span
-                  class="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full border border-neutral-300"
+                  class="bg-gradient flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full"
                 >
                   <svg
-                    class="text-neutral-500"
+                    class="text-white"
                     width="18"
                     height="25"
                     viewBox="0 0 18 25"
@@ -1107,7 +1109,6 @@
                           id="Vector"
                           d="M8.85123 11.1553C8.73602 11.144 8.59778 11.144 8.47105 11.1553C5.72913 11.0642 3.55176 8.84369 3.55176 6.11071C3.55176 3.32079 5.83281 1.05469 8.6669 1.05469C11.4894 1.05469 13.782 3.32079 13.782 6.11071C13.7705 8.84369 11.5931 11.0642 8.85123 11.1553Z"
                           stroke="currentColor"
-                          stroke-opacity="0.7"
                           stroke-width="1.7"
                           stroke-linecap="round"
                           stroke-linejoin="round"
@@ -1116,7 +1117,6 @@
                           id="Vector_2"
                           d="M3.09097 15.3559C0.30301 17.2007 0.30301 20.2069 3.09097 22.0403C6.2591 24.1356 11.4549 24.1356 14.623 22.0403C17.411 20.1956 17.411 17.1893 14.623 15.3559C11.4664 13.272 6.27062 13.272 3.09097 15.3559Z"
                           stroke="currentColor"
-                          stroke-opacity="0.7"
                           stroke-width="1.7"
                           stroke-linecap="round"
                           stroke-linejoin="round"
@@ -1126,26 +1126,24 @@
                   </svg>
                 </span>
                 <div
-                  class="ms-2 h-0.5 w-full flex-1 bg-gray-300 group-last:hidden"
+                  class="ms-2 h-0.5 w-full flex-1 bg-primary-900 group-last:hidden"
                 ></div>
               </div>
               <div class="mt-3">
-                <span
-                  class="block text-sm font-medium text-neutral-500 text-opacity-70"
-                >
+                <span class="block text-sm font-medium text-primary-900">
                   البيانات الشخصية
                 </span>
               </div>
             </li>
-            <li class="group flex-1 shrink basis-0 max-sm:hidden">
+            <li class="group flex-1 shrink basis-0">
               <div
                 class="inline-flex min-h-[28px] w-full min-w-[28px] items-center align-middle text-xs"
               >
                 <span
-                  class="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full border border-neutral-300"
+                  class="bg-gradient flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full"
                 >
                   <svg
-                    class="text-neutral-500"
+                    class="text-white"
                     width="29"
                     height="23"
                     viewBox="0 0 29 23"
@@ -1157,14 +1155,12 @@
                       clip-rule="evenodd"
                       d="M14.558 6.37109C11.9363 6.37109 9.81104 8.47185 9.81104 11.0633C9.81104 13.6547 11.9363 15.7554 14.558 15.7554C17.1798 15.7554 19.305 13.6547 19.305 11.0633C19.305 8.47185 17.1798 6.37109 14.558 6.37109ZM11.7098 11.0633C11.7098 9.50847 12.9851 8.24796 14.558 8.24796C16.131 8.24796 17.4062 9.50847 17.4062 11.0633C17.4062 12.6181 16.131 13.8786 14.558 13.8786C12.9851 13.8786 11.7098 12.6181 11.7098 11.0633Z"
                       fill="currentColor"
-                      fill-opacity="0.7"
                     />
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
                       d="M14.5585 0.0546875C8.80843 0.0546875 4.93536 3.45689 2.68748 6.34134L2.64694 6.39335C2.13857 7.04547 1.67035 7.64608 1.3527 8.35627C1.01254 9.1168 0.865234 9.94565 0.865234 11.0632C0.865234 12.1808 1.01254 13.0097 1.3527 13.7702C1.67035 14.4804 2.13857 15.081 2.64695 15.7331L2.68748 15.7851C4.93536 18.6696 8.80843 22.0718 14.5585 22.0718C20.3085 22.0718 24.1816 18.6696 26.4295 15.7851L26.47 15.7331C26.9785 15.081 27.4466 14.4804 27.7643 13.7702C28.1045 13.0097 28.2517 12.1808 28.2517 11.0632C28.2517 9.94565 28.1045 9.1168 27.7643 8.35627C27.4466 7.64607 26.9785 7.04546 26.47 6.39332L26.4295 6.34134C24.1816 3.45689 20.3085 0.0546875 14.5585 0.0546875ZM4.20157 7.49244C6.27711 4.82915 9.65485 1.94187 14.5585 1.94187C19.4621 1.94187 22.8399 4.82915 24.9154 7.49244C25.4741 8.2093 25.8013 8.63771 26.0165 9.11881C26.2177 9.56859 26.341 10.1183 26.341 11.0632C26.341 12.0082 26.2177 12.5579 26.0165 13.0077C25.8013 13.4888 25.4741 13.9172 24.9154 14.634C22.8399 17.2973 19.4621 20.1846 14.5585 20.1846C9.65485 20.1846 6.27711 17.2973 4.20157 14.634C3.64291 13.9172 3.31568 13.4888 3.10043 13.0077C2.89927 12.5579 2.77592 12.0082 2.77592 11.0632C2.77592 10.1183 2.89927 9.56859 3.10043 9.11881C3.31568 8.63771 3.6429 8.2093 4.20157 7.49244Z"
                       fill="currentColor"
-                      fill-opacity="0.7"
                     />
                   </svg>
                 </span>
@@ -1173,9 +1169,7 @@
                 ></div>
               </div>
               <div class="mt-3">
-                <span
-                  class="block text-sm font-medium text-neutral-500 text-opacity-70"
-                >
+                <span class="block text-sm font-medium text-primary-900">
                   عرض الإعلان
                 </span>
               </div>
@@ -1183,82 +1177,257 @@
           </ul>
           <!-- End Stepper -->
 
-          <form action="#" class="space-y-8">
-            <div>
-              <label
-                for="title"
-                class="mb-3 inline-block font-medium text-slate-900 md:text-lg md:leading-7"
-                >المحافظة</label
-              >
+          <div class="space-y-16">
+            <div class="relative isolate">
+              <div class="swiper banner z-20 rounded-3xl p-3 shadow">
+                <div class="swiper-wrapper w-full">
+                  <div class="swiper-slide">
+                    <div
+                      class="bg-gradient h-[225px] overflow-hidden rounded-lg sm:h-[380px] sm:rounded-3xl"
+                    >
+                      <img
+                        src="./assets/images/img-large.png"
+                        class="h-full w-full object-cover object-center"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="bg-gradient h-[225px] overflow-hidden rounded-lg sm:h-[380px] sm:rounded-3xl"
+                    >
+                      <img
+                        src="./assets/images/img-large.png"
+                        class="h-full w-full object-cover object-center"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="bg-gradient h-[225px] overflow-hidden rounded-lg sm:h-[380px] sm:rounded-3xl"
+                    >
+                      <img
+                        src="./assets/images/img-large.png"
+                        class="h-full w-full object-cover object-center"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-              <div
-                class="flex h-16 items-center gap-4 rounded-3xl border border-transparent bg-neutral-100 bg-opacity-60 px-5 transition-colors duration-200 focus-within:border-violet-900"
-              >
-                <img
-                  src="./assets/images/icons/location-colored.svg"
-                  class="h-[22px] shrink-0"
-                  alt=""
-                />
-                <select
-                  class="block flex-1 appearance-none border-none bg-transparent outline-none"
+              <span class="card__badge z-30">إعلان ممول</span>
+
+              <div class="ites-center mt-4 flex justify-center gap-4 sm:mt-8">
+                <div
+                  class="swiper-button-prev static m-0 h-5 w-5 sm:h-6 sm:w-6 rtl:rotate-180"
                 >
-                  <option value="null" hidden>اختر المحافظة</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                </select>
+                  <img
+                    src="./assets/images/icons/swiper-arrow.png"
+                    class="w-5 sm:w-6"
+                    alt=""
+                  />
+                </div>
+
+                <div class="swiper-pagination static pt-1"></div>
+
+                <div
+                  class="swiper-button-next static m-0 h-5 w-5 sm:h-6 sm:w-6 ltr:rotate-180"
+                >
+                  <img
+                    src="./assets/images/icons/swiper-arrow.png"
+                    class="w-5 sm:w-6"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
-            <div>
-              <label
-                for="title"
-                class="mb-3 inline-block font-medium text-slate-900 md:text-lg md:leading-7"
-                >المنطقة</label
-              >
 
-              <div
-                class="flex h-16 items-center gap-4 rounded-3xl border border-transparent bg-neutral-100 bg-opacity-60 px-5 transition-colors duration-200 focus-within:border-violet-900"
-              >
-                <img
-                  src="./assets/images/icons/location-colored.svg"
-                  class="h-[22px] shrink-0"
-                  alt=""
-                />
-                <select
-                  class="block flex-1 appearance-none border-none bg-transparent outline-none"
-                >
-                  <option value="null" hidden>اختر المحافظة</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                </select>
+            <div class="rounded-3xl p-6 shadow-md">
+              <p class="mb-4 text-xl">ضع عنوان الإعلان هنا</p>
+              <p class="mb-7 text-lg text-neutral-500 text-opacity-70">
+                هذا مثال لنص يمكن أن يستبدل في في نفس المساحة هذا مثال لنص يمكن
+                أن يستبدل في في نفس المساحة هذا مثال لنص يمكن هذا مثال لنص هذا
+                مثال لنص يمكن أن يستبدل في في نفس المساحة هذا مثال لنص يمكن أن
+                هذا مثال لنص يمكن أن يستبدل في في نفس المساحة هذا مثال لنص يمكن
+                أن يستبدل في في نفس المساحة هذا مثال لنص يمكن هذا
+              </p>
+
+              <p class="text-2xl font-bold text-primary-900">25,000EGP</p>
+            </div>
+
+            <div>
+              <div class="mb-6 flex items-start justify-between">
+                <div class="">
+                  <h2 class="text-lg font-semibold leading-none md:text-xl">
+                    الموقع
+                  </h2>
+                  <span
+                    class="bg-gradient-l inline-block h-px w-10 rounded-full sm:h-1"
+                  ></span>
+                </div>
+              </div>
+
+              <div class="rounded-3xl p-6 shadow-md">
+                <div class="mb-6 flex items-center gap-2">
+                  <img
+                    src="./assets/images/icons/location.svg"
+                    class="h-4 sm:h-6"
+                    alt=""
+                  />
+                  <p class="text-neutral-500 text-opacity-70 sm:text-lg">
+                    ضع الموقع هنا
+                  </p>
+                </div>
+
+                <div class="relative flex items-center justify-center">
+                  <iframe
+                    class="block w-full rounded-3xl"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3491699.675045647!2d37.12262705!3d31.27988555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15006f476664de99%3A0x8d285b0751264e99!2z2KfZhNij2LHYr9mG!5e0!3m2!1sar!2seg!4v1704911144606!5m2!1sar!2seg"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+
+                  <button
+                    type="button"
+                    class="absolute flex h-10 items-center gap-2 rounded-3xl bg-gradient-to-b from-violet-900 to-violet-400 px-6 py-4 font-bold text-white transition-colors hover:to-violet-900 sm:h-16 sm:text-lg"
+                  >
+                    اعرض على الخريطة
+
+                    <svg
+                      width="7"
+                      height="12"
+                      viewBox="0 0 7 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M6.57824 0.351784C6.37003 0.126537 6.08767 0 5.79326 0C5.49885 0 5.2165 0.126537 5.00829 0.351784L0.567109 5.15779C0.358961 5.38311 0.24203 5.68866 0.24203 6.00725C0.24203 6.32585 0.358961 6.6314 0.567109 6.85672L5.00829 11.6627C5.21769 11.8816 5.49815 12.0027 5.78927 12C6.08038 11.9972 6.35886 11.8709 6.56472 11.6481C6.77057 11.4253 6.88734 11.124 6.88987 10.8089C6.8924 10.4939 6.78049 10.1904 6.57824 9.9638L2.92204 6.00725L6.57824 2.05071C6.78639 1.82539 6.90332 1.51984 6.90332 1.20125C6.90332 0.88265 6.78639 0.577099 6.57824 0.351784Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
 
-            <div class="relative flex items-center justify-center">
-              <iframe
-                class="block w-full rounded-3xl"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3491699.675045647!2d37.12262705!3d31.27988555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15006f476664de99%3A0x8d285b0751264e99!2z2KfZhNij2LHYr9mG!5e0!3m2!1sar!2seg!4v1704911144606!5m2!1sar!2seg"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+            <div>
+              <div class="mb-6 flex items-start justify-between">
+                <div>
+                  <h2 class="text-lg font-semibold leading-none md:text-xl">
+                    المواصفات
+                  </h2>
+                  <span
+                    class="bg-gradient-l inline-block h-px w-10 rounded-full sm:h-1"
+                  ></span>
+                </div>
+              </div>
 
-              <button
-                type="button"
-                class="absolute h-12 rounded-3xl bg-gradient-to-b from-violet-900 to-violet-400 px-6 py-4 font-bold text-white transition-colors hover:to-violet-900 sm:h-16 sm:text-lg"
-              >
-                حدد موقعي على الخريطة
-              </button>
+              <div class="rounded-3xl p-6 shadow-md md:p-10">
+                <div
+                  class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-16 md:gap-28"
+                >
+                  <div class="space-y-6">
+                    <div class="flex items-center justify-between">
+                      <p class="text-lg text-neutral-500 text-opacity-70">
+                        ضع عنوان هنا
+                      </p>
+                      <p class="text-lg font-medium text-slate-900">
+                        ضع الوصف هنا
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <p class="text-lg text-neutral-500 text-opacity-70">
+                        ضع عنوان هنا
+                      </p>
+                      <p class="text-lg font-medium text-slate-900">
+                        ضع الوصف هنا
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <p class="text-lg text-neutral-500 text-opacity-70">
+                        ضع عنوان هنا
+                      </p>
+                      <p class="text-lg font-medium text-slate-900">
+                        ضع الوصف هنا
+                      </p>
+                    </div>
+                  </div>
+                  <div class="space-y-6">
+                    <div class="flex items-center justify-between">
+                      <p class="text-lg text-neutral-500 text-opacity-70">
+                        ضع عنوان هنا
+                      </p>
+                      <p class="text-lg font-medium text-slate-900">
+                        ضع الوصف هنا
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <p class="text-lg text-neutral-500 text-opacity-70">
+                        ضع عنوان هنا
+                      </p>
+                      <p class="text-lg font-medium text-slate-900">
+                        ضع الوصف هنا
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <p class="text-lg text-neutral-500 text-opacity-70">
+                        ضع عنوان هنا
+                      </p>
+                      <p class="text-lg font-medium text-slate-900">
+                        ضع الوصف هنا
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </form>
 
-          <button
-            type="button"
-            class="ms-auto mt-11 block h-16 w-64 rounded-3xl bg-gradient-to-b from-violet-900 to-violet-900/50 py-4 text-lg font-bold text-white transition-colors hover:to-violet-900"
-          >
-            التالي
-          </button>
+            <div>
+              <div class="mb-6 flex items-start justify-between">
+                <div>
+                  <h2 class="text-lg font-semibold leading-none md:text-xl">
+                    الوصف
+                  </h2>
+                  <span
+                    class="bg-gradient-l inline-block h-px w-10 rounded-full sm:h-1"
+                  ></span>
+                </div>
+              </div>
+
+              <div class="space-y-4 rounded-3xl p-6 shadow-md md:p-10">
+                <p class="text-neutral-500 text-opacity-70 sm:text-lg">
+                  هذا مثال لنص يمكن أن يستبدل في نفس المساحة هذا مثال لنص يمكن
+                  أن يستبدل في نفس المساحة هذا مثال لنص يمكن أن يستبدل في نفس
+                  المساحة هذا مثال لنص يمكن أن يستبدل في نفس المساحة هذا مثال
+                  لنص يمكن أن يستبدل في نفس المساحة هذا مثال لنص يمكن أن يستبدل
+                  في نفس المساحة هذا مثال لنص يمكن أن يستبدل في نفس المساحة هذا
+                  مثال لنص يمكن أن يستبدل في نفس المساحة
+                </p>
+                <p class="text-neutral-500 text-opacity-70 sm:text-lg">
+                  هذا مثال لنص يمكن أن يستبدل في نفس المساحة هذا مثال لنص يمكن
+                  أن يستبدل في نفس المساحة هذا مثال لنص يمكن أن يستبدل في نفس
+                  المساحة هذا مثال لنص يمكن أن يستبدل في نفس المساحة هذا مثال
+                  لنص يمكن أن يستبدل في نفس المساحة هذا مثال لنص يمكن أن يستبدل
+                  في نفس المساحة هذا مثال لنص يمكن أن يستبدل في نفس المساحة هذا
+                  مثال لنص يمكن أن يستبدل في نفس المساحة
+                </p>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="ms-auto mt-11 block h-12 w-64 rounded-3xl bg-gradient-to-b from-violet-900 to-violet-900/50 py-4 font-bold text-white transition-colors hover:to-violet-900 sm:h-16 sm:text-lg"
+            >
+              نشر
+            </button>
+          </div>
         </section>
       </main>
 
@@ -1474,5 +1643,21 @@
         <img src="./assets/images/icons/whatsapp.svg" alt="" />
       </a>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".swiper.banner", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
