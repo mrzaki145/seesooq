@@ -91,9 +91,10 @@
   }
 }
 
+/* card */
 @layer components {
   .card {
-    @apply relative rounded-3xl bg-white p-1 shadow-md sm:p-3.5;
+    @apply relative flex flex-col rounded-3xl bg-white p-1 shadow-md sm:p-3.5;
   }
   .card__badge {
     @apply absolute left-0 top-0 rounded-br-xl rounded-tl-xl  bg-secondary-900 bg-gradient-to-b from-red-500 to-red-500 px-2 py-4 text-sm text-white [writing-mode:tb-rl];
@@ -107,34 +108,88 @@
     z-index: -1;
   }
   .card__thumbnail {
-    @apply relative isolate  sm:mb-3.5;
+    @apply relative isolate h-[225px] sm:mb-3.5;
   }
   .card__img {
     @apply h-full w-full rounded-3xl object-cover object-center;
   }
   .card__action {
-    @apply absolute right-4 top-4 inline-flex h-5 w-5 items-center justify-center rounded-full bg-white sm:h-7 sm:w-7;
+    @apply absolute right-4 top-4 flex h-7 w-7 items-center justify-center rounded-full bg-white aria-pressed:bg-secondary-900;
   }
-  .card__action img {
-    @apply w-3 sm:w-4;
+  .card__action svg {
+    @apply inline-block h-4 w-4 fill-current text-secondary-900;
   }
   .card__body {
-    @apply space-y-3 p-2.5 text-[10px] text-neutral-500 text-opacity-70 sm:p-0 sm:text-xs md:text-sm;
+    @apply flex h-full flex-1 flex-col justify-between p-2.5 text-[10px] text-neutral-500 text-opacity-70 sm:p-0 sm:text-xs md:text-sm;
+  }
+  .card__body > div {
+    @apply space-y-2 sm:space-y-3;
+  }
+  .card__body > div:first-child {
+    @apply mb-4;
+  }
+  .card__category {
+    @apply text-sm text-primary-900;
   }
   .card__title {
     @apply text-xs font-medium text-slate-900 sm:text-sm md:text-base;
   }
-  /* .card__disc {
-    @apply text-neutral-500 text-opacity-70;
-  } */
   .card__price {
-    @apply text-sm font-bold leading-none text-violet-900 sm:text-lg;
+    @apply text-sm font-bold  text-violet-900 sm:text-lg;
+    line-height: 1 !important;
   }
   .card__btn {
     @apply flex h-7 flex-1 items-center justify-center gap-1.5 rounded-full bg-neutral-100 text-[10px] text-slate-900 transition-colors hover:bg-neutral-200 sm:h-10 sm:text-sm;
   }
   .card__btn svg {
     @apply h-3.5 w-3.5 fill-current text-secondary-900 sm:h-5 sm:w-5;
+  }
+}
+
+/* reel */
+@layer components {
+  .reel {
+    @apply relative h-[350px] rounded-3xl p-1.5 shadow sm:h-[475px];
+  }
+  .reel__content {
+    @apply absolute inset-1.5 rounded-3xl bg-gradient-to-b from-transparent to-black/10;
+  }
+  .reel__info {
+    @apply absolute inset-x-0 bottom-0 flex items-center gap-3 p-4 text-white;
+  }
+  .reel__info img {
+    @apply h-14 w-14 shrink-0 rounded-full;
+  }
+  .reel__info > div p:first-child {
+    @apply text-lg font-medium;
+  }
+}
+
+@layer components {
+  .notification {
+    @apply relative flex flex-col gap-4 rounded-3xl bg-white p-5 sm:flex-row sm:items-center sm:gap-6 sm:pe-16;
+    box-shadow:
+      0px 0px 5.27px 0px rgba(0, 0, 0, 0.04),
+      0px 0px 37px 0px rgba(0, 0, 0, 0.05);
+  }
+  .notification--new {
+    @apply bg-neutral-100 shadow-none;
+  }
+
+  .notification__avatar {
+    @apply h-[70px] w-[70px] shrink-0 rounded-full object-cover object-center;
+  }
+  .notification__content {
+    @apply flex-1 text-neutral-500 text-opacity-70;
+  }
+  .notification__text {
+    @apply mb-2 sm:text-lg;
+  }
+  .notification__dot {
+    @apply bg-gradient absolute end-5 hidden h-3.5  w-3.5 rounded-full sm:end-6;
+  }
+  .notification--new .notification__dot {
+    @apply block;
   }
 }
 

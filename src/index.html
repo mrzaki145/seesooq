@@ -890,20 +890,20 @@
 
             <a
               href="#"
-              class="flex items-center gap-1 text-sm text-secondary-900 hover:underline sm:text-base"
+              class="inline-flex items-center gap-1 text-sm leading-none text-secondary-900 hover:underline sm:text-base"
             >
-              مشاهدة المزيد
+              قراءة المزيد
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                class="h-5 w-5 ltr:rotate-180"
+                class="h-5 w-5 pt-1 ltr:rotate-180"
               >
                 <path
                   fill-rule="evenodd"
                   d="M4.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L6.31 10l3.72-3.72a.75.75 0 1 0-1.06-1.06L4.72 9.47Zm9.25-4.25L9.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L11.31 10l3.72-3.72a.75.75 0 0 0-1.06-1.06Z"
                   clip-rule="evenodd"
-                />
+                ></path>
               </svg>
             </a>
           </header>
@@ -1178,20 +1178,20 @@
 
             <a
               href="#"
-              class="flex items-center gap-1 text-sm text-secondary-900 hover:underline sm:text-base"
+              class="inline-flex items-center gap-1 text-sm leading-none text-secondary-900 hover:underline sm:text-base"
             >
-              مشاهدة المزيد
+              قراءة المزيد
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                class="h-5 w-5 ltr:rotate-180"
+                class="h-5 w-5 pt-1 ltr:rotate-180"
               >
                 <path
                   fill-rule="evenodd"
                   d="M4.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L6.31 10l3.72-3.72a.75.75 0 1 0-1.06-1.06L4.72 9.47Zm9.25-4.25L9.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L11.31 10l3.72-3.72a.75.75 0 0 0-1.06-1.06Z"
                   clip-rule="evenodd"
-                />
+                ></path>
               </svg>
             </a>
           </header>
@@ -1205,55 +1205,63 @@
                       class="card__img"
                       src="assets/images/products/chairpng.png"
                     />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
+                    <button type="button" class="card__action group">
+                      <svg class="group-aria-pressed:text-white">
+                        <use
+                          href="./assets/images/icons/sprite.svg#heart"
+                        ></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
+                    <div>
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
                       </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
+                      <p class="card__price">25,000 EGP</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
+                    <div>
+                      <div class="flex items-center">
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
                     </div>
                   </div>
 
@@ -1267,55 +1275,63 @@
                       class="card__img"
                       src="assets/images/products/chairpng.png"
                     />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
+                    <button type="button" class="card__action group">
+                      <svg class="group-aria-pressed:text-white">
+                        <use
+                          href="./assets/images/icons/sprite.svg#heart"
+                        ></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
+                    <div>
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
                       </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
+                      <p class="card__price">25,000 EGP</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
+                    <div>
+                      <div class="flex items-center">
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
                     </div>
                   </div>
 
@@ -1329,55 +1345,63 @@
                       class="card__img"
                       src="assets/images/products/chairpng.png"
                     />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
+                    <button type="button" class="card__action group">
+                      <svg class="group-aria-pressed:text-white">
+                        <use
+                          href="./assets/images/icons/sprite.svg#heart"
+                        ></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
+                    <div>
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
                       </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
+                      <p class="card__price">25,000 EGP</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
+                    <div>
+                      <div class="flex items-center">
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
                     </div>
                   </div>
 
@@ -1391,55 +1415,63 @@
                       class="card__img"
                       src="assets/images/products/chairpng.png"
                     />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
+                    <button type="button" class="card__action group">
+                      <svg class="group-aria-pressed:text-white">
+                        <use
+                          href="./assets/images/icons/sprite.svg#heart"
+                        ></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
+                    <div>
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
                       </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
+                      <p class="card__price">25,000 EGP</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
+                    <div>
+                      <div class="flex items-center">
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
                     </div>
                   </div>
 
@@ -1453,55 +1485,63 @@
                       class="card__img"
                       src="assets/images/products/chairpng.png"
                     />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
+                    <button type="button" class="card__action group">
+                      <svg class="group-aria-pressed:text-white">
+                        <use
+                          href="./assets/images/icons/sprite.svg#heart"
+                        ></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
+                    <div>
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
                       </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
+                      <p class="card__price">25,000 EGP</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
+                    <div>
+                      <div class="flex items-center">
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
                     </div>
                   </div>
 
@@ -1515,55 +1555,63 @@
                       class="card__img"
                       src="assets/images/products/chairpng.png"
                     />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
+                    <button type="button" class="card__action group">
+                      <svg class="group-aria-pressed:text-white">
+                        <use
+                          href="./assets/images/icons/sprite.svg#heart"
+                        ></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
+                    <div>
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
                       </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
+                      <p class="card__price">25,000 EGP</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
+                    <div>
+                      <div class="flex items-center">
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
                     </div>
                   </div>
 
@@ -1609,20 +1657,20 @@
 
             <a
               href="#"
-              class="flex items-center gap-1 text-sm text-secondary-900 hover:underline sm:text-base"
+              class="inline-flex items-center gap-1 text-sm leading-none text-secondary-900 hover:underline sm:text-base"
             >
-              مشاهدة المزيد
+              قراءة المزيد
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                class="h-5 w-5 ltr:rotate-180"
+                class="h-5 w-5 pt-1 ltr:rotate-180"
               >
                 <path
                   fill-rule="evenodd"
                   d="M4.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L6.31 10l3.72-3.72a.75.75 0 1 0-1.06-1.06L4.72 9.47Zm9.25-4.25L9.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L11.31 10l3.72-3.72a.75.75 0 0 0-1.06-1.06Z"
                   clip-rule="evenodd"
-                />
+                ></path>
               </svg>
             </a>
           </header>
@@ -1636,55 +1684,63 @@
                       class="card__img"
                       src="./assets/images/products/car.png"
                     />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
+                    <button type="button" class="card__action group">
+                      <svg class="group-aria-pressed:text-white">
+                        <use
+                          href="./assets/images/icons/sprite.svg#heart"
+                        ></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
+                    <div>
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
                       </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
+                      <p class="card__price">25,000 EGP</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
+                    <div>
+                      <div class="flex items-center">
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
                     </div>
                   </div>
 
@@ -1698,55 +1754,63 @@
                       class="card__img"
                       src="./assets/images/products/car.png"
                     />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
+                    <button type="button" class="card__action group">
+                      <svg class="group-aria-pressed:text-white">
+                        <use
+                          href="./assets/images/icons/sprite.svg#heart"
+                        ></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
+                    <div>
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
                       </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
+                      <p class="card__price">25,000 EGP</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
+                    <div>
+                      <div class="flex items-center">
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
                     </div>
                   </div>
 
@@ -1760,55 +1824,63 @@
                       class="card__img"
                       src="./assets/images/products/car.png"
                     />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
+                    <button type="button" class="card__action group">
+                      <svg class="group-aria-pressed:text-white">
+                        <use
+                          href="./assets/images/icons/sprite.svg#heart"
+                        ></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
+                    <div>
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
                       </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
+                      <p class="card__price">25,000 EGP</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
+                    <div>
+                      <div class="flex items-center">
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
                     </div>
                   </div>
 
@@ -1822,55 +1894,63 @@
                       class="card__img"
                       src="./assets/images/products/car.png"
                     />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
+                    <button type="button" class="card__action group">
+                      <svg class="group-aria-pressed:text-white">
+                        <use
+                          href="./assets/images/icons/sprite.svg#heart"
+                        ></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
+                    <div>
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
                       </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
+                      <p class="card__price">25,000 EGP</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
+                    <div>
+                      <div class="flex items-center">
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
                     </div>
                   </div>
 
@@ -1884,55 +1964,63 @@
                       class="card__img"
                       src="./assets/images/products/car.png"
                     />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
+                    <button type="button" class="card__action group">
+                      <svg class="group-aria-pressed:text-white">
+                        <use
+                          href="./assets/images/icons/sprite.svg#heart"
+                        ></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
+                    <div>
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
                       </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
+                      <p class="card__price">25,000 EGP</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
+                    <div>
+                      <div class="flex items-center">
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
                     </div>
                   </div>
 
@@ -1946,55 +2034,63 @@
                       class="card__img"
                       src="./assets/images/products/car.png"
                     />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
+                    <button type="button" class="card__action group">
+                      <svg class="group-aria-pressed:text-white">
+                        <use
+                          href="./assets/images/icons/sprite.svg#heart"
+                        ></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
+                    <div>
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
                       </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
+                      <p class="card__price">25,000 EGP</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
+                    <div>
+                      <div class="flex items-center">
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
                     </div>
                   </div>
 
@@ -2008,55 +2104,63 @@
                       class="card__img"
                       src="./assets/images/products/car.png"
                     />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
+                    <button type="button" class="card__action group">
+                      <svg class="group-aria-pressed:text-white">
+                        <use
+                          href="./assets/images/icons/sprite.svg#heart"
+                        ></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
+                    <div>
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
                       </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
+                      <p class="card__price">25,000 EGP</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
+                    <div>
+                      <div class="flex items-center">
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
                     </div>
                   </div>
 
@@ -2070,55 +2174,63 @@
                       class="card__img"
                       src="./assets/images/products/car.png"
                     />
-                    <button type="button" class="card__action">
-                      <img src="./assets/images/icons/card-heart.png" alt="" />
+                    <button type="button" class="card__action group">
+                      <svg class="group-aria-pressed:text-white">
+                        <use
+                          href="./assets/images/icons/sprite.svg#heart"
+                        ></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="card__body">
-                    <p class="card__title">كرسي بني ذو طراز عصري</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">25,000 EGP</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
+                    <div>
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
                       </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
+                      <p class="card__price">25,000 EGP</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-mail"
-                          ></use>
-                        </svg>
-                        رسالة
-                      </button>
+                    <div>
+                      <div class="flex items-center">
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex w-1/2 items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
                     </div>
                   </div>
 
