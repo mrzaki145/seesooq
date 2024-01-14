@@ -278,3 +278,8 @@ select {
 .swiper-pagination-fraction {
   width: auto;
 }
+
+.watch-reels .swiper-button-prev svg,
+.watch-reels .swiper-button-next svg {
+  @apply sm:h-4 sm:w-3.5 h-3 w-2.5 !important;
+}
