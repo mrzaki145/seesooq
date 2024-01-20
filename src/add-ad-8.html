@@ -1252,11 +1252,13 @@
                 <div
                   class="flex h-16 items-center gap-4 rounded-3xl border border-transparent bg-neutral-100 bg-opacity-60 px-5 transition-colors duration-200 focus-within:border-violet-900"
                 >
-                  <input
-                    type="text"
-                    class="w-12 border-none bg-transparent text-slate-900 outline-none placeholder:text-neutral-500 placeholder:text-opacity-70"
-                    placeholder="+ 962"
-                  />
+                  <select
+                  class="block flex-1 appearance-none bg-none border-none bg-transparent outline-none"
+                >
+                  <option value="null" hidden>+ 962</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
                   <img
                     src="./assets/images/jordan-circle.png"
                     class="h-4 w-4 shrink-0 select-none"

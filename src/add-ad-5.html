@@ -1189,7 +1189,7 @@
           </ul>
           <!-- End Stepper -->
 
-          <label
+          <!-- <label
             class="flex h-[363px] cursor-pointer flex-col items-center justify-center rounded-3xl border border-dashed border-neutral-500 border-opacity-40 transition-colors hover:bg-gray-50"
           >
             <img
@@ -1202,16 +1202,16 @@
             </p>
 
             <input type="file" class="sr-only" />
-          </label>
+          </label> -->
 
           <!-- video preview -->
-          <!-- <div
-            class="relative flex items-center justify-center overflow-hidden rounded-3xl"
+          <div
+            class="relative flex items-center mx-auto sm:h-[500px] w-fit justify-center rounded-3xl"
           >
             <video
               id="video"
               src="./assets/videos/nature-stock-video.webm"
-              class="block w-full object-cover object-center"
+              class="block w-full h-full rounded-3xl object-fill object-center"
             ></video>
 
             <button
@@ -1225,7 +1225,27 @@
                 alt=""
               />
             </button>
-          </div> -->
+
+            <button
+              class="absolute -start-4 -top-4 inline-flex h-8 w-8 items-center justify-center rounded-full bg-white shadow"
+              type="button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="h-4 w-4 text-red-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
 
           <button
             type="button"
