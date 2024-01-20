@@ -152,7 +152,7 @@
     @apply relative h-[350px] rounded-3xl p-1.5 shadow sm:h-[475px];
   }
   .reel__content {
-    @apply absolute inset-1.5 rounded-3xl bg-gradient-to-b from-transparent to-black/10;
+    @apply absolute inset-1.5 rounded-3xl bg-gradient-to-b from-transparent to-black/30;
   }
   .reel__info {
     @apply absolute inset-x-0 bottom-0 flex items-center gap-3 p-4 text-white;
@@ -279,7 +279,14 @@ select {
   width: auto;
 }
 
-.watch-reels .swiper-button-prev svg,
-.watch-reels .swiper-button-next svg {
-  @apply sm:h-4 sm:w-3.5 h-3 w-2.5 !important;
+.reel-arrow.swiper-button-prev svg,
+.reel-arrow.swiper-button-next svg {
+  @apply h-3 w-2.5 sm:h-4 sm:w-3.5 !important;
+}
+
+.reel-progressbar {
+  @apply static h-2.5 overflow-hidden rounded-full bg-primary-900 bg-opacity-10 !important;
+}
+.reel-progressbar span {
+  @apply inline-block rounded-full bg-primary-900 rtl:origin-right !important;
 }

@@ -11,8 +11,14 @@
     />
     <link rel="stylesheet" href="assets/styles/styles.css" />
 
-    <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/preline@2.0.3/dist/preline.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/preline@2.0.3/dist/preline.min.js"
+    ></script>
     <script defer src="./assets/scripts/main.js"></script>
   </head>
 
@@ -687,1701 +693,231 @@
       </header>
       <!-- /header -->
 
-      <!-- reels -->
-      <div class="wrapper py-6">
-        <div class="swiper reels">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide w-auto">
-              <div class="flex flex-col items-center space-y-1">
-                <button
-                  type="button"
-                  data-hs-overlay="#my-reel-modal"
-                  onclick="showMyReels()"
-                  class="relative rounded-full p-0.5"
-                >
-                  <div class="block rounded-full bg-white">
-                    <img
-                      class="h-[55px] w-[55px] rounded-full sm:h-24 sm:w-24"
-                      src="./assets/images/reel.png"
-                      alt=""
-                    />
-                  </div>
-
-                  <span
-                    class="absolute bottom-0 right-1 flex h-5 w-5 items-center justify-center rounded-full border-2 border-white bg-secondary-900 font-mono text-xl font-medium text-white sm:h-7 sm:w-7 sm:border-4 sm:text-xl ltr:left-1 ltr:right-auto"
-                  >
-                    <div class="-translate-y-px transform">+</div>
-                  </span>
-                </button>
-
-                <span>reel</span>
-              </div>
-            </div>
-            <div class="swiper-slide w-auto">
-              <div class="group flex shrink-0 flex-col items-center space-y-1">
-                <button
-                  type="button"
-                  data-hs-overlay="#upload-reel-modal"
-                  class="bg-gradient rounded-full p-0.5"
-                >
-                  <div
-                    class="block overflow-hidden rounded-full bg-white p-1 sm:p-2"
-                  >
-                    <img
-                      class="h-[46px] w-[46px] scale-95 rounded-full transition-transform group-hover:scale-105 sm:h-20 sm:w-20"
-                      src="./assets/images/reel.png"
-                      alt=""
-                    />
-                  </div>
-                </button>
-
-                <span>reel</span>
-              </div>
-            </div>
-
-            <div class="swiper-slide w-auto">
-              <div class="group flex shrink-0 flex-col items-center space-y-1">
-                <button
-                  type="button"
-                  data-hs-overlay="#watch-reel-modal"
-                  data-reel-index="0"
-                  class="bg-gradient rounded-full p-0.5"
-                >
-                  <div
-                    class="block overflow-hidden rounded-full bg-white p-1 sm:p-2"
-                  >
-                    <img
-                      class="h-[46px] w-[46px] scale-95 rounded-full transition-transform group-hover:scale-105 sm:h-20 sm:w-20"
-                      src="./assets/images/reel.png"
-                      alt=""
-                    />
-                  </div>
-                </button>
-
-                <span>reel</span>
-              </div>
-            </div>
-            <div class="swiper-slide w-auto">
-              <div class="group flex shrink-0 flex-col items-center space-y-1">
-                <button
-                  type="button"
-                  data-hs-overlay="#watch-reel-modal"
-                  data-reel-index="1"
-                  class="bg-gradient rounded-full p-0.5"
-                >
-                  <div
-                    class="block overflow-hidden rounded-full bg-white p-1 sm:p-2"
-                  >
-                    <img
-                      class="h-[46px] w-[46px] scale-95 rounded-full transition-transform group-hover:scale-105 sm:h-20 sm:w-20"
-                      src="./assets/images/reel.png"
-                      alt=""
-                    />
-                  </div>
-                </button>
-
-                <span>reel</span>
-              </div>
-            </div>
-            <div class="swiper-slide w-auto">
-              <div class="group flex shrink-0 flex-col items-center space-y-1">
-                <button
-                  type="button"
-                  data-hs-overlay="#watch-reel-modal"
-                  data-reel-index="2"
-                  class="bg-gradient rounded-full p-0.5"
-                >
-                  <div
-                    class="block overflow-hidden rounded-full bg-white p-1 sm:p-2"
-                  >
-                    <img
-                      class="h-[46px] w-[46px] scale-95 rounded-full transition-transform group-hover:scale-105 sm:h-20 sm:w-20"
-                      src="./assets/images/reel.png"
-                      alt=""
-                    />
-                  </div>
-                </button>
-
-                <span>reel</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /reels -->
-
-      <main class="mb-20 space-y-16">
-        <!-- banners -->
-        <section class="wrapper">
-          <div class="-mx-3 flex flex-col max-sm:gap-6 sm:flex-row">
-            <div class="w-full sm:w-1/2">
-              <div class="px-3">
-                <div class="swiper banner-1-2">
-                  <div class="swiper-wrapper w-full">
-                    <div class="swiper-slide">
-                      <div
-                        class="bg-gradient h-[225px] overflow-hidden rounded-lg sm:h-[380px] sm:rounded-3xl"
-                      >
-                        <img
-                          src="./assets/images/img-large.png"
-                          class="h-full w-full object-cover object-center"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div
-                        class="bg-gradient h-[225px] overflow-hidden rounded-lg sm:h-[380px] sm:rounded-3xl"
-                      >
-                        <img
-                          src="./assets/images/img-large.png"
-                          class="h-full w-full object-cover object-center"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div
-                        class="bg-gradient h-[225px] overflow-hidden rounded-lg sm:h-[380px] sm:rounded-3xl"
-                      >
-                        <img
-                          src="./assets/images/img-large.png"
-                          class="h-full w-full object-cover object-center"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="ite6s-center mt-4 flex justify-center gap-4 sm:mt-8"
-                  >
-                    <div
-                      class="reel-arrow swiper-button-prev static m-0 h-5 w-5 sm:h-6 sm:w-6 rtl:rotate-180"
-                    >
-                      <img
-                        src="./assets/images/icons/swiper-arrow.png"
-                        class="w-5 sm:w-6"
-                        alt=""
-                      />
-                    </div>
-
-                    <div class="swiper-pagination static pt-1"></div>
-
-                    <div
-                      class="reel-arrow swiper-button-next static m-0 h-5 w-5 sm:h-6 sm:w-6 ltr:rotate-180"
-                    >
-                      <img
-                        src="./assets/images/icons/swiper-arrow.png"
-                        class="w-5 sm:w-6"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-full sm:w-1/2">
-              <div class="px-3">
-                <div class="swiper banner-2-2">
-                  <div class="swiper-wrapper w-full">
-                    <div class="swiper-slide">
-                      <div
-                        class="bg-gradient h-[225px] overflow-hidden rounded-lg sm:h-[380px] sm:rounded-3xl"
-                      >
-                        <img
-                          src="./assets/images/img-large.png"
-                          class="h-full w-full object-cover object-center"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div
-                        class="bg-gradient h-[225px] overflow-hidden rounded-lg sm:h-[380px] sm:rounded-3xl"
-                      >
-                        <img
-                          src="./assets/images/img-large.png"
-                          class="h-full w-full object-cover object-center"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div
-                        class="bg-gradient h-[225px] overflow-hidden rounded-lg sm:h-[380px] sm:rounded-3xl"
-                      >
-                        <img
-                          src="./assets/images/img-large.png"
-                          class="h-full w-full object-cover object-center"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="ite6s-center mt-4 flex justify-center gap-4 sm:mt-8"
-                  >
-                    <div
-                      class="reel-arrow swiper-button-prev static m-0 h-5 w-5 sm:h-6 sm:w-6 rtl:rotate-180"
-                    >
-                      <img
-                        src="./assets/images/icons/swiper-arrow.png"
-                        class="w-5 sm:w-6"
-                        alt=""
-                      />
-                    </div>
-
-                    <div class="swiper-pagination static pt-1"></div>
-
-                    <div
-                      class="reel-arrow swiper-button-next static m-0 h-5 w-5 sm:h-6 sm:w-6 ltr:rotate-180"
-                    >
-                      <img
-                        src="./assets/images/icons/swiper-arrow.png"
-                        class="w-5 sm:w-6"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- /banners -->
-
-        <!-- categories -->
-        <section class="wrapper">
-          <header class="mb-6 flex items-start justify-between">
-            <div class="">
-              <h2 class="leading-none sm:text-lg">اكتشف أقسامنا</h2>
-              <span
-                class="bg-gradient-l inline-block h-px w-10 rounded-full sm:h-1 sm:w-20"
-              ></span>
-            </div>
-
+      <main class="wrapper py-8">
+        <ol
+          class="mb-12 flex items-center whitespace-nowrap"
+          aria-label="Breadcrumb"
+        >
+          <li class="inline-flex items-center">
             <a
-              href="#"
-              class="inline-flex items-center gap-1 text-sm leading-none text-secondary-900 hover:underline sm:text-base"
+              class="flex items-center text-sm text-neutral-500 text-opacity-70 hover:text-neutral-700"
+              href="./index.html"
             >
-              قراءة المزيد
+              الصفحة الرئيسية
               <svg
+                class="mx-2 h-4 w-4 flex-shrink-0 overflow-visible text-neutral-400 rtl:rotate-180"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-5 w-5 pt-1 ltr:rotate-180"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L6.31 10l3.72-3.72a.75.75 0 1 0-1.06-1.06L4.72 9.47Zm9.25-4.25L9.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L11.31 10l3.72-3.72a.75.75 0 0 0-1.06-1.06Z"
-                  clip-rule="evenodd"
-                ></path>
+                <path d="m9 18 6-6-6-6" />
               </svg>
             </a>
-          </header>
-
-          <div
-            class="grid grid-flow-col gap-x-4 gap-y-6 overflow-x-auto text-center sm:grid-flow-row sm:grid-cols-[repeat(auto-fill,_minmax(120px,_1fr))]"
+          </li>
+          <li
+            class="inline-flex items-center truncate text-sm font-semibold text-secondary-900"
+            aria-current="page"
           >
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/smart-watch.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >ساعات</a
-              >
-            </div>
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/laptops.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >أجهزة</a
-              >
-            </div>
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/cars.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >سيارات</a
-              >
-            </div>
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/chair.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >أثاث</a
-              >
-            </div>
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/smart-watch.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >ساعات</a
-              >
-            </div>
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/laptops.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >أجهزة</a
-              >
-            </div>
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/cars.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >سيارات</a
-              >
-            </div>
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/chair.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >أثاث</a
-              >
-            </div>
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/smart-watch.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >ساعات</a
-              >
-            </div>
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/laptops.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >أجهزة</a
-              >
-            </div>
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/cars.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >سيارات</a
-              >
-            </div>
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/chair.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >أثاث</a
-              >
-            </div>
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/smart-watch.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >ساعات</a
-              >
-            </div>
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/laptops.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >أجهزة</a
-              >
-            </div>
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/cars.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >سيارات</a
-              >
-            </div>
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/chair.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >أثاث</a
-              >
-            </div>
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/smart-watch.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >ساعات</a
-              >
-            </div>
-            <div class="space-y-3">
-              <div
-                class="bg-gradient group flex items-center justify-center rounded-3xl max-sm:aspect-square max-sm:w-[70px] sm:h-28"
-              >
-                <img
-                  class="scale-75 transition-transform group-hover:scale-105 sm:scale-90"
-                  src="./assets/images/categories/laptops.png"
-                  alt=""
-                />
-              </div>
-              <a href="#" class="inline-block font-medium hover:underline"
-                >أجهزة</a
-              >
-            </div>
-          </div>
-        </section>
-        <!-- /categories -->
+            فيديو ريلز
+          </li>
+        </ol>
 
-        <section class="wrapper">
-          <header class="mb-6 flex items-start justify-between">
-            <div class="">
-              <h2 class="leading-none sm:text-lg">عروض الأثاث</h2>
-              <span
-                class="bg-gradient-l inline-block h-px w-10 rounded-full sm:h-1 sm:w-20"
-              ></span>
-            </div>
-
-            <a
-              href="#"
-              class="inline-flex items-center gap-1 text-sm leading-none text-secondary-900 hover:underline sm:text-base"
-            >
-              قراءة المزيد
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-5 w-5 pt-1 ltr:rotate-180"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L6.31 10l3.72-3.72a.75.75 0 1 0-1.06-1.06L4.72 9.47Zm9.25-4.25L9.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L11.31 10l3.72-3.72a.75.75 0 0 0-1.06-1.06Z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </a>
-          </header>
-
-          <div class="swiper furniture -m-2 p-2">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="assets/images/products/chairpng.png"
-                    />
-                    <button type="button" class="card__action group">
-                      <svg class="group-aria-pressed:text-white">
-                        <use
-                          href="./assets/images/icons/sprite.svg#heart"
-                        ></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <div>
-                      <p class="card__title">كرسي بني ذو طراز عصري</p>
-                      <p class="card__disc">
-                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                      </p>
-                      <p class="card__price">25,000 EGP</p>
-                    </div>
-                    <div>
-                      <div class="flex items-center">
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-location"
-                            ></use>
-                          </svg>
-                          الموقع هنا
-                        </p>
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-clock"
-                            ></use>
-                          </svg>
-                          منذ يومين
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-3">
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-call"
-                            ></use>
-                          </svg>
-                          اتصال
-                        </button>
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-mail"
-                            ></use>
-                          </svg>
-                          رسالة
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="assets/images/products/chairpng.png"
-                    />
-                    <button type="button" class="card__action group">
-                      <svg class="group-aria-pressed:text-white">
-                        <use
-                          href="./assets/images/icons/sprite.svg#heart"
-                        ></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <div>
-                      <p class="card__title">كرسي بني ذو طراز عصري</p>
-                      <p class="card__disc">
-                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                      </p>
-                      <p class="card__price">25,000 EGP</p>
-                    </div>
-                    <div>
-                      <div class="flex items-center">
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-location"
-                            ></use>
-                          </svg>
-                          الموقع هنا
-                        </p>
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-clock"
-                            ></use>
-                          </svg>
-                          منذ يومين
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-3">
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-call"
-                            ></use>
-                          </svg>
-                          اتصال
-                        </button>
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-mail"
-                            ></use>
-                          </svg>
-                          رسالة
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="assets/images/products/chairpng.png"
-                    />
-                    <button type="button" class="card__action group">
-                      <svg class="group-aria-pressed:text-white">
-                        <use
-                          href="./assets/images/icons/sprite.svg#heart"
-                        ></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <div>
-                      <p class="card__title">كرسي بني ذو طراز عصري</p>
-                      <p class="card__disc">
-                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                      </p>
-                      <p class="card__price">25,000 EGP</p>
-                    </div>
-                    <div>
-                      <div class="flex items-center">
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-location"
-                            ></use>
-                          </svg>
-                          الموقع هنا
-                        </p>
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-clock"
-                            ></use>
-                          </svg>
-                          منذ يومين
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-3">
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-call"
-                            ></use>
-                          </svg>
-                          اتصال
-                        </button>
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-mail"
-                            ></use>
-                          </svg>
-                          رسالة
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="assets/images/products/chairpng.png"
-                    />
-                    <button type="button" class="card__action group">
-                      <svg class="group-aria-pressed:text-white">
-                        <use
-                          href="./assets/images/icons/sprite.svg#heart"
-                        ></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <div>
-                      <p class="card__title">كرسي بني ذو طراز عصري</p>
-                      <p class="card__disc">
-                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                      </p>
-                      <p class="card__price">25,000 EGP</p>
-                    </div>
-                    <div>
-                      <div class="flex items-center">
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-location"
-                            ></use>
-                          </svg>
-                          الموقع هنا
-                        </p>
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-clock"
-                            ></use>
-                          </svg>
-                          منذ يومين
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-3">
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-call"
-                            ></use>
-                          </svg>
-                          اتصال
-                        </button>
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-mail"
-                            ></use>
-                          </svg>
-                          رسالة
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="assets/images/products/chairpng.png"
-                    />
-                    <button type="button" class="card__action group">
-                      <svg class="group-aria-pressed:text-white">
-                        <use
-                          href="./assets/images/icons/sprite.svg#heart"
-                        ></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <div>
-                      <p class="card__title">كرسي بني ذو طراز عصري</p>
-                      <p class="card__disc">
-                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                      </p>
-                      <p class="card__price">25,000 EGP</p>
-                    </div>
-                    <div>
-                      <div class="flex items-center">
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-location"
-                            ></use>
-                          </svg>
-                          الموقع هنا
-                        </p>
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-clock"
-                            ></use>
-                          </svg>
-                          منذ يومين
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-3">
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-call"
-                            ></use>
-                          </svg>
-                          اتصال
-                        </button>
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-mail"
-                            ></use>
-                          </svg>
-                          رسالة
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="assets/images/products/chairpng.png"
-                    />
-                    <button type="button" class="card__action group">
-                      <svg class="group-aria-pressed:text-white">
-                        <use
-                          href="./assets/images/icons/sprite.svg#heart"
-                        ></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <div>
-                      <p class="card__title">كرسي بني ذو طراز عصري</p>
-                      <p class="card__disc">
-                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                      </p>
-                      <p class="card__price">25,000 EGP</p>
-                    </div>
-                    <div>
-                      <div class="flex items-center">
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-location"
-                            ></use>
-                          </svg>
-                          الموقع هنا
-                        </p>
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-clock"
-                            ></use>
-                          </svg>
-                          منذ يومين
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-3">
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-call"
-                            ></use>
-                          </svg>
-                          اتصال
-                        </button>
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-mail"
-                            ></use>
-                          </svg>
-                          رسالة
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="ite6s-center mt-4 flex justify-center gap-4 sm:mt-8">
-              <div
-                class="reel-arrow swiper-button-prev static m-0 h-5 w-5 sm:h-6 sm:w-6 rtl:rotate-180"
-              >
-                <img
-                  src="./assets/images/icons/swiper-arrow.png"
-                  class="w-5 sm:w-6"
-                  alt=""
-                />
-              </div>
-
-              <div class="swiper-pagination static pt-1"></div>
-
-              <div
-                class="reel-arrow swiper-button-next static m-0 h-5 w-5 sm:h-6 sm:w-6 ltr:rotate-180"
-              >
-                <img
-                  src="./assets/images/icons/swiper-arrow.png"
-                  class="w-5 sm:w-6"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="wrapper">
-          <header class="mb-6 flex items-start justify-between">
-            <div class="">
-              <h2 class="leading-none sm:text-lg">عروض السيارات</h2>
-              <span
-                class="bg-gradient-l inline-block h-px w-10 rounded-full sm:h-1 sm:w-20"
-              ></span>
-            </div>
-
-            <a
-              href="#"
-              class="inline-flex items-center gap-1 text-sm leading-none text-secondary-900 hover:underline sm:text-base"
-            >
-              قراءة المزيد
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-5 w-5 pt-1 ltr:rotate-180"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L6.31 10l3.72-3.72a.75.75 0 1 0-1.06-1.06L4.72 9.47Zm9.25-4.25L9.72 9.47a.75.75 0 0 0 0 1.06l4.25 4.25a.75.75 0 1 0 1.06-1.06L11.31 10l3.72-3.72a.75.75 0 0 0-1.06-1.06Z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </a>
-          </header>
-
-          <div class="swiper cars -m-2 p-2">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="./assets/images/products/car.png"
-                    />
-                    <button type="button" class="card__action group">
-                      <svg class="group-aria-pressed:text-white">
-                        <use
-                          href="./assets/images/icons/sprite.svg#heart"
-                        ></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <div>
-                      <p class="card__title">كرسي بني ذو طراز عصري</p>
-                      <p class="card__disc">
-                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                      </p>
-                      <p class="card__price">25,000 EGP</p>
-                    </div>
-                    <div>
-                      <div class="flex items-center">
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-location"
-                            ></use>
-                          </svg>
-                          الموقع هنا
-                        </p>
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-clock"
-                            ></use>
-                          </svg>
-                          منذ يومين
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-3">
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-call"
-                            ></use>
-                          </svg>
-                          اتصال
-                        </button>
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-mail"
-                            ></use>
-                          </svg>
-                          رسالة
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="./assets/images/products/car.png"
-                    />
-                    <button type="button" class="card__action group">
-                      <svg class="group-aria-pressed:text-white">
-                        <use
-                          href="./assets/images/icons/sprite.svg#heart"
-                        ></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <div>
-                      <p class="card__title">كرسي بني ذو طراز عصري</p>
-                      <p class="card__disc">
-                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                      </p>
-                      <p class="card__price">25,000 EGP</p>
-                    </div>
-                    <div>
-                      <div class="flex items-center">
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-location"
-                            ></use>
-                          </svg>
-                          الموقع هنا
-                        </p>
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-clock"
-                            ></use>
-                          </svg>
-                          منذ يومين
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-3">
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-call"
-                            ></use>
-                          </svg>
-                          اتصال
-                        </button>
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-mail"
-                            ></use>
-                          </svg>
-                          رسالة
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="./assets/images/products/car.png"
-                    />
-                    <button type="button" class="card__action group">
-                      <svg class="group-aria-pressed:text-white">
-                        <use
-                          href="./assets/images/icons/sprite.svg#heart"
-                        ></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <div>
-                      <p class="card__title">كرسي بني ذو طراز عصري</p>
-                      <p class="card__disc">
-                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                      </p>
-                      <p class="card__price">25,000 EGP</p>
-                    </div>
-                    <div>
-                      <div class="flex items-center">
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-location"
-                            ></use>
-                          </svg>
-                          الموقع هنا
-                        </p>
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-clock"
-                            ></use>
-                          </svg>
-                          منذ يومين
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-3">
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-call"
-                            ></use>
-                          </svg>
-                          اتصال
-                        </button>
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-mail"
-                            ></use>
-                          </svg>
-                          رسالة
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="./assets/images/products/car.png"
-                    />
-                    <button type="button" class="card__action group">
-                      <svg class="group-aria-pressed:text-white">
-                        <use
-                          href="./assets/images/icons/sprite.svg#heart"
-                        ></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <div>
-                      <p class="card__title">كرسي بني ذو طراز عصري</p>
-                      <p class="card__disc">
-                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                      </p>
-                      <p class="card__price">25,000 EGP</p>
-                    </div>
-                    <div>
-                      <div class="flex items-center">
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-location"
-                            ></use>
-                          </svg>
-                          الموقع هنا
-                        </p>
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-clock"
-                            ></use>
-                          </svg>
-                          منذ يومين
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-3">
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-call"
-                            ></use>
-                          </svg>
-                          اتصال
-                        </button>
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-mail"
-                            ></use>
-                          </svg>
-                          رسالة
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="./assets/images/products/car.png"
-                    />
-                    <button type="button" class="card__action group">
-                      <svg class="group-aria-pressed:text-white">
-                        <use
-                          href="./assets/images/icons/sprite.svg#heart"
-                        ></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <div>
-                      <p class="card__title">كرسي بني ذو طراز عصري</p>
-                      <p class="card__disc">
-                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                      </p>
-                      <p class="card__price">25,000 EGP</p>
-                    </div>
-                    <div>
-                      <div class="flex items-center">
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-location"
-                            ></use>
-                          </svg>
-                          الموقع هنا
-                        </p>
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-clock"
-                            ></use>
-                          </svg>
-                          منذ يومين
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-3">
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-call"
-                            ></use>
-                          </svg>
-                          اتصال
-                        </button>
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-mail"
-                            ></use>
-                          </svg>
-                          رسالة
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="./assets/images/products/car.png"
-                    />
-                    <button type="button" class="card__action group">
-                      <svg class="group-aria-pressed:text-white">
-                        <use
-                          href="./assets/images/icons/sprite.svg#heart"
-                        ></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <div>
-                      <p class="card__title">كرسي بني ذو طراز عصري</p>
-                      <p class="card__disc">
-                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                      </p>
-                      <p class="card__price">25,000 EGP</p>
-                    </div>
-                    <div>
-                      <div class="flex items-center">
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-location"
-                            ></use>
-                          </svg>
-                          الموقع هنا
-                        </p>
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-clock"
-                            ></use>
-                          </svg>
-                          منذ يومين
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-3">
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-call"
-                            ></use>
-                          </svg>
-                          اتصال
-                        </button>
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-mail"
-                            ></use>
-                          </svg>
-                          رسالة
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="./assets/images/products/car.png"
-                    />
-                    <button type="button" class="card__action group">
-                      <svg class="group-aria-pressed:text-white">
-                        <use
-                          href="./assets/images/icons/sprite.svg#heart"
-                        ></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <div>
-                      <p class="card__title">كرسي بني ذو طراز عصري</p>
-                      <p class="card__disc">
-                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                      </p>
-                      <p class="card__price">25,000 EGP</p>
-                    </div>
-                    <div>
-                      <div class="flex items-center">
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-location"
-                            ></use>
-                          </svg>
-                          الموقع هنا
-                        </p>
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-clock"
-                            ></use>
-                          </svg>
-                          منذ يومين
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-3">
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-call"
-                            ></use>
-                          </svg>
-                          اتصال
-                        </button>
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-mail"
-                            ></use>
-                          </svg>
-                          رسالة
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__thumbnail h-[225px]">
-                    <img
-                      class="card__img"
-                      src="./assets/images/products/car.png"
-                    />
-                    <button type="button" class="card__action group">
-                      <svg class="group-aria-pressed:text-white">
-                        <use
-                          href="./assets/images/icons/sprite.svg#heart"
-                        ></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="card__body">
-                    <div>
-                      <p class="card__title">كرسي بني ذو طراز عصري</p>
-                      <p class="card__disc">
-                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                      </p>
-                      <p class="card__price">25,000 EGP</p>
-                    </div>
-                    <div>
-                      <div class="flex items-center">
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-location"
-                            ></use>
-                          </svg>
-                          الموقع هنا
-                        </p>
-                        <p class="flex w-1/2 items-center gap-1">
-                          <svg
-                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-clock"
-                            ></use>
-                          </svg>
-                          منذ يومين
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-3">
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-call"
-                            ></use>
-                          </svg>
-                          اتصال
-                        </button>
-                        <button class="card__btn">
-                          <svg>
-                            <use
-                              href="./assets/images/icons/sprite.svg#card-mail"
-                            ></use>
-                          </svg>
-                          رسالة
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <span class="card__badge">إعلان ممول</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="ite6s-center mt-4 flex justify-center gap-4 sm:mt-8">
-              <div
-                class="reel-arrow swiper-button-prev static m-0 h-5 w-5 sm:h-6 sm:w-6 rtl:rotate-180"
-              >
-                <img
-                  src="./assets/images/icons/swiper-arrow.png"
-                  class="w-5 sm:w-6"
-                  alt=""
-                />
-              </div>
-
-              <div class="swiper-pagination static pt-1"></div>
-
-              <div
-                class="reel-arrow swiper-button-next static m-0 h-5 w-5 sm:h-6 sm:w-6 ltr:rotate-180"
-              >
-                <img
-                  src="./assets/images/icons/swiper-arrow.png"
-                  class="w-5 sm:w-6"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <!-- cta -->
-      <section class="mx-auto max-w-[1360px] px-4">
-        <div class="cta bg-gradient">
-          <div class="cta__inner">
-            <header class="space-y-7">
-              <h2>حمل التطبيق الآن</h2>
-              <p>
-                هذا مثال لنص يمكن أن يستخدم في نفس المساحة هذا مثال لنص يمكنأن
-                يستخدم في نفس
-              </p>
-              <div
-                class="flex flex-wrap items-center gap-4 max-md:justify-center"
-              >
-                <a href="#" class="shrink-0">
-                  <img
-                    src="./assets/images/googleplay.png"
-                    class="w-36"
-                    alt=""
-                  />
-                </a>
-                <a href="#" class="shrink-0">
-                  <img src="./assets/images/appstore.png" class="w-36" alt="" />
-                </a>
-                <a href="#" class="shrink-0">
-                  <img
-                    src="./assets/images/appgallery.png"
-                    class="w-36"
-                    alt=""
-                  />
-                </a>
+        <section>
+          <div
+            class="mb-20 flex flex-col items-center justify-between gap-4 sm:flex-row"
+          >
+            <header class="flex items-start justify-between">
+              <div class="">
+                <h2 class="text-lg font-semibold leading-none md:text-xl">
+                  فيديو ريلز
+                </h2>
+                <span
+                  class="bg-gradient-l inline-block h-px w-10 rounded-full sm:h-1 sm:w-20"
+                ></span>
               </div>
             </header>
 
-            <img
-              src="./assets/images/app-screens.png"
-              class="cta__img"
-              alt=""
-            />
+            <button
+              type="button"
+              data-hs-overlay="#upload-reel-modal"
+              class="flex h-16 w-full items-center justify-center gap-2 rounded-3xl bg-gradient-to-b from-violet-900 to-violet-900/50 px-8 py-4 font-bold text-white transition-colors hover:to-violet-900 sm:w-auto"
+            >
+              <img
+                src="./assets/images/icons/upload-video-sm.svg"
+                class="w-6"
+                alt=""
+              />
+              رفع فيديو
+            </button>
           </div>
-        </div>
-      </section>
-      <!-- /cta -->
+
+          <div>
+            <div
+              class="mb-10 grid grid-cols-1 gap-4 md:mb-20 md:grid-cols-3 xl:grid-cols-4"
+            >
+              <a
+                href="#"
+                data-hs-overlay="#watch-reel-modal"
+                data-reel-index="0"
+                class="reel"
+              >
+                <div class="reel__content">
+                  <button type="button" class="card__action group">
+                    <svg class="group-aria-pressed:text-white">
+                      <use href="./assets/images/icons/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+
+                  <div class="reel__info">
+                    <img src="./assets/images/reel.png" alt="" />
+
+                    <div>
+                      <p>آدم يوسف</p>
+                      <p>16 ثانية</p>
+                    </div>
+                  </div>
+                </div>
+
+                <img
+                  src="./assets/images/img-large.png"
+                  class="h-full w-full rounded-3xl object-cover object-center"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                data-hs-overlay="#watch-reel-modal"
+                data-reel-index="1"
+                class="reel"
+              >
+                <div class="reel__content">
+                  <button type="button" class="card__action group">
+                    <svg class="group-aria-pressed:text-white">
+                      <use href="./assets/images/icons/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+
+                  <div class="reel__info">
+                    <img src="./assets/images/reel.png" alt="" />
+
+                    <div>
+                      <p>آدم يوسف</p>
+                      <p>16 ثانية</p>
+                    </div>
+                  </div>
+                </div>
+
+                <img
+                  src="./assets/images/img-large.png"
+                  class="h-full w-full rounded-3xl object-cover object-center"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                data-hs-overlay="#watch-reel-modal"
+                data-reel-index="2"
+                class="reel"
+              >
+                <div class="reel__content">
+                  <button type="button" class="card__action group">
+                    <svg class="group-aria-pressed:text-white">
+                      <use href="./assets/images/icons/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+
+                  <div class="reel__info">
+                    <img src="./assets/images/reel.png" alt="" />
+
+                    <div>
+                      <p>آدم يوسف</p>
+                      <p>16 ثانية</p>
+                    </div>
+                  </div>
+                </div>
+
+                <img
+                  src="./assets/images/img-large.png"
+                  class="h-full w-full rounded-3xl object-cover object-center"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="flex items-center justify-center gap-x-4">
+              <button
+                type="button"
+                class="inline-flex min-h-10 min-w-10 items-center justify-center gap-x-2 rounded-lg bg-secondary-900/10 px-2.5 py-2 text-base text-secondary-900 transition-colors hover:bg-secondary-900/100 hover:text-white md:min-h-12 md:min-w-12"
+              >
+                <svg
+                  class="h-6 w-6 flex-shrink-0 rtl:rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m15 18-6-6 6-6" />
+                </svg>
+                <span aria-hidden="true" class="sr-only">Previous</span>
+              </button>
+              <div class="flex items-center gap-x-4">
+                <button
+                  type="button"
+                  class="flex min-h-10 min-w-10 items-center justify-center rounded-lg bg-secondary-900 px-3 py-2 text-base text-white hover:opacity-80 md:min-h-12 md:min-w-12"
+                  aria-current="page"
+                >
+                  1
+                </button>
+                <button
+                  type="button"
+                  class="flex min-h-10 min-w-10 items-center justify-center rounded-lg bg-secondary-900/10 px-3 py-2 text-base text-secondary-900 transition-colors hover:bg-secondary-900/100 hover:text-white md:min-h-12 md:min-w-12"
+                >
+                  2
+                </button>
+                <button
+                  type="button"
+                  class="flex min-h-10 min-w-10 items-center justify-center rounded-lg bg-secondary-900/10 px-3 py-2 text-base text-secondary-900 transition-colors hover:bg-secondary-900/100 hover:text-white md:min-h-12 md:min-w-12"
+                >
+                  3
+                </button>
+              </div>
+              <button
+                type="button"
+                class="inline-flex min-h-10 min-w-10 items-center justify-center gap-x-2 rounded-lg bg-secondary-900/10 px-2.5 py-2 text-base text-secondary-900 transition-colors hover:bg-secondary-900/100 hover:text-white md:min-h-12 md:min-w-12"
+              >
+                <span aria-hidden="true" class="sr-only">Next</span>
+                <svg
+                  class="h-6 w-6 flex-shrink-0 rtl:rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </button>
+            </nav>
+            <!-- End Pagination -->
+          </div>
+        </section>
+      </main>
 
       <footer class="footer">
         <div class="mx-auto max-w-[1360px] px-4">
@@ -2709,7 +1245,7 @@
                       <div class="relative mb-8">
                         <img
                           src="./assets/images/img-large.png"
-                          class="w-full rounded-3xl object-cover object-center"
+                          class="mb-8 h-[600px] w-full rounded-3xl object-cover object-center"
                           alt=""
                         />
 
@@ -2757,30 +1293,45 @@
                         مثال لنص يمكن أن يستبدل هذا مثال لنص يمكن أن يستبدل
                       </p>
 
-                      <form
-                        action="#"
-                        class="flex items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
-                      >
-                        <input
-                          type="text"
-                          class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
-                          placeholder="اكتب وصفًا"
-                        />
-
-                        <button type="button" class="shrink-0">
-                          <img
-                            src="./assets/images/icons/send-message.svg"
-                            class="h-7 w-7"
-                            alt=""
+                      <div class="flex gap-3">
+                        <form
+                          action="#"
+                          class="flex flex-1 items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
+                        >
+                          <input
+                            type="text"
+                            class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
+                            placeholder="اكتب وصفًا"
                           />
+
+                          <button type="button" class="shrink-0">
+                            <img
+                              src="./assets/images/icons/send-message.svg"
+                              class="h-7 w-7"
+                              alt=""
+                            />
+                          </button>
+                        </form>
+
+                        <button
+                          type="button"
+                          class="group flex items-center justify-center rounded-2xl bg-stone-50 px-6 py-3 aria-[pressed]:bg-secondary-900"
+                        >
+                          <svg
+                            class="h-6 w-6 text-secondary-900 group-aria-pressed:text-white"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#heart"
+                            ></use>
+                          </svg>
                         </button>
-                      </form>
+                      </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="relative mb-8">
                         <img
                           src="./assets/images/img-large.png"
-                          class="w-full rounded-3xl object-cover object-center"
+                          class="mb-8 h-[600px] w-full rounded-3xl object-cover object-center"
                           alt=""
                         />
 
@@ -2828,30 +1379,45 @@
                         مثال لنص يمكن أن يستبدل هذا مثال لنص يمكن أن يستبدل
                       </p>
 
-                      <form
-                        action="#"
-                        class="flex items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
-                      >
-                        <input
-                          type="text"
-                          class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
-                          placeholder="اكتب وصفًا"
-                        />
-
-                        <button type="button" class="shrink-0">
-                          <img
-                            src="./assets/images/icons/send-message.svg"
-                            class="h-7 w-7"
-                            alt=""
+                      <div class="flex gap-3">
+                        <form
+                          action="#"
+                          class="flex flex-1 items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
+                        >
+                          <input
+                            type="text"
+                            class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
+                            placeholder="اكتب وصفًا"
                           />
+
+                          <button type="button" class="shrink-0">
+                            <img
+                              src="./assets/images/icons/send-message.svg"
+                              class="h-7 w-7"
+                              alt=""
+                            />
+                          </button>
+                        </form>
+
+                        <button
+                          type="button"
+                          class="group flex items-center justify-center rounded-2xl bg-stone-50 px-4 py-3 aria-[pressed]:bg-secondary-900"
+                        >
+                          <svg
+                            class="h-6 w-6 text-secondary-900 group-aria-pressed:text-white"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#heart"
+                            ></use>
+                          </svg>
                         </button>
-                      </form>
+                      </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="relative mb-8">
                         <img
                           src="./assets/images/img-large.png"
-                          class="w-full rounded-3xl object-cover object-center"
+                          class="mb-8 h-[600px] w-full rounded-3xl object-cover object-center"
                           alt=""
                         />
 
@@ -2899,24 +1465,39 @@
                         مثال لنص يمكن أن يستبدل هذا مثال لنص يمكن أن يستبدل
                       </p>
 
-                      <form
-                        action="#"
-                        class="flex items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
-                      >
-                        <input
-                          type="text"
-                          class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
-                          placeholder="اكتب وصفًا"
-                        />
-
-                        <button type="button" class="shrink-0">
-                          <img
-                            src="./assets/images/icons/send-message.svg"
-                            class="h-7 w-7"
-                            alt=""
+                      <div class="flex gap-3">
+                        <form
+                          action="#"
+                          class="flex flex-1 items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
+                        >
+                          <input
+                            type="text"
+                            class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
+                            placeholder="اكتب وصفًا"
                           />
+
+                          <button type="button" class="shrink-0">
+                            <img
+                              src="./assets/images/icons/send-message.svg"
+                              class="h-7 w-7"
+                              alt=""
+                            />
+                          </button>
+                        </form>
+
+                        <button
+                          type="button"
+                          class="group flex items-center justify-center rounded-2xl bg-stone-50 px-4 py-3 aria-[pressed]:bg-secondary-900"
+                        >
+                          <svg
+                            class="h-6 w-6 text-secondary-900 group-aria-pressed:text-white"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#heart"
+                            ></use>
+                          </svg>
                         </button>
-                      </form>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -3024,7 +1605,7 @@
                       <div class="relative mb-8">
                         <img
                           src="./assets/images/img-large.png"
-                          class="w-full rounded-3xl object-cover object-center"
+                          class="mb-8 h-[600px] w-full rounded-3xl object-cover object-center"
                           alt=""
                         />
 
@@ -3072,30 +1653,45 @@
                         مثال لنص يمكن أن يستبدل هذا مثال لنص يمكن أن يستبدل
                       </p>
 
-                      <form
-                        action="#"
-                        class="flex items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
-                      >
-                        <input
-                          type="text"
-                          class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
-                          placeholder="اكتب وصفًا"
-                        />
-
-                        <button type="button" class="shrink-0">
-                          <img
-                            src="./assets/images/icons/send-message.svg"
-                            class="h-7 w-7"
-                            alt=""
+                      <div class="flex gap-3">
+                        <form
+                          action="#"
+                          class="flex flex-1 items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
+                        >
+                          <input
+                            type="text"
+                            class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
+                            placeholder="اكتب وصفًا"
                           />
+
+                          <button type="button" class="shrink-0">
+                            <img
+                              src="./assets/images/icons/send-message.svg"
+                              class="h-7 w-7"
+                              alt=""
+                            />
+                          </button>
+                        </form>
+
+                        <button
+                          type="button"
+                          class="group flex items-center justify-center rounded-2xl bg-stone-50 px-4 py-3 aria-[pressed]:bg-secondary-900"
+                        >
+                          <svg
+                            class="h-6 w-6 text-secondary-900 group-aria-pressed:text-white"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#heart"
+                            ></use>
+                          </svg>
                         </button>
-                      </form>
+                      </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="relative mb-8">
                         <img
                           src="./assets/images/img-large.png"
-                          class="w-full rounded-3xl object-cover object-center"
+                          class="mb-8 h-[600px] w-full rounded-3xl object-cover object-center"
                           alt=""
                         />
 
@@ -3143,30 +1739,45 @@
                         مثال لنص يمكن أن يستبدل هذا مثال لنص يمكن أن يستبدل
                       </p>
 
-                      <form
-                        action="#"
-                        class="flex items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
-                      >
-                        <input
-                          type="text"
-                          class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
-                          placeholder="اكتب وصفًا"
-                        />
-
-                        <button type="button" class="shrink-0">
-                          <img
-                            src="./assets/images/icons/send-message.svg"
-                            class="h-7 w-7"
-                            alt=""
+                      <div class="flex gap-3">
+                        <form
+                          action="#"
+                          class="flex flex-1 items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
+                        >
+                          <input
+                            type="text"
+                            class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
+                            placeholder="اكتب وصفًا"
                           />
+
+                          <button type="button" class="shrink-0">
+                            <img
+                              src="./assets/images/icons/send-message.svg"
+                              class="h-7 w-7"
+                              alt=""
+                            />
+                          </button>
+                        </form>
+
+                        <button
+                          type="button"
+                          class="group flex items-center justify-center rounded-2xl bg-stone-50 px-4 py-3 aria-[pressed]:bg-secondary-900"
+                        >
+                          <svg
+                            class="h-6 w-6 text-secondary-900 group-aria-pressed:text-white"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#heart"
+                            ></use>
+                          </svg>
                         </button>
-                      </form>
+                      </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="relative mb-8">
                         <img
                           src="./assets/images/img-large.png"
-                          class="w-full rounded-3xl object-cover object-center"
+                          class="mb-8 h-[600px] w-full rounded-3xl object-cover object-center"
                           alt=""
                         />
 
@@ -3214,24 +1825,39 @@
                         مثال لنص يمكن أن يستبدل هذا مثال لنص يمكن أن يستبدل
                       </p>
 
-                      <form
-                        action="#"
-                        class="flex items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
-                      >
-                        <input
-                          type="text"
-                          class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
-                          placeholder="اكتب وصفًا"
-                        />
-
-                        <button type="button" class="shrink-0">
-                          <img
-                            src="./assets/images/icons/send-message.svg"
-                            class="h-7 w-7"
-                            alt=""
+                      <div class="flex gap-3">
+                        <form
+                          action="#"
+                          class="flex flex-1 items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
+                        >
+                          <input
+                            type="text"
+                            class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
+                            placeholder="اكتب وصفًا"
                           />
+
+                          <button type="button" class="shrink-0">
+                            <img
+                              src="./assets/images/icons/send-message.svg"
+                              class="h-7 w-7"
+                              alt=""
+                            />
+                          </button>
+                        </form>
+
+                        <button
+                          type="button"
+                          class="group flex items-center justify-center rounded-2xl bg-stone-50 px-4 py-3 aria-[pressed]:bg-secondary-900"
+                        >
+                          <svg
+                            class="h-6 w-6 text-secondary-900 group-aria-pressed:text-white"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#heart"
+                            ></use>
+                          </svg>
                         </button>
-                      </form>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -3339,7 +1965,7 @@
                       <div class="relative mb-8">
                         <img
                           src="./assets/images/img-large.png"
-                          class="w-full rounded-3xl object-cover object-center"
+                          class="mb-8 h-[600px] w-full rounded-3xl object-cover object-center"
                           alt=""
                         />
 
@@ -3387,30 +2013,45 @@
                         مثال لنص يمكن أن يستبدل هذا مثال لنص يمكن أن يستبدل
                       </p>
 
-                      <form
-                        action="#"
-                        class="flex items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
-                      >
-                        <input
-                          type="text"
-                          class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
-                          placeholder="اكتب وصفًا"
-                        />
-
-                        <button type="button" class="shrink-0">
-                          <img
-                            src="./assets/images/icons/send-message.svg"
-                            class="h-7 w-7"
-                            alt=""
+                      <div class="flex gap-3">
+                        <form
+                          action="#"
+                          class="flex flex-1 items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
+                        >
+                          <input
+                            type="text"
+                            class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
+                            placeholder="اكتب وصفًا"
                           />
+
+                          <button type="button" class="shrink-0">
+                            <img
+                              src="./assets/images/icons/send-message.svg"
+                              class="h-7 w-7"
+                              alt=""
+                            />
+                          </button>
+                        </form>
+
+                        <button
+                          type="button"
+                          class="group flex items-center justify-center rounded-2xl bg-stone-50 px-4 py-3 aria-[pressed]:bg-secondary-900"
+                        >
+                          <svg
+                            class="h-6 w-6 text-secondary-900 group-aria-pressed:text-white"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#heart"
+                            ></use>
+                          </svg>
                         </button>
-                      </form>
+                      </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="relative mb-8">
                         <img
                           src="./assets/images/img-large.png"
-                          class="w-full rounded-3xl object-cover object-center"
+                          class="mb-8 h-[600px] w-full rounded-3xl object-cover object-center"
                           alt=""
                         />
 
@@ -3458,30 +2099,45 @@
                         مثال لنص يمكن أن يستبدل هذا مثال لنص يمكن أن يستبدل
                       </p>
 
-                      <form
-                        action="#"
-                        class="flex items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
-                      >
-                        <input
-                          type="text"
-                          class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
-                          placeholder="اكتب وصفًا"
-                        />
-
-                        <button type="button" class="shrink-0">
-                          <img
-                            src="./assets/images/icons/send-message.svg"
-                            class="h-7 w-7"
-                            alt=""
+                      <div class="flex gap-3">
+                        <form
+                          action="#"
+                          class="flex flex-1 items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
+                        >
+                          <input
+                            type="text"
+                            class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
+                            placeholder="اكتب وصفًا"
                           />
+
+                          <button type="button" class="shrink-0">
+                            <img
+                              src="./assets/images/icons/send-message.svg"
+                              class="h-7 w-7"
+                              alt=""
+                            />
+                          </button>
+                        </form>
+
+                        <button
+                          type="button"
+                          class="group flex items-center justify-center rounded-2xl bg-stone-50 px-4 py-3 aria-[pressed]:bg-secondary-900"
+                        >
+                          <svg
+                            class="h-6 w-6 text-secondary-900 group-aria-pressed:text-white"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#heart"
+                            ></use>
+                          </svg>
                         </button>
-                      </form>
+                      </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="relative mb-8">
                         <img
                           src="./assets/images/img-large.png"
-                          class="w-full rounded-3xl object-cover object-center"
+                          class="mb-8 h-[600px] w-full rounded-3xl object-cover object-center"
                           alt=""
                         />
 
@@ -3529,24 +2185,39 @@
                         مثال لنص يمكن أن يستبدل هذا مثال لنص يمكن أن يستبدل
                       </p>
 
-                      <form
-                        action="#"
-                        class="flex items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
-                      >
-                        <input
-                          type="text"
-                          class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
-                          placeholder="اكتب وصفًا"
-                        />
-
-                        <button type="button" class="shrink-0">
-                          <img
-                            src="./assets/images/icons/send-message.svg"
-                            class="h-7 w-7"
-                            alt=""
+                      <div class="flex gap-3">
+                        <form
+                          action="#"
+                          class="flex flex-1 items-center gap-3 rounded-3xl bg-primary-900 bg-opacity-5 p-3 ps-4 sm:p-4 sm:ps-6"
+                        >
+                          <input
+                            type="text"
+                            class="flex-1 bg-transparent text-primary-900 placeholder:text-neutral-500/70"
+                            placeholder="اكتب وصفًا"
                           />
+
+                          <button type="button" class="shrink-0">
+                            <img
+                              src="./assets/images/icons/send-message.svg"
+                              class="h-7 w-7"
+                              alt=""
+                            />
+                          </button>
+                        </form>
+
+                        <button
+                          type="button"
+                          class="group flex items-center justify-center rounded-2xl bg-stone-50 px-4 py-3 aria-[pressed]:bg-secondary-900"
+                        >
+                          <svg
+                            class="h-6 w-6 text-secondary-900 group-aria-pressed:text-white"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#heart"
+                            ></use>
+                          </svg>
                         </button>
-                      </form>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -3654,7 +2325,7 @@
                     <div class="relative">
                       <img
                         src="./assets/images/img-large.png"
-                        class="mb-8 w-full rounded-3xl object-cover object-center"
+                        class="mb-8 h-[600px] w-full rounded-3xl object-cover object-center"
                         alt=""
                       />
 
@@ -3864,7 +2535,7 @@
                     <div class="relative">
                       <img
                         src="./assets/images/img-large.png"
-                        class="mb-8 w-full rounded-3xl object-cover object-center"
+                        class="mb-8 h-[600px] w-full rounded-3xl object-cover object-center"
                         alt=""
                       />
 
@@ -4074,7 +2745,7 @@
                     <div class="relative">
                       <img
                         src="./assets/images/img-large.png"
-                        class="mb-8 w-full rounded-3xl object-cover object-center"
+                        class="mb-8 h-[600px] w-full rounded-3xl object-cover object-center"
                         alt=""
                       />
 
@@ -4296,7 +2967,7 @@
             class="mb-8 flex h-[363px] cursor-pointer flex-col items-center justify-center rounded-3xl border border-dashed border-neutral-500 border-opacity-40 transition-colors hover:bg-gray-50"
           >
             <img
-              src="./assets/images/icons/upload-video.png"
+              src="./assets/images/icons/reel-video.png"
               class="w-16h-16 mb-3 h-16 sm:h-24 sm:w-24"
               alt=""
             />
@@ -4306,6 +2977,29 @@
 
             <input type="file" class="sr-only" />
           </label>
+
+          <!-- video preview -->
+          <!-- <div
+            class="relative flex items-center justify-center overflow-hidden rounded-3xl"
+          >
+            <video
+              id="video"
+              src="./assets/videos/nature-stock-video.webm"
+              class="block w-full object-cover object-center"
+            ></video>
+
+            <button
+              class="ply-btn not absolute aria-pressed:opacity-0"
+              aria-controls="video"
+              aria-pressed="false"
+            >
+              <img
+                src="./assets/images/icons/video-play.png"
+                class="h-20 w-20"
+                alt=""
+              />
+            </button>
+          </div> -->
 
           <form
             action="#"
@@ -4331,22 +3025,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
     <script>
-      // reel
-      new Swiper(".swiper.reels", {
-        direction: "horizontal",
-        slidesPerView: "auto",
-        spaceBetween: 10,
-        mousewheel: {
-          invert: false,
-        },
-
-        breakpoints: {
-          768: {
-            spaceBetween: 16,
-          },
-        },
-      });
-
       let storyTime = 1000;
 
       const allReelsSwiper = new Swiper("#all-reels.swiper", {
@@ -4360,41 +3038,21 @@
 
         on: {
           init: async function () {
-            console.log('init');
+            console.log("init");
           },
 
           slideChange: function () {
-            console.log('slideChange');
-
+            console.log("slideChange");
 
             const { activeIndex } = this;
-            const selectedSlide = allReelsSwiper.wrapperEl.children[activeIndex];
-            const innerSwiper = selectedSlide.querySelector('.swiper').swiper;
+            const selectedSlide =
+              allReelsSwiper.wrapperEl.children[activeIndex];
+            const innerSwiper = selectedSlide.querySelector(".swiper").swiper;
 
             innerSwiper.slideTo(0, 0);
             innerSwiper.autoplay.start();
           },
         },
-      });
-
-      window.addEventListener("load", () => {
-        $('[data-hs-overlay="#watch-reel-modal"]').on('click', function() {
-          const selectedReelIndex = +this.dataset.reelIndex;
-          const selectedSlide = allReelsSwiper.wrapperEl.children[selectedReelIndex];
-          const innerSwiper = selectedSlide.querySelector('.swiper').swiper;
-
-          allReelsSwiper.slideTo(selectedReelIndex, 0);
-          innerSwiper.slideTo(0, 0);
-          innerSwiper.autoplay.start();
-        });
-
-        $(document).bind('DOMNodeRemoved', function(event) {
-          if (event.target.id === 'watch-reel-modal-backdrop') {
-            allReelsSwiper.slides.forEach(slide => {
-              slide.querySelector('.swiper').swiper.autoplay.stop()
-            })
-          }
-        });
       });
 
       new Swiper("#reel-1 .swiper", {
@@ -4518,6 +3176,27 @@
         },
       });
 
+      window.addEventListener("load", () => {
+        $('[data-hs-overlay="#watch-reel-modal"]').on("click", function () {
+          const selectedReelIndex = +this.dataset.reelIndex;
+          const selectedSlide =
+            allReelsSwiper.wrapperEl.children[selectedReelIndex];
+          const innerSwiper = selectedSlide.querySelector(".swiper").swiper;
+
+          allReelsSwiper.slideTo(selectedReelIndex, 0);
+          innerSwiper.slideTo(0, 0);
+          innerSwiper.autoplay.start();
+        });
+
+        $(document).bind("DOMNodeRemoved", function (event) {
+          if (event.target.id === "watch-reel-modal-backdrop") {
+            allReelsSwiper.slides.forEach((slide) => {
+              slide.querySelector(".swiper").swiper.autoplay.stop();
+            });
+          }
+        });
+      });
+
       const myReelsSwiper = new Swiper(".swiper.my-reels", {
         init: false,
         autoplay: {
@@ -4537,115 +3216,28 @@
         },
 
         on: {
-          init: function() {
-            this.slideTo(0,0);
+          init: function () {
+            this.slideTo(0, 0);
             this.autoplay.start();
           },
-          
+
           slideChange: function () {
             if (this.isEnd) this.autoplay.stop();
             else this.autoplay.start();
-            
+
             console.log("change my");
           },
-          
+
           reachEnd: function () {
             this.autoplay.stop();
           },
         },
       });
       function showMyReels() {
-        myReelsSwiper.init(); 
-        myReelsSwiper.slideTo(0,0);
+        myReelsSwiper.init();
+        myReelsSwiper.slideTo(0, 0);
         myReelsSwiper.autoplay.start();
       }
-
-      // banner-1
-      new Swiper(".swiper.banner-full", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-
-        pagination: {
-          el: ".swiper.banner-full .swiper-pagination",
-        },
-      });
-      // banner-2
-      new Swiper(".swiper.banner-1-2", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-
-        pagination: {
-          el: ".swiper.banner-1-2 .swiper-pagination",
-        },
-        navigation: {
-          nextEl: ".swiper.banner-1-2 .swiper-button-next",
-          prevEl: ".swiper.banner-1-2 .swiper-button-prev",
-        },
-      });
-      new Swiper(".swiper.banner-2-2", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-
-        pagination: {
-          el: ".swiper.banner-2-2 .swiper-pagination",
-        },
-
-        navigation: {
-          nextEl: ".swiper.banner-2-2 .swiper-button-next",
-          prevEl: ".swiper.banner-2-2 .swiper-button-prev",
-        },
-      });
-
-      new Swiper(".swiper.furniture", {
-        slidesPerView: 1.5,
-        spaceBetween: 16,
-        breakpoints: {
-          768: {
-            slidesPerView: 2.5,
-            spaceBetween: 16,
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 16,
-          },
-          1200: {
-            slidesPerView: 5,
-            spaceBetween: 16,
-          },
-        },
-        pagination: {
-          el: ".swiper.furniture .swiper-pagination",
-        },
-        navigation: {
-          nextEl: ".swiper.furniture .swiper-button-next",
-          prevEl: ".swiper.furniture .swiper-button-prev",
-        },
-      });
-      new Swiper(".swiper.cars", {
-        slidesPerView: 1.5,
-        spaceBetween: 16,
-        breakpoints: {
-          768: {
-            slidesPerView: 2.5,
-            spaceBetween: 16,
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 16,
-          },
-          1200: {
-            slidesPerView: 5,
-            spaceBetween: 16,
-          },
-        },
-        pagination: {
-          el: ".swiper.cars .swiper-pagination",
-        },
-        navigation: {
-          nextEl: ".swiper.cars .swiper-button-next",
-          prevEl: ".swiper.cars .swiper-button-prev",
-        },
-      });
     </script>
   </body>
 </html>
