@@ -689,7 +689,7 @@
       </header>
       <!-- /header -->
 
-      <main class="wrapper py-8">
+      <main class="wrapper mb-20 pt-12">
         <ol
           class="mb-12 flex items-center whitespace-nowrap"
           aria-label="Breadcrumb"
@@ -720,49 +720,328 @@
             class="inline-flex items-center truncate text-sm font-semibold text-secondary-900"
             aria-current="page"
           >
-            فيديو ريلز
+            عرض الإعلان
           </li>
         </ol>
 
-        <section class="">
-          <header class="mb-20 flex items-start justify-between">
-            <div class="">
-              <h2 class="text-lg font-semibold leading-none md:text-xl">
-                فيديو ريلز
-              </h2>
-              <span
-                class="bg-gradient-l inline-block h-px w-10 rounded-full sm:h-1 sm:w-20"
-              ></span>
+        <section>
+          <div
+            class="mb-20 flex flex-col justify-between gap-4 sm:flex-row sm:items-center"
+          >
+            <header class="flex items-start justify-between">
+              <div class="">
+                <h2 class="text-lg font-semibold leading-none md:text-xl">
+                  اسم الإعلان هنا
+                </h2>
+                <span
+                  class="bg-gradient-l inline-block h-px w-10 rounded-full sm:h-1 sm:w-20"
+                ></span>
+              </div>
+            </header>
+
+            <div class="flex flex-col items-center gap-3 sm:flex-row">
+              <button
+                type="button"
+                class="flex h-12 w-full items-center justify-center gap-2 rounded-3xl bg-gradient-to-b from-violet-900 to-violet-900/50 px-6 font-bold text-white transition-colors hover:to-violet-900 sm:h-14 sm:w-auto"
+              >
+                <img
+                  src="./assets/images/icons/edit-white.svg"
+                  class="w-5"
+                  alt=""
+                />
+                تعديل الإعلان
+              </button>
+              <button
+                type="button"
+                class="flex h-12 w-full items-center justify-center gap-2 rounded-3xl border border-red-500 bg-white px-6 font-bold text-red-500 transition-colors hover:bg-red-100 sm:h-14 sm:w-auto"
+              >
+                <img
+                  src="./assets/images/icons/delete-red.svg"
+                  class="w-5"
+                  alt=""
+                />
+                حذف الإعلان
+              </button>
             </div>
-          </header>
+          </div>
 
-          <div class="flex flex-col items-center text-center">
-            <img
-              src="./assets/images/icons/reel-video.png"
-              class="mb-8 h-20 w-20 sm:h-40 sm:w-40"
-              alt=""
-            />
+          <div class="space-y-16">
+            <div class="relative isolate">
+              <div class="swiper banner z-20">
+                <div class="swiper-wrapper w-full">
+                  <div class="swiper-slide">
+                    <div
+                      class="mx-auto h-[400px] w-fit overflow-hidden rounded-3xl p-4 sm:h-[500px]"
+                    >
+                      <img
+                        src="https://via.placeholder.com/285x600"
+                        class="mx-auto h-full rounded-lg object-fill object-center p-2 shadow-lg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="mx-auto h-[400px] w-fit overflow-hidden rounded-3xl p-4 sm:h-[500px]"
+                    >
+                      <img
+                        src="https://via.placeholder.com/500x464"
+                        class="mx-auto h-full rounded-lg object-fill object-center p-3 shadow-lg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="mx-auto h-[400px] w-fit overflow-hidden rounded-3xl p-4 sm:h-[500px]"
+                    >
+                      <img
+                        src="https://via.placeholder.com/800x464"
+                        class="mx-auto h-full rounded-lg object-fill object-center p-2 shadow-lg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-            <p class="mb-4 text-lg font-medium text-primary-900 sm:text-2xl">
-              لا توجد فيديوهات للمشاهدة
-            </p>
-            <p
-              class="max-w-[35ch] text-lg text-neutral-500 text-opacity-70 sm:text-xl"
-            >
-              يبدو أنك لم تتابع أي مستخدم بعد، ستظهر فيديوهات من تتابعهم هنا....
-            </p>
+              <span class="card__badge z-30">إعلان ممول</span>
 
-            <button
-              type="button"
-              class="mx-auto mt-11 flex h-16 w-full max-w-xl items-center justify-center gap-2 rounded-3xl bg-gradient-to-b from-violet-900 to-violet-900/50 py-4 text-lg font-bold text-white transition-colors hover:to-violet-900"
-            >
-              <img
-                src="./assets/images/icons/upload-video-sm.png"
-                class="w-6"
-                alt=""
-              />
-              رفع فيديو
-            </button>
+              <div class="ites-center mt-4 flex justify-center gap-4 sm:mt-6">
+                <div
+                  class="swiper-button-prev static m-0 h-5 w-5 sm:h-6 sm:w-6 rtl:rotate-180"
+                >
+                  <img
+                    src="./assets/images/icons/swiper-arrow.png"
+                    class="w-5 sm:w-6"
+                    alt=""
+                  />
+                </div>
+
+                <div class="swiper-pagination static pt-1"></div>
+
+                <div
+                  class="swiper-button-next static m-0 h-5 w-5 sm:h-6 sm:w-6 ltr:rotate-180"
+                >
+                  <img
+                    src="./assets/images/icons/swiper-arrow.png"
+                    class="w-5 sm:w-6"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-3xl p-6 shadow-card">
+              <p class="mb-4 text-xl">ضع عنوان الإعلان هنا</p>
+              <p class="mb-7 text-lg text-neutral-500 text-opacity-70">
+                هذا مثال لنص يمكن أن يستبدل في في نفس المساحة هذا مثال لنص يمكن
+                أن يستبدل في في نفس المساحة هذا مثال لنص يمكن هذا مثال لنص هذا
+                مثال لنص يمكن أن يستبدل في في نفس المساحة هذا مثال لنص يمكن أن
+                هذا مثال لنص يمكن أن يستبدل في في نفس المساحة هذا مثال لنص يمكن
+                أن يستبدل في في نفس المساحة هذا مثال لنص هذا مثال لنص يمكن أن
+                يستبدل في في نفس المساحة هذا مثال لنص يمكن أن يستبدل في في نفس
+                المساحة هذا مثال لنص يمكن هذا مثال لنص هذا مثال لنص يمكن أن
+                يستبدل في في نفس المساحة هذا مثال لنص يمكن أن هذا مثال لنص يمكن
+                أن يستبدل في في نفس المساحة هذا مثال لنص يمكن أن يستبدل في في
+                نفس المساحة هذا مثال لنص يمكن هذا
+              </p>
+
+              <div
+                class="flex flex-col justify-between sm:flex-row sm:items-center"
+              >
+                <p class="mb-4 text-2xl font-bold text-primary-900">
+                  25,000EGP
+                </p>
+
+                <div class="flex flex-wrap items-center gap-4">
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./assets/images/icons/eye-gradient.svg"
+                      class="h-5 shrink-0"
+                      alt=""
+                    />
+                    <p class="text-neutral-500 text-opacity-70">
+                      عدد مشاهدات الإعلان
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./assets/images/icons/clock-gradient.svg"
+                      class="h-5 shrink-0"
+                      alt=""
+                    />
+                    <p class="text-neutral-500 text-opacity-70">
+                      تم النشر منذ يومين
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="mb-6 flex items-start justify-between">
+                <div class="">
+                  <h2 class="text-lg font-semibold leading-none md:text-xl">
+                    الموقع
+                  </h2>
+                  <span
+                    class="bg-gradient-l inline-block h-px w-10 rounded-full sm:h-1"
+                  ></span>
+                </div>
+              </div>
+
+              <div class="rounded-3xl p-6 shadow-card">
+                <div class="mb-6 flex items-center gap-2">
+                  <img
+                    src="./assets/images/icons/location.svg"
+                    class="h-4 sm:h-6"
+                    alt=""
+                  />
+                  <p class="text-neutral-500 text-opacity-70 sm:text-lg">
+                    ضع الموقع هنا
+                  </p>
+                </div>
+
+                <div class="relative flex items-center justify-center">
+                  <iframe
+                    class="block w-full rounded-3xl"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3491699.675045647!2d37.12262705!3d31.27988555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15006f476664de99%3A0x8d285b0751264e99!2z2KfZhNij2LHYr9mG!5e0!3m2!1sar!2seg!4v1704911144606!5m2!1sar!2seg"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+
+                  <button
+                    type="button"
+                    class="absolute flex h-10 items-center gap-2 rounded-3xl bg-gradient-to-b from-violet-900 to-violet-400 px-6 py-4 font-bold text-white transition-colors hover:to-violet-900 sm:h-16 sm:text-lg"
+                  >
+                    اعرض على الخريطة
+
+                    <svg
+                      width="7"
+                      height="12"
+                      viewBox="0 0 7 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M6.57824 0.351784C6.37003 0.126537 6.08767 0 5.79326 0C5.49885 0 5.2165 0.126537 5.00829 0.351784L0.567109 5.15779C0.358961 5.38311 0.24203 5.68866 0.24203 6.00725C0.24203 6.32585 0.358961 6.6314 0.567109 6.85672L5.00829 11.6627C5.21769 11.8816 5.49815 12.0027 5.78927 12C6.08038 11.9972 6.35886 11.8709 6.56472 11.6481C6.77057 11.4253 6.88734 11.124 6.88987 10.8089C6.8924 10.4939 6.78049 10.1904 6.57824 9.9638L2.92204 6.00725L6.57824 2.05071C6.78639 1.82539 6.90332 1.51984 6.90332 1.20125C6.90332 0.88265 6.78639 0.577099 6.57824 0.351784Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="mb-6 flex items-start justify-between">
+                <div>
+                  <h2 class="text-lg font-semibold leading-none md:text-xl">
+                    المواصفات
+                  </h2>
+                  <span
+                    class="bg-gradient-l inline-block h-px w-10 rounded-full sm:h-1"
+                  ></span>
+                </div>
+              </div>
+
+              <div class="rounded-3xl p-6 shadow-card md:p-10">
+                <div
+                  class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-16 md:gap-28"
+                >
+                  <div class="space-y-6">
+                    <div class="flex items-center justify-between">
+                      <p class="text-lg text-neutral-500 text-opacity-70">
+                        ضع عنوان هنا
+                      </p>
+                      <p class="text-lg font-medium text-slate-900">
+                        ضع الوصف هنا
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <p class="text-lg text-neutral-500 text-opacity-70">
+                        ضع عنوان هنا
+                      </p>
+                      <p class="text-lg font-medium text-slate-900">
+                        ضع الوصف هنا
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <p class="text-lg text-neutral-500 text-opacity-70">
+                        ضع عنوان هنا
+                      </p>
+                      <p class="text-lg font-medium text-slate-900">
+                        ضع الوصف هنا
+                      </p>
+                    </div>
+                  </div>
+                  <div class="space-y-6">
+                    <div class="flex items-center justify-between">
+                      <p class="text-lg text-neutral-500 text-opacity-70">
+                        ضع عنوان هنا
+                      </p>
+                      <p class="text-lg font-medium text-slate-900">
+                        ضع الوصف هنا
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <p class="text-lg text-neutral-500 text-opacity-70">
+                        ضع عنوان هنا
+                      </p>
+                      <p class="text-lg font-medium text-slate-900">
+                        ضع الوصف هنا
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <p class="text-lg text-neutral-500 text-opacity-70">
+                        ضع عنوان هنا
+                      </p>
+                      <p class="text-lg font-medium text-slate-900">
+                        ضع الوصف هنا
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="mb-6 flex items-start justify-between">
+                <div>
+                  <h2 class="text-lg font-semibold leading-none md:text-xl">
+                    الوصف
+                  </h2>
+                  <span
+                    class="bg-gradient-l inline-block h-px w-10 rounded-full sm:h-1"
+                  ></span>
+                </div>
+              </div>
+
+              <div class="space-y-4 rounded-3xl p-6 shadow-card md:p-10">
+                <p class="text-neutral-500 text-opacity-70 sm:text-lg">
+                  هذا مثال لنص يمكن أن يستبدل في نفس المساحة هذا مثال لنص يمكن
+                  أن يستبدل في نفس المساحة هذا مثال لنص يمكن أن يستبدل في نفس
+                  المساحة هذا مثال لنص يمكن أن يستبدل في نفس المساحة هذا مثال
+                  لنص يمكن أن يستبدل في نفس المساحة هذا مثال لنص يمكن أن يستبدل
+                  في نفس المساحة هذا مثال لنص يمكن أن يستبدل في نفس المساحة هذا
+                  مثال لنص يمكن أن يستبدل في نفس المساحة
+                </p>
+                <p class="text-neutral-500 text-opacity-70 sm:text-lg">
+                  هذا مثال لنص يمكن أن يستبدل في نفس المساحة هذا مثال لنص يمكن
+                  أن يستبدل في نفس المساحة هذا مثال لنص يمكن أن يستبدل في نفس
+                  المساحة هذا مثال لنص يمكن أن يستبدل في نفس المساحة هذا مثال
+                  لنص يمكن أن يستبدل في نفس المساحة هذا مثال لنص يمكن أن يستبدل
+                  في نفس المساحة هذا مثال لنص يمكن أن يستبدل في نفس المساحة هذا
+                  مثال لنص يمكن أن يستبدل في نفس المساحة
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </main>
@@ -979,5 +1258,21 @@
         <img src="./assets/images/icons/whatsapp.svg" alt="" />
       </a>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".swiper.banner", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
