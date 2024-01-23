@@ -193,6 +193,114 @@
   }
 }
 
+@layer components {
+  .plan {
+    @apply relative flex flex-col justify-between rounded-3xl bg-white shadow;
+    box-shadow:
+      0px 0px 5.27px 0px rgba(0, 0, 0, 0.04),
+      0px 0px 37px 0px rgba(0, 0, 0, 0.05);
+  }
+  .plan__badge {
+    @apply absolute left-0 top-0 rounded-br-xl rounded-tl-xl  bg-secondary-900 bg-gradient-to-b from-red-500 to-red-500 px-2 py-4 text-lg text-white [writing-mode:tb-rl];
+  }
+  .plan__badge::before {
+    content: "";
+    position: absolute;
+    border-radius: theme(borderRadius.xl);
+    background: inherit;
+    inset: -8px;
+    z-index: -1;
+  }
+  .plan__head {
+    @apply px-4 py-8 text-center;
+  }
+  .plan__icon {
+    width: 78px;
+    height: 78px;
+    @apply mx-auto mb-5;
+  }
+  .plan__name {
+    @apply mb-6 sm:text-[26px] text-lg font-bold leading-7;
+  }
+  .plan__disc {
+    @apply text-xl;
+  }
+  .plan__price {
+    @apply my-6 sm:text-[26px] text-lg font-bold;
+  }
+  .plan__price {
+    @apply text-neutral-500 text-opacity-70;
+  }
+  .plan__price span {
+    @apply sm:text-lg;
+  }
+  .plan__paying-period {
+    @apply mx-auto flex h-[55px] w-[226px] rounded-full bg-white p-1;
+    box-shadow:
+      0px 0px 5.27px 0px rgba(0, 0, 0, 0.04),
+      0px 0px 37px 0px rgba(0, 0, 0, 0.05);
+  }
+  .plan__paying-period label {
+    @apply h-full flex-1 cursor-pointer;
+  }
+  .plan__paying-period span {
+    @apply flex h-full items-center justify-center rounded-full text-center;
+  }
+  .plan__paying-period input:checked + span {
+    @apply bg-gradient-to-b from-primary-900 to-primary-900/50 text-white;
+  }
+  .plan__body {
+    @apply border-t border-black border-opacity-5 px-7 py-8;
+  }
+  .plan__features-list {
+    @apply mb-7 space-y-6;
+  }
+  .plan__feature {
+    @apply flex items-start gap-2 text-lg text-neutral-500 text-opacity-70;
+  }
+  .plan__feature img {
+    @apply mt-1.5 w-5 shrink-0;
+  }
+  .plan__footer {
+    @apply px-7 pb-8;
+  }
+  .plan__btn {
+    @apply flex h-[54px] w-full items-center justify-center rounded-3xl bg-gradient-to-b from-neutral-500 to-neutral-500/50 font-bold text-white transition-opacity hover:opacity-85;
+  }
+
+  /* silver */
+  .plan.silver .plan__name,
+  .plan.silver .plan__disc,
+  .plan.silver .plan__price {
+    @apply text-neutral-500;
+  }
+  .plan.silver .plan__btn,
+  .plan.silver .plan__paying-period input:checked + span {
+    @apply bg-gradient-to-b from-neutral-500 to-neutral-500/50 text-white;
+  }
+
+  /* gold */
+  .plan.gold .plan__name,
+  .plan.gold .plan__disc,
+  .plan.gold .plan__price {
+    @apply text-secondary-900;
+  }
+  .plan.gold .plan__btn,
+  .plan.gold .plan__paying-period input:checked + span {
+    @apply bg-gradient-to-b from-secondary-900 to-secondary-900/50 text-white;
+  }
+  /* premium */
+  .plan.premium .plan__name,
+  .plan.premium .plan__disc,
+  .plan.premium .plan__price {
+    @apply text-primary-900;
+  }
+  .plan.premium .plan__btn,
+  .plan.premium .plan__paying-period input:checked + span {
+    @apply bg-gradient-to-b from-primary-900 to-primary-900/50 text-white;
+  }
+}
+
 @layer utilities {
   .wrapper {
     @apply mx-auto max-w-[1600px] px-4;
