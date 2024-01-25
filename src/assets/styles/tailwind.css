@@ -120,7 +120,7 @@
     @apply inline-block h-4 w-4 fill-current text-secondary-900;
   }
   .card__body {
-    @apply flex h-full flex-1 flex-col justify-between p-2.5 text-[10px] text-neutral-500 text-opacity-70 sm:p-0 sm:text-xs md:text-sm;
+    @apply flex h-full flex-1 flex-col justify-between space-y-2 p-2.5 text-[10px] text-neutral-500 text-opacity-70 sm:p-0 sm:text-xs md:text-sm;
   }
   .card__body > div {
     @apply space-y-2 sm:space-y-3;
@@ -220,13 +220,13 @@
     @apply mx-auto mb-5;
   }
   .plan__name {
-    @apply mb-6 sm:text-[26px] text-lg font-bold leading-7;
+    @apply mb-6 text-lg font-bold leading-7 sm:text-[26px];
   }
   .plan__disc {
     @apply text-xl;
   }
   .plan__price {
-    @apply my-6 sm:text-[26px] text-lg font-bold;
+    @apply my-6 text-lg font-bold sm:text-[26px];
   }
   .plan__price {
     @apply text-neutral-500 text-opacity-70;
