@@ -360,6 +360,11 @@ select {
   background-position: right 0.5rem center;
 }
 
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
 /* swiper */
 
 .swiper-pagination-bullet {
