@@ -5,6 +5,10 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      screens: {
+        "2xl": "1380px",
+      },
+
       colors: {
         primary: {
           900: "#4C0497",
@@ -24,6 +28,7 @@ module.exports = {
       },
     },
   },
+
   variants: {
     space: ["responsive", "direction"],
   },

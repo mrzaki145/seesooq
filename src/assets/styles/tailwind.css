@@ -12,8 +12,13 @@
 
   body {
     font-family: "Tajawal", sans-serif;
-    font-size: theme(fontSize.sm);
+    font-size: theme(fontSize.xs) !important;
     color: theme(colors.slate.900);
+  }
+  @screen 2xl {
+    body {
+      font-size: theme(fontSize.sm);
+    }
   }
 
   :root {
@@ -65,7 +70,7 @@
     @apply self-center lg:-mt-20;
   }
   .cta h2 {
-    @apply text-2xl font-medium sm:text-3xl  sm:leading-7;
+    @apply text-2xl font-medium md:text-3xl 2xl:text-4xl sm:leading-7;
   }
   .cta p {
     @apply max-w-[35ch] text-lg;
@@ -126,23 +131,23 @@
     @apply space-y-2 sm:space-y-3;
   }
   .card__body > div:first-child {
-    @apply mb-4;
+    @apply mb-3;
   }
   .card__category {
     @apply text-sm text-primary-900;
   }
   .card__title {
-    @apply text-xs font-medium text-slate-900 sm:text-sm md:text-base;
+    @apply text-xs font-medium text-slate-900 sm:text-sm;
   }
   .card__price {
-    @apply text-sm font-bold  text-violet-900 sm:text-lg;
+    @apply text-sm font-bold  text-violet-900 sm:text-base;
     line-height: 1 !important;
   }
   .card__btn {
-    @apply flex h-7 flex-1 items-center justify-center gap-1.5 rounded-full bg-neutral-100 text-[10px] text-slate-900 transition-colors hover:bg-neutral-200 sm:h-10 sm:text-sm;
+    @apply flex h-7 flex-1 items-center justify-center gap-1.5 rounded-full bg-neutral-100 text-[10px] sm:text-xs font-medium text-slate-900 transition-colors hover:bg-neutral-200 sm:h-10;
   }
   .card__btn svg {
-    @apply h-3.5 w-3.5 fill-current text-secondary-900 sm:h-5 sm:w-5;
+    @apply h-3.5 w-3.5 fill-current text-secondary-900 sm:h-4 sm:w-4;
   }
 }
 
@@ -220,13 +225,13 @@
     @apply mx-auto mb-5;
   }
   .plan__name {
-    @apply mb-6 text-lg font-bold leading-7 sm:text-[26px];
+    @apply mb-6 text-lg font-bold leading-7 md:text-2xl 2xl:text-3xl;
   }
   .plan__disc {
-    @apply text-xl;
+    @apply text-base 2xl:text-2xl;
   }
   .plan__price {
-    @apply my-6 text-lg font-bold sm:text-[26px];
+    @apply my-6 text-lg 2xl:text-2xl font-bold;
   }
   .plan__price {
     @apply text-neutral-500 text-opacity-70;
@@ -244,7 +249,7 @@
     @apply h-full flex-1 cursor-pointer;
   }
   .plan__paying-period span {
-    @apply flex h-full items-center justify-center rounded-full text-center;
+    @apply flex h-full text-base items-center justify-center rounded-full text-center;
   }
   .plan__paying-period input:checked + span {
     @apply bg-gradient-to-b from-primary-900 to-primary-900/50 text-white;
@@ -256,7 +261,7 @@
     @apply mb-7 space-y-6;
   }
   .plan__feature {
-    @apply flex items-start gap-2 text-lg text-neutral-500 text-opacity-70;
+    @apply flex items-start gap-2 text-base 2xl:text-lg text-neutral-500 text-opacity-70;
   }
   .plan__feature img {
     @apply mt-1.5 w-5 shrink-0;
