@@ -53,7 +53,7 @@
 
 @layer components {
   .header__nav-link {
-    @apply relative text-sm text-white text-opacity-70 transition-colors after:absolute after:start-0 after:top-[125%] after:h-0.5 after:w-0 after:bg-white after:transition-[width] hover:text-opacity-100 hover:after:w-1/2 aria-[current]:text-opacity-100 aria-[current]:after:w-1/2 2xl:text-base;
+    @apply relative text-xs text-white text-opacity-70 transition-colors after:absolute after:start-0 after:top-[125%] after:h-0.5 after:w-0 after:bg-white after:transition-[width] hover:text-opacity-100 hover:after:w-1/2 aria-[current]:text-opacity-100 aria-[current]:after:w-1/2 2xl:text-sm;
   }
 
   .cta {
