@@ -13,7 +13,7 @@
   body {
     font-family: "Tajawal", sans-serif;
     font-size: theme(fontSize.xs) !important;
-    color: theme(colors.slate.900);
+    @apply bg-white text-slate-900 dark:bg-[#18191B] dark:text-[#DFCDF1];
   }
   @screen 2xl {
     body {
@@ -81,7 +81,7 @@
   }
 
   .footer {
-    @apply mt-20 pb-8 pt-12  text-neutral-500 text-opacity-70;
+    @apply mt-20 pb-8 pt-12  text-neutral-500 text-opacity-70 dark:bg-[#111111] dark:text-white/60;
     box-shadow:
       0px 0px 5.27px 0px rgba(0, 0, 0, 0.04),
       0px 0px 37px 0px rgba(0, 0, 0, 0.05);
@@ -99,10 +99,12 @@
 /* card */
 @layer components {
   .card {
-    @apply relative flex flex-col rounded-3xl bg-white p-1 shadow-md sm:p-3.5;
+    @apply relative flex flex-col rounded-3xl p-1 shadow-md sm:p-3.5 dark:border dark:border-[#323335] dark:bg-[#18191B] dark:shadow-none;
   }
   .card__badge {
-    @apply absolute left-0 top-0 rounded-br-xl rounded-tl-xl  bg-secondary-900 bg-gradient-to-b from-red-500 to-red-500 px-2 py-4 text-sm text-white [writing-mode:tb-rl];
+    left: -2px;
+    top: -2px;
+    @apply absolute rounded-br-xl rounded-tl-xl  bg-secondary-900 bg-gradient-to-b from-red-500 to-red-500 px-2 py-4 text-sm font-medium text-white [writing-mode:tb-rl] dark:text-black;
   }
   .card__badge::before {
     content: "";
@@ -119,13 +121,13 @@
     @apply h-full w-full rounded-3xl object-cover object-center;
   }
   .card__action {
-    @apply absolute right-4 top-4 flex h-7 w-7 items-center justify-center rounded-full bg-white aria-pressed:bg-secondary-900;
+    @apply absolute right-4 top-4 flex h-7 w-7 items-center justify-center rounded-full bg-white aria-pressed:bg-secondary-900 dark:bg-[#0D0D0D];
   }
   .card__action svg {
     @apply inline-block h-4 w-4 fill-current text-secondary-900;
   }
   .card__body {
-    @apply flex h-full flex-1 flex-col justify-between space-y-2 p-2.5 text-[10px] text-neutral-500 text-opacity-70 sm:p-0 sm:text-xs md:text-sm;
+    @apply flex h-full flex-1 flex-col justify-between space-y-2 p-2.5 text-[10px] text-neutral-500 text-opacity-70 sm:p-0 sm:text-xs md:text-sm dark:text-neutral-400;
   }
   .card__body > div {
     @apply space-y-2 sm:space-y-3;
@@ -134,20 +136,20 @@
     @apply mb-3;
   }
   .card__category {
-    @apply text-sm text-primary-900;
+    @apply text-sm text-primary-900 dark:text-primary-600;
   }
   .card__title {
-    @apply text-xs font-medium text-slate-900 sm:text-sm;
+    @apply text-xs font-medium text-slate-900 sm:text-sm dark:text-[#DFCDF1];
   }
   .card__disc {
     @apply line-clamp-2;
   }
   .card__price {
-    @apply text-sm font-bold  text-violet-900 sm:text-base;
+    @apply text-sm font-bold text-primary-900 sm:text-base dark:text-primary-600;
     line-height: 1 !important;
   }
   .card__btn {
-    @apply flex h-7 flex-1 items-center justify-center gap-1.5 rounded-full bg-neutral-100 text-[10px] font-medium text-slate-900 transition-colors hover:bg-neutral-200 sm:h-10 sm:text-xs;
+    @apply flex h-7 flex-1 items-center justify-center gap-1.5 rounded-full bg-neutral-100 text-[10px] font-medium transition-colors hover:opacity-75 sm:h-10 sm:text-xs dark:bg-black dark:text-neutral-300;
   }
   .card__btn svg {
     @apply h-3.5 w-3.5 fill-current text-secondary-900 sm:h-4 sm:w-4;
@@ -175,26 +177,26 @@
 
 @layer components {
   .notification {
-    @apply relative flex flex-col gap-4 rounded-3xl bg-white p-5 sm:flex-row sm:items-center sm:gap-6 sm:pe-16;
+    @apply relative flex flex-col gap-4 rounded-3xl bg-white p-5 sm:flex-row sm:items-center sm:gap-6 sm:pe-16 dark:bg-[#111111];
     box-shadow:
       0px 0px 5.27px 0px rgba(0, 0, 0, 0.04),
       0px 0px 37px 0px rgba(0, 0, 0, 0.05);
   }
   .notification--new {
-    @apply bg-neutral-100 shadow-none;
+    @apply bg-neutral-100 shadow-none dark:bg-neutral-900;
   }
 
   .notification__avatar {
     @apply h-[70px] w-[70px] shrink-0 rounded-full object-cover object-center;
   }
   .notification__content {
-    @apply flex-1 text-neutral-500 text-opacity-70;
+    @apply flex-1 text-neutral-500 text-opacity-70 dark:text-neutral-400;
   }
   .notification__text {
     @apply mb-2 sm:text-lg;
   }
   .notification__dot {
-    @apply bg-gradient absolute end-5 hidden h-3.5  w-3.5 rounded-full sm:end-6;
+    @apply bg-gradient absolute end-5 hidden h-3.5 w-3.5  rounded-full sm:end-6 dark:bg-primary-600;
   }
   .notification--new .notification__dot {
     @apply block;
@@ -203,7 +205,7 @@
 
 @layer components {
   .plan {
-    @apply relative flex flex-col justify-between rounded-3xl bg-white shadow;
+    @apply relative flex flex-col justify-between rounded-3xl bg-white shadow dark:bg-[#242527] dark:shadow-none;
     box-shadow:
       0px 0px 5.27px 0px rgba(0, 0, 0, 0.04),
       0px 0px 37px 0px rgba(0, 0, 0, 0.05);
@@ -243,7 +245,7 @@
     @apply sm:text-lg;
   }
   .plan__paying-period {
-    @apply mx-auto flex h-[55px] w-[226px] rounded-full bg-white p-1;
+    @apply mx-auto flex h-[55px] w-[226px] rounded-full bg-white p-1 dark:bg-[#111111];
     box-shadow:
       0px 0px 5.27px 0px rgba(0, 0, 0, 0.04),
       0px 0px 37px 0px rgba(0, 0, 0, 0.05);
@@ -264,7 +266,7 @@
     @apply mb-7 space-y-6;
   }
   .plan__feature {
-    @apply flex items-start gap-2 text-base text-neutral-500 text-opacity-70 2xl:text-lg;
+    @apply flex items-start gap-2 text-base text-neutral-500 text-opacity-70 2xl:text-lg dark:text-neutral-400;
   }
   .plan__feature img {
     @apply mt-1.5 w-5 shrink-0;
@@ -280,7 +282,7 @@
   .plan.silver .plan__name,
   .plan.silver .plan__disc,
   .plan.silver .plan__price {
-    @apply text-neutral-500;
+    @apply text-neutral-500 dark:text-neutral-400;
   }
   .plan.silver .plan__btn,
   .plan.silver .plan__paying-period input:checked + span {
@@ -301,7 +303,7 @@
   .plan.premium .plan__name,
   .plan.premium .plan__disc,
   .plan.premium .plan__price {
-    @apply text-primary-900;
+    @apply text-primary-900 dark:text-primary-600;
   }
   .plan.premium .plan__btn,
   .plan.premium .plan__paying-period input:checked + span {
@@ -378,11 +380,13 @@ input::-ms-clear {
 .swiper-pagination-bullet {
   --swiper-pagination-color: theme(colors.primary.900);
   --swiper-pagination-bullet-size: 14px;
-  --swiper-pagination-bullet-inactive-color: theme(colors.white);
   --swiper-pagination-bullet-inactive-opacity: 1;
   border: 1px solid theme(colors.primary.900);
 }
-.swiper-pagination-bullet-active {
+:is(:where(.dark) .swiper-pagination-bullet) {
+  --swiper-pagination-color: #ffffff;
+  --swiper-pagination-bullet-inactive-color: transparent;
+  border: 1px solid #ffffff;
 }
 
 .swiper-button-next::after,
@@ -406,7 +410,7 @@ input::-ms-clear {
 }
 
 .reel-progressbar {
-  @apply static h-2.5 overflow-hidden rounded-full bg-primary-900 bg-opacity-10 !important;
+  @apply static h-2.5 overflow-hidden rounded-full bg-primary-900 bg-opacity-10 dark:bg-white dark:bg-opacity-15 !important;
 }
 .reel-progressbar span {
   @apply inline-block rounded-full bg-primary-900 rtl:origin-right !important;

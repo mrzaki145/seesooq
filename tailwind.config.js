@@ -11,6 +11,7 @@ module.exports = {
 
       colors: {
         primary: {
+          600: "#a65ff0",
           900: "#4C0497",
         },
         secondary: {
@@ -32,5 +33,9 @@ module.exports = {
   variants: {
     space: ["responsive", "direction"],
   },
-  plugins: [require("@tailwindcss/forms"), require("preline/plugin")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/line-clamp"),
+    require("preline/plugin"),
+  ],
 };

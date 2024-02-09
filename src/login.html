@@ -11,6 +11,7 @@
       defer
       src="https://cdn.jsdelivr.net/npm/preline@2.0.3/dist/preline.min.js"
     ></script>
+    <script defer src="./assets/scripts/main.js"></script>
   </head>
 
   <body>
@@ -29,12 +30,12 @@
             <div>
               <label
                 for="email"
-                class="mb-3 inline-block font-medium text-slate-900 md:text-lg md:leading-7"
+                class="mb-3 inline-block font-medium md:text-lg md:leading-7"
                 >البريد الإلكتروني</label
               >
 
               <div
-                class="flex h-16 items-center gap-4 rounded-3xl border border-transparent bg-neutral-100 bg-opacity-60 px-5 transition-colors duration-200 focus-within:border-violet-900"
+                class="flex h-16 items-center gap-4 rounded-3xl border border-transparent bg-neutral-100 bg-opacity-60 px-5 transition-colors duration-200 focus-within:border-violet-900 dark:bg-[#171717] dark:bg-opacity-95 dark:text-black"
               >
                 <img
                   src="./assets/images/icons/mail.png"
@@ -45,7 +46,7 @@
                   type="email"
                   name="email"
                   id="email"
-                  class="flex-1 border-none bg-transparent text-slate-900 outline-none placeholder:text-neutral-500 placeholder:text-opacity-70"
+                  class="flex-1 border-none bg-transparent outline-none placeholder:text-neutral-500 placeholder:text-opacity-70 dark:text-white dark:placeholder:text-neutral-400"
                   placeholder="أدخل بريدك الإلكتروني "
                 />
               </div>
@@ -56,12 +57,12 @@
             <div>
               <label
                 for="email"
-                class="mb-3 inline-block font-medium text-slate-900 md:text-lg md:leading-7"
+                class="mb-3 inline-block font-medium md:text-lg md:leading-7"
                 >كلمة السر</label
               >
 
               <div
-                class="flex h-16 items-center gap-4 rounded-3xl border border-transparent bg-neutral-100 bg-opacity-60 px-5 transition-colors duration-200 focus-within:border-violet-900"
+                class="flex h-16 items-center gap-4 rounded-3xl border border-transparent bg-neutral-100 bg-opacity-60 px-5 transition-colors duration-200 focus-within:border-violet-900 dark:bg-[#171717] dark:bg-opacity-95 dark:text-black"
               >
                 <img
                   src="./assets/images/icons/lock.png"
@@ -73,7 +74,7 @@
                     type="password"
                     name="password"
                     id="password-1"
-                    class="block flex-1 border-none bg-transparent text-slate-900 outline-none placeholder:text-neutral-500 placeholder:text-opacity-70"
+                    class="block flex-1 border-none bg-transparent outline-none placeholder:text-neutral-500 placeholder:text-opacity-70 dark:text-white dark:placeholder:text-neutral-400"
                     placeholder="أدخل كلمة السر "
                   />
 
@@ -135,7 +136,7 @@
             <div class="flex gap-5">
               <button
                 type="button"
-                class="flex h-16 grow items-center justify-center rounded-xl bg-neutral-100 bg-opacity-60 transition-colors hover:bg-opacity-100"
+                class="flex h-16 grow items-center justify-center rounded-xl bg-neutral-100 bg-opacity-60 transition-colors hover:bg-opacity-100 dark:bg-[#171717] dark:bg-opacity-95 dark:text-black"
                 aria-label="register using apple"
               >
                 <img
@@ -146,7 +147,7 @@
               </button>
               <button
                 type="button"
-                class="flex h-16 grow items-center justify-center rounded-xl bg-neutral-100 bg-opacity-60 transition-colors hover:bg-opacity-100"
+                class="flex h-16 grow items-center justify-center rounded-xl bg-neutral-100 bg-opacity-60 transition-colors hover:bg-opacity-100 dark:bg-[#171717] dark:bg-opacity-95 dark:text-black"
                 aria-label="register using google"
               >
                 <img
@@ -157,7 +158,7 @@
               </button>
               <button
                 type="button"
-                class="flex h-16 grow items-center justify-center rounded-xl bg-neutral-100 bg-opacity-60 transition-colors hover:bg-opacity-100"
+                class="flex h-16 grow items-center justify-center rounded-xl bg-neutral-100 bg-opacity-60 transition-colors hover:bg-opacity-100 dark:bg-[#171717] dark:bg-opacity-95 dark:text-black"
                 aria-label="register using facebook"
               >
                 <img
@@ -169,7 +170,9 @@
             </div>
           </div>
 
-          <p class="text-lg text-neutral-500 text-opacity-70">
+          <p
+            class="text-lg text-neutral-500 text-opacity-70 dark:text-neutral-400"
+          >
             ليس لديك حساب؟
             <a
               href="./signup.html"
