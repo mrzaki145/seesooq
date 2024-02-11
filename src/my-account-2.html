@@ -813,49 +813,75 @@
               </div>
             </header>
 
-            <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+            <div class="flex flex-col gap-6 lg:flex-row lg:gap-10">
               <div
-                class="bg-gradient flex flex-col items-center justify-center rounded-3xl py-6 text-center text-white lg:col-span-1 lg:py-9"
+                class="bg-gradient h-full max-w-[450px] shrink-0 grow rounded-3xl p-6 text-white lg:p-9"
               >
                 <div
-                  class="relative mx-auto mb-4 h-24 w-24 lg:mb-8 lg:h-40 lg:w-40"
+                  class="mb-4 flex flex-col items-center justify-center gap-6 lg:mb-8 lg:flex-row lg:gap-10"
                 >
-                  <img
-                    src="./assets/images/reel.png"
-                    class="h-full w-full origin-center rounded-full object-cover"
-                    alt=""
-                  />
-
-                  <label
-                    class="card__action group bottom-0 end-0 start-auto top-auto -translate-y-1/2 cursor-pointer"
+                  <div
+                    class="relative mx-auto h-24 w-24 shrink-0 lg:h-36 lg:w-36"
                   >
-                    <input type="file" class="sr-only" />
-                    <svg class="group-aria-pressed:text-white">
-                      <use href="./assets/images/icons/sprite.svg#edit"></use>
-                    </svg>
-                  </label>
-                </div>
-
-                <div>
-                  <p
-                    class="mb-3 text-lg font-medium lg:mb-4 lg:text-xl 2xl:text-2xl"
-                  >
-                    آدم يوسف
-                  </p>
-                  <div class="mb-2 flex items-center gap-2 lg:mb-3">
-                    <p class="text-base lg:text-lg">رقم الحساب هنا</p>
                     <img
-                      src="./assets/images/icons/king.png"
-                      class="w-5 lg:w-7"
+                      src="./assets/images/reel.png"
+                      class="h-full w-full origin-center rounded-full object-cover"
                       alt=""
                     />
+
+                    <label
+                      class="card__action group bottom-0 end-0 start-auto top-auto -translate-y-1/2 cursor-pointer"
+                    >
+                      <input type="file" class="sr-only" />
+                      <svg class="group-aria-pressed:text-white">
+                        <use href="./assets/images/icons/sprite.svg#edit"></use>
+                      </svg>
+                    </label>
                   </div>
-                  <p class="text-base lg:text-lg">رقم الحساب هنا</p>
+
+                  <div class="flex-1 max-lg:text-center">
+                    <p
+                      class="mb-3 text-lg font-medium lg:mb-4 lg:text-xl 2xl:text-2xl"
+                    >
+                      آدم يوسف
+                    </p>
+                    <div class="mb-2 flex items-center gap-2">
+                      <p class="text-base lg:text-lg">رقم الحساب هنا</p>
+                      <img
+                        src="./assets/images/icons/king.png"
+                        class="w-5 lg:w-7"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <button
+                    class="card__btn py-6 text-base text-slate-900 dark:text-white"
+                  >
+                    <svg class="h-5 w-5">
+                      <use
+                        href="./assets/images/icons/sprite.svg#card-call"
+                      ></use>
+                    </svg>
+                    اتصال
+                  </button>
+                  <button
+                    class="card__btn py-6 text-base text-slate-900 dark:text-white"
+                  >
+                    <svg class="h-5 w-5">
+                      <use
+                        href="./assets/images/icons/sprite.svg#card-mail"
+                      ></use>
+                    </svg>
+                    رسالة
+                  </button>
                 </div>
               </div>
 
-              <div class="lg:col-span-2">
-                <div class="grid h-full grid-cols-2 grid-rows-3 gap-4">
+              <div class="flex-1">
+                <div class="mb-6 grid h-full grid-cols-2 grid-rows-2 gap-4">
                   <div
                     class="flex flex-col items-start gap-3 rounded-3xl p-4 shadow-card lg:flex-row lg:items-center dark:bg-[#111111] dark:shadow-none"
                   >
@@ -929,40 +955,30 @@
                     </div>
                   </div>
                   <div
-                    class="flex flex-col items-start gap-3 rounded-3xl p-4 shadow-card lg:flex-row lg:items-center dark:bg-[#111111] dark:shadow-none"
+                    class="col-span-2 flex items-center justify-end gap-3 self-start py-2 lg:py-4"
                   >
-                    <img
-                      src="./assets/images/icons/account-add-views.png"
-                      class="w-10 shrink-0 lg:w-14"
-                      alt=""
-                    />
-
-                    <div class="flex-1">
-                      <p
-                        class="mb-1 text-sm text-neutral-500 text-opacity-70 lg:text-base dark:text-white"
+                    <button
+                      class="2xl:text-lbase inline-flex items-center gap-3 rounded-full border border-red-600 bg-transparent px-6 py-2 text-sm text-red-600 aria-pressed:bg-white lg:px-8 lg:py-3"
+                    >
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        عدد الإعلانات
-                      </p>
-                      <p class="text-lg font-medium">100 إعلان</p>
-                    </div>
-                  </div>
-                  <div
-                    class="flex flex-col items-start gap-3 rounded-3xl p-4 shadow-card lg:flex-row lg:items-center dark:bg-[#111111] dark:shadow-none"
-                  >
-                    <img
-                      src="./assets/images/icons/account-views.png"
-                      class="w-10 shrink-0 lg:w-14"
-                      alt=""
-                    />
-
-                    <div class="flex-1">
-                      <p
-                        class="mb-1 text-sm text-neutral-500 text-opacity-70 lg:text-base dark:text-white"
-                      >
-                        مشاهدات الإعلان
-                      </p>
-                      <p class="text-lg font-medium">100 مشاهدة</p>
-                    </div>
+                        <path
+                          d="M11.6393 5.21611C8.6107 5.37288 5.77914 6.63362 3.60667 8.80612C1.28088 11.1319 0 14.2134 0 17.483V22L1.63629 18.228C3.54749 14.4197 7.42324 11.8947 11.6393 11.6599V16.8654L21.9786 8.41992L11.6393 0V5.21611ZM12.9278 6.48793V2.71096L19.94 8.42143L12.9278 14.1492V10.3534H12.2835C9.84065 10.3534 7.44175 11.0403 5.34625 12.3397C3.75936 13.3238 2.40731 14.6213 1.36944 16.1452C2.0312 10.7109 6.67339 6.48793 12.2835 6.48793H12.9278Z"
+                          fill="#F05A35"
+                        />
+                      </svg>
+                      مشاركة
+                    </button>
+                    <button
+                      class="2xl:text-lbase rounded-full border border-primary-900 bg-primary-900 px-6 py-2 text-sm text-white hover:bg-opacity-75 aria-pressed:bg-white aria-pressed:text-primary-900 lg:px-8 lg:py-3 lg:text-base dark:aria-pressed:border-primary-600 dark:aria-pressed:bg-transparent dark:aria-pressed:text-primary-600"
+                    >
+                      + متابعة
+                    </button>
                   </div>
                 </div>
               </div>
@@ -973,7 +989,10 @@
             <header class="mb-10 flex items-start justify-between">
               <div class="">
                 <h2 class="text-lg font-semibold leading-none 2xl:text-xl">
-                  روابط سريعة
+                  إعلانات الحساب
+                  <span class="text-sm font-medium opacity-70 lg:text-base"
+                    >(40)</span
+                  >
                 </h2>
                 <span
                   class="bg-gradient-l inline-block h-px w-10 rounded-full sm:h-1 sm:w-20"
@@ -981,160 +1000,753 @@
               </div>
             </header>
 
-            <div class="space-y-4 lg:space-y-6">
-              <a
-                href="./ads.html"
-                class="group flex items-center gap-3.5 rounded-3xl bg-white p-4 shadow-card dark:bg-[#111111] dark:shadow-none"
-              >
-                <img
-                  src="./assets/images/icons/commercials.png"
-                  class="h-8 w-8 shrink-0 lg:h-10 lg:w-10"
-                  alt=""
-                />
-
-                <span
-                  class="text-base font-medium group-hover:underline lg:text-lg"
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-6">
+              <div class="md:col-span-1">
+                <div
+                  class="hs-accordion-group mb-4 divide-y divide-black divide-opacity-5 rounded-3xl border border-black border-opacity-5"
+                  data-hs-accordion-always-open
                 >
-                  إعلاناتي
-                </span>
-              </a>
-              <a
-                href="./reels.html"
-                class="group flex items-center gap-3.5 rounded-3xl bg-white p-4 shadow-card dark:bg-[#111111] dark:shadow-none"
-              >
-                <img
-                  src="./assets/images/icons/reels.png"
-                  class="h-8 w-8 shrink-0 lg:h-10 lg:w-10"
-                  alt=""
-                />
+                  <div class="hs-accordion active" id="heading-one">
+                    <button
+                      class="hs-accordion-toggle inline-flex w-full items-center justify-between gap-x-3 p-4 text-start font-semibold md:p-6"
+                      aria-controls="collapse-one"
+                    >
+                      اسم التصنيف
+                      <svg
+                        class="block h-4 w-4 text-neutral-500 hs-accordion-active:rotate-180"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m6 9 6 6 6-6" />
+                      </svg>
+                    </button>
+                    <div
+                      id="collapse-one"
+                      class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                      aria-labelledby="heading-one"
+                    >
+                      <div class="px-3 pb-3 md:px-4 md:pb-6">
+                        <form
+                          action="#"
+                          class="mb-4 flex h-10 w-full items-center overflow-hidden rounded-xl bg-stone-50 py-3 ps-5"
+                        >
+                          <img
+                            src="./assets/images/icons/search.svg"
+                            class="me-2 h-3 w-3 shrink-0"
+                            alt=""
+                          />
 
-                <span
-                  class="text-base font-medium group-hover:underline lg:text-lg"
-                >
-                  فيديو ريلز
-                </span>
-              </a>
-              <a
-                href="./ads.html"
-                class="group flex items-center gap-3.5 rounded-3xl bg-white p-4 shadow-card dark:bg-[#111111] dark:shadow-none"
-              >
-                <img
-                  src="./assets/images/icons/bookings.png"
-                  class="h-8 w-8 shrink-0 lg:h-10 lg:w-10"
-                  alt=""
-                />
+                          <input
+                            type="text"
+                            placeholder="كلمة للبحث"
+                            class="flex-1 bg-transparent p-0 text-sm text-primary-900 placeholder:text-neutral-500 placeholder:text-opacity-70"
+                          />
+                        </form>
 
-                <span
-                  class="text-base font-medium group-hover:underline lg:text-lg"
-                >
-                  حجوزاتي
-                </span>
-              </a>
-              <a
-                href="./ads.html"
-                class="group flex items-center gap-3.5 rounded-3xl bg-white p-4 shadow-card dark:bg-[#111111] dark:shadow-none"
-              >
-                <img
-                  src="./assets/images/icons/wallet.png"
-                  class="h-8 w-8 shrink-0 lg:h-10 lg:w-10"
-                  alt=""
-                />
+                        <div class="space-y-4">
+                          <p class="flex text-neutral-500 text-opacity-70">
+                            <input
+                              type="checkbox"
+                              class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
+                              id="input1"
+                            />
+                            <label
+                              for="input1"
+                              class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
+                              >ضع الاختيار هنا</label
+                            >
+                          </p>
+                          <p class="flex text-neutral-500 text-opacity-70">
+                            <input
+                              type="checkbox"
+                              class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
+                              id="input2"
+                            />
+                            <label
+                              for="input2"
+                              class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
+                              >ضع الاختيار هنا</label
+                            >
+                          </p>
+                          <p class="flex text-neutral-500 text-opacity-70">
+                            <input
+                              type="checkbox"
+                              class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
+                              id="input3"
+                            />
+                            <label
+                              for="input3"
+                              class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
+                              >ضع الاختيار هنا</label
+                            >
+                          </p>
+                          <p class="flex text-neutral-500 text-opacity-70">
+                            <input
+                              type="checkbox"
+                              class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
+                              id="input4"
+                            />
+                            <label
+                              for="input4"
+                              class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
+                              >ضع الاختيار هنا</label
+                            >
+                          </p>
+                          <p class="flex text-neutral-500 text-opacity-70">
+                            <input
+                              type="checkbox"
+                              class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
+                              id="input5"
+                            />
+                            <label
+                              for="input5"
+                              class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
+                              >ضع الاختيار هنا</label
+                            >
+                          </p>
 
-                <span
-                  class="text-base font-medium group-hover:underline lg:text-lg"
-                >
-                  المحفظة
-                </span>
-              </a>
-              <a
-                href="./ads.html"
-                class="group flex items-center gap-3.5 rounded-3xl bg-white p-4 shadow-card dark:bg-[#111111] dark:shadow-none"
-              >
-                <img
-                  src="./assets/images/icons/subscriptions.png"
-                  class="h-8 w-8 shrink-0 lg:h-10 lg:w-10"
-                  alt=""
-                />
+                          <button type="button" class="text-secondary-900">
+                            + مشاهدة المزيد
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-                <span
-                  class="text-base font-medium group-hover:underline lg:text-lg"
-                >
-                  الاشتراكات
-                </span>
-              </a>
-              <a
-                href="./ads.html"
-                class="group flex items-center gap-3.5 rounded-3xl bg-white p-4 shadow-card dark:bg-[#111111] dark:shadow-none"
-              >
-                <img
-                  src="./assets/images/icons/help.png"
-                  class="h-8 w-8 shrink-0 lg:h-10 lg:w-10"
-                  alt=""
-                />
+                  <div class="hs-accordion active" id="heading-two">
+                    <button
+                      class="hs-accordion-toggle inline-flex w-full items-center justify-between gap-x-3 p-4 text-start font-semibold md:p-6"
+                      aria-controls="collapse-two"
+                    >
+                      اسم التصنيف
+                      <svg
+                        class="block h-4 w-4 text-neutral-500 hs-accordion-active:rotate-180"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m6 9 6 6 6-6" />
+                      </svg>
+                    </button>
+                    <div
+                      id="collapse-two"
+                      class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                      aria-labelledby="heading-two"
+                    >
+                      <div class="space-y-4 px-3 pb-3 md:px-4 md:pb-6">
+                        <p class="flex text-neutral-500 text-opacity-70">
+                          <input
+                            type="checkbox"
+                            class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
+                            id="input1"
+                          />
+                          <label
+                            for="input1"
+                            class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
+                            >ضع الاختيار هنا</label
+                          >
+                        </p>
+                        <p class="flex text-neutral-500 text-opacity-70">
+                          <input
+                            type="checkbox"
+                            class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
+                            id="input2"
+                          />
+                          <label
+                            for="input2"
+                            class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
+                            >ضع الاختيار هنا</label
+                          >
+                        </p>
+                        <p class="flex text-neutral-500 text-opacity-70">
+                          <input
+                            type="checkbox"
+                            class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
+                            id="input3"
+                          />
+                          <label
+                            for="input3"
+                            class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
+                            >ضع الاختيار هنا</label
+                          >
+                        </p>
+                        <p class="flex text-neutral-500 text-opacity-70">
+                          <input
+                            type="checkbox"
+                            class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
+                            id="input4"
+                          />
+                          <label
+                            for="input4"
+                            class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
+                            >ضع الاختيار هنا</label
+                          >
+                        </p>
+                        <p class="flex text-neutral-500 text-opacity-70">
+                          <input
+                            type="checkbox"
+                            class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
+                            id="input5"
+                          />
+                          <label
+                            for="input5"
+                            class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
+                            >ضع الاختيار هنا</label
+                          >
+                        </p>
 
-                <span
-                  class="text-base font-medium group-hover:underline lg:text-lg"
-                >
-                  مساعدة
-                </span>
-              </a>
-              <a
-                href="./ads.html"
-                class="group flex items-center gap-3.5 rounded-3xl bg-white p-4 shadow-card dark:bg-[#111111] dark:shadow-none"
-              >
-                <img
-                  src="./assets/images/icons/settings.png"
-                  class="h-8 w-8 shrink-0 lg:h-10 lg:w-10"
-                  alt=""
-                />
+                        <button type="button" class="text-secondary-900">
+                          + مشاهدة المزيد
+                        </button>
+                      </div>
+                    </div>
+                  </div>
 
-                <span
-                  class="text-base font-medium group-hover:underline lg:text-lg"
-                >
-                  الإعدادات
-                </span>
-              </a>
-              <label
-                href="./ads.html"
-                class="flex cursor-pointer items-center gap-3.5 rounded-3xl bg-white p-4 shadow-card dark:bg-[#111111] dark:shadow-none"
-              >
-                <img
-                  src="./assets/images/icons/dark-mode.png"
-                  class="h-8 w-8 shrink-0 lg:h-10 lg:w-10"
-                  alt=""
-                />
+                  <div class="hs-accordion active" id="heading-three">
+                    <button
+                      class="hs-accordion-toggle inline-flex w-full items-center justify-between gap-x-3 p-4 text-start font-semibold md:p-6"
+                      aria-controls="collapse-three"
+                    >
+                      اسم التصنيف
+                      <svg
+                        class="block h-4 w-4 text-neutral-500 hs-accordion-active:rotate-180"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m6 9 6 6 6-6" />
+                      </svg>
+                    </button>
+                    <div
+                      id="collapse-three"
+                      class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                      aria-labelledby="heading-three"
+                    >
+                      <div class="space-y-4 px-3 pb-3 md:px-4 md:pb-6">
+                        <p class="flex text-neutral-500 text-opacity-70">
+                          <input
+                            type="radio"
+                            name="radio"
+                            class="mt-0.5 shrink-0 rounded-full border-gray-200 text-primary-900 focus:outline-transparent focus:ring-primary-900"
+                            id="radio1"
+                            checked
+                          />
+                          <label
+                            for="radio1"
+                            class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
+                            >ضع الاختيار هنا</label
+                          >
+                        </p>
+                        <p class="flex text-neutral-500 text-opacity-70">
+                          <input
+                            type="radio"
+                            name="radio"
+                            class="mt-0.5 shrink-0 rounded-full border-gray-200 text-primary-900 focus:outline-transparent focus:ring-primary-900"
+                            id="radio2"
+                          />
+                          <label
+                            for="radio2"
+                            class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
+                            >ضع الاختيار هنا</label
+                          >
+                        </p>
+                        <p class="flex text-neutral-500 text-opacity-70">
+                          <input
+                            type="radio"
+                            name="radio"
+                            class="mt-0.5 shrink-0 rounded-full border-gray-200 text-primary-900 focus:outline-transparent focus:ring-primary-900"
+                            id="radio3"
+                          />
+                          <label
+                            for="input3"
+                            class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
+                            >ضع الاختيار هنا</label
+                          >
+                        </p>
+                        <p class="flex text-neutral-500 text-opacity-70">
+                          <input
+                            type="radio"
+                            name="radio"
+                            class="mt-0.5 shrink-0 rounded-full border-gray-200 text-primary-900 focus:outline-transparent focus:ring-primary-900"
+                            id="radio4"
+                          />
+                          <label
+                            for="input4"
+                            class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
+                            >ضع الاختيار هنا</label
+                          >
+                        </p>
+                        <p class="flex text-neutral-500 text-opacity-70">
+                          <input
+                            type="radio"
+                            name="radio"
+                            class="mt-0.5 shrink-0 rounded-full border-gray-200 text-primary-900 focus:outline-transparent focus:ring-primary-900"
+                            id="radio4"
+                          />
+                          <label
+                            for="radio5"
+                            class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
+                            >ضع الاختيار هنا</label
+                          >
+                        </p>
 
-                <div class="flex flex-1 items-center justify-between pe-6">
-                  <span
-                    class="text-base font-medium group-hover:underline lg:text-lg"
-                  >
-                    الوضع الليلي
-                  </span>
-
-                  <input
-                    data-hs-theme-switch
-                    class="relative h-7 w-[3.25rem] cursor-pointer appearance-none rounded-full border-2 border-transparent bg-gray-100 ring-1 ring-transparent transition-colors duration-200 ease-in-out before:inline-block before:h-6 before:w-6 before:-translate-x-full before:transform before:rounded-full before:bg-white before:shadow before:ring-0 before:transition before:duration-200 before:ease-in-out after:absolute after:end-1.5 after:top-[calc(50%-0.40625rem)] after:h-[.8125rem] after:w-[.8125rem] after:transform after:opacity-70 after:transition-all after:duration-200 after:ease-in-out checked:bg-primary-900 checked:bg-none checked:before:translate-x-0 checked:after:end-auto checked:after:start-1.5 hover:checked:bg-primary-900 focus:border-slate-700 focus:outline-none focus:checked:bg-primary-900 ltr:before:translate-x-full"
-                    type="checkbox"
-                    id="darkSwitch"
-                  />
+                        <button type="button" class="text-secondary-900">
+                          + مشاهدة المزيد
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </label>
-              <a
-                href="./ads.html"
-                class="group flex items-center gap-3.5 rounded-3xl bg-white p-4 shadow-card dark:bg-[#111111] dark:shadow-none"
-              >
-                <img
-                  src="./assets/images/icons/logout.png"
-                  class="h-8 w-8 shrink-0 lg:h-10 lg:w-10"
-                  alt=""
-                />
 
-                <span
-                  class="text-base font-medium text-primary-900 group-hover:underline lg:text-lg dark:text-primary-600"
+                <div
+                  class="rounded-3xl border border-black border-opacity-5 p-4 lg:p-6"
                 >
-                  تسجيل الخروج
-                </span>
-              </a>
+                  <p class="mb-2 text-base lg:mb-4 lg:text-lg 2xl:text-xl">
+                    احصل علي اعلانات أكثر وبيع بكل أسرع
+                  </p>
+
+                  <div class="mb-4 grid grid-cols-2 gap-2 lg:grid-cols-3">
+                    <img
+                      src="./assets/images/products/car.png"
+                      class="max-h-16 w-full rounded-md object-cover object-center"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/images/products/car.png"
+                      class="max-h-16 w-full rounded-md object-cover object-center"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/images/products/car.png"
+                      class="max-h-16 w-full rounded-md object-cover object-center"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/images/products/car.png"
+                      class="max-h-16 w-full rounded-md object-cover object-center"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/images/products/car.png"
+                      class="max-h-16 w-full rounded-md object-cover object-center"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/images/products/car.png"
+                      class="max-h-16 w-full rounded-md object-cover object-center"
+                      alt=""
+                    />
+                  </div>
+
+                  <button
+                    class="w-full rounded-xl bg-gradient-to-b from-primary-900 to-primary-900/50 py-2 text-sm text-white lg:py-4 lg:text-base"
+                  >
+                    احصل علي اعلانات اكثر
+                  </button>
+                </div>
+              </div>
+
+              <div class="md:col-span-3">
+                <div
+                  class="mb-10 grid grid-cols-1 gap-4 md:mb-20 md:grid-cols-3 2xl:grid-cols-4"
+                >
+                  <div class="card">
+                    <div class="card__thumbnail h-[225px]">
+                      <img
+                        class="card__img"
+                        src="assets/images/products/chairpng.png"
+                      />
+                      <button type="button" class="card__action group">
+                        <svg class="group-aria-pressed:text-white">
+                          <use
+                            href="./assets/images/icons/sprite.svg#heart"
+                          ></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="card__body">
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
+                      </p>
+                      <p class="card__price">25,000 EGP</p>
+                      <div class="flex items-center justify-between">
+                        <p class="flex items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card__thumbnail h-[225px]">
+                      <img
+                        class="card__img"
+                        src="assets/images/products/chairpng.png"
+                      />
+                      <button type="button" class="card__action group">
+                        <svg class="group-aria-pressed:text-white">
+                          <use
+                            href="./assets/images/icons/sprite.svg#heart"
+                          ></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="card__body">
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
+                      </p>
+                      <p class="card__price">25,000 EGP</p>
+                      <div class="flex items-center justify-between">
+                        <p class="flex items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card__thumbnail h-[225px]">
+                      <img
+                        class="card__img"
+                        src="assets/images/products/chairpng.png"
+                      />
+                      <button type="button" class="card__action group">
+                        <svg class="group-aria-pressed:text-white">
+                          <use
+                            href="./assets/images/icons/sprite.svg#heart"
+                          ></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="card__body">
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
+                      </p>
+                      <p class="card__price">25,000 EGP</p>
+                      <div class="flex items-center justify-between">
+                        <p class="flex items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card__thumbnail h-[225px]">
+                      <img
+                        class="card__img"
+                        src="assets/images/products/chairpng.png"
+                      />
+                      <button type="button" class="card__action group">
+                        <svg class="group-aria-pressed:text-white">
+                          <use
+                            href="./assets/images/icons/sprite.svg#heart"
+                          ></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="card__body">
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
+                      </p>
+                      <p class="card__price">25,000 EGP</p>
+                      <div class="flex items-center justify-between">
+                        <p class="flex items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card__thumbnail h-[225px]">
+                      <img
+                        class="card__img"
+                        src="assets/images/products/chairpng.png"
+                      />
+                      <button type="button" class="card__action group">
+                        <svg class="group-aria-pressed:text-white">
+                          <use
+                            href="./assets/images/icons/sprite.svg#heart"
+                          ></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="card__body">
+                      <p class="card__title">كرسي بني ذو طراز عصري</p>
+                      <p class="card__disc">
+                        هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
+                      </p>
+                      <p class="card__price">25,000 EGP</p>
+                      <div class="flex items-center justify-between">
+                        <p class="flex items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-location"
+                            ></use>
+                          </svg>
+                          الموقع هنا
+                        </p>
+                        <p class="flex items-center gap-1">
+                          <svg
+                            class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-clock"
+                            ></use>
+                          </svg>
+                          منذ يومين
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-call"
+                            ></use>
+                          </svg>
+                          اتصال
+                        </button>
+                        <button class="card__btn">
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#card-mail"
+                            ></use>
+                          </svg>
+                          رسالة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pagination -->
+                <nav class="flex items-center justify-center gap-x-4">
+                  <button
+                    type="button"
+                    class="inline-flex min-h-10 min-w-10 items-center justify-center gap-x-2 rounded-lg bg-secondary-900/10 px-2.5 py-2 text-base text-secondary-900 transition-colors hover:bg-secondary-900/100 hover:text-white md:min-h-12 md:min-w-12"
+                  >
+                    <svg
+                      class="h-6 w-6 flex-shrink-0 rtl:rotate-180"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m15 18-6-6 6-6" />
+                    </svg>
+                    <span aria-hidden="true" class="sr-only">Previous</span>
+                  </button>
+                  <div class="flex items-center gap-x-4">
+                    <button
+                      type="button"
+                      class="flex min-h-10 min-w-10 items-center justify-center rounded-lg bg-secondary-900 px-3 py-2 text-base text-white hover:opacity-80 md:min-h-12 md:min-w-12"
+                      aria-current="page"
+                    >
+                      1
+                    </button>
+                    <button
+                      type="button"
+                      class="flex min-h-10 min-w-10 items-center justify-center rounded-lg bg-secondary-900/10 px-3 py-2 text-base text-secondary-900 transition-colors hover:bg-secondary-900/100 hover:text-white md:min-h-12 md:min-w-12"
+                    >
+                      2
+                    </button>
+                    <button
+                      type="button"
+                      class="flex min-h-10 min-w-10 items-center justify-center rounded-lg bg-secondary-900/10 px-3 py-2 text-base text-secondary-900 transition-colors hover:bg-secondary-900/100 hover:text-white md:min-h-12 md:min-w-12"
+                    >
+                      3
+                    </button>
+                  </div>
+                  <button
+                    type="button"
+                    class="inline-flex min-h-10 min-w-10 items-center justify-center gap-x-2 rounded-lg bg-secondary-900/10 px-2.5 py-2 text-base text-secondary-900 transition-colors hover:bg-secondary-900/100 hover:text-white md:min-h-12 md:min-w-12"
+                  >
+                    <span aria-hidden="true" class="sr-only">Next</span>
+                    <svg
+                      class="h-6 w-6 flex-shrink-0 rtl:rotate-180"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </button>
+                </nav>
+                <!-- End Pagination -->
+              </div>
             </div>
           </section>
         </div>
