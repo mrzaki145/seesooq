@@ -948,7 +948,7 @@
                     <div class="px-3 pb-3 md:px-4 md:pb-6">
                       <form
                         action="#"
-                        class="mb-4 flex h-10 w-full items-center overflow-hidden rounded-xl bg-stone-50 py-3 ps-5"
+                        class="mb-4 flex h-10 w-full items-center overflow-hidden rounded-xl bg-stone-50 py-3 ps-5 dark:bg-[#111111]"
                       >
                         <img
                           src="./assets/images/icons/search.svg"
@@ -959,7 +959,7 @@
                         <input
                           type="text"
                           placeholder="كلمة للبحث"
-                          class="flex-1 bg-transparent p-0 text-sm text-primary-900 placeholder:text-neutral-500 placeholder:text-opacity-70"
+                          class="flex-1 bg-transparent p-0 text-sm text-primary-900 placeholder:text-neutral-500 placeholder:text-opacity-70 dark:text-white dark:placeholder:text-neutral-400"
                         />
                       </form>
 
@@ -1038,7 +1038,7 @@
                     class="hs-accordion-toggle inline-flex w-full items-center justify-between gap-x-3 p-4 text-start font-semibold md:p-6"
                     aria-controls="collapse-two"
                   >
-                    اسم التصنيف
+                    السعر
                     <svg
                       class="block h-4 w-4 text-neutral-500 hs-accordion-active:rotate-180"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1059,71 +1059,43 @@
                     class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
                     aria-labelledby="heading-two"
                   >
-                    <div class="space-y-4 px-3 pb-3 md:px-4 md:pb-6">
-                      <p class="flex text-neutral-500 text-opacity-70">
-                        <input
-                          type="checkbox"
-                          class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
-                          id="input1"
-                        />
-                        <label
-                          for="input1"
-                          class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
-                          >ضع الاختيار هنا</label
+                    <div
+                      class="grid grid-cols-2 items-center gap-2 px-4 pb-4 lg:px-6 lg:pb-6"
+                    >
+                      <div class="flex1">
+                        <label class="mb-1 text-xs">From</label>
+                        <div
+                          class="mb-4 flex h-10 items-center overflow-hidden rounded-xl bg-stone-50 p-3 dark:bg-[#111111]"
                         >
-                      </p>
-                      <p class="flex text-neutral-500 text-opacity-70">
-                        <input
-                          type="checkbox"
-                          class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
-                          id="input2"
-                        />
-                        <label
-                          for="input2"
-                          class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
-                          >ضع الاختيار هنا</label
-                        >
-                      </p>
-                      <p class="flex text-neutral-500 text-opacity-70">
-                        <input
-                          type="checkbox"
-                          class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
-                          id="input3"
-                        />
-                        <label
-                          for="input3"
-                          class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
-                          >ضع الاختيار هنا</label
-                        >
-                      </p>
-                      <p class="flex text-neutral-500 text-opacity-70">
-                        <input
-                          type="checkbox"
-                          class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
-                          id="input4"
-                        />
-                        <label
-                          for="input4"
-                          class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
-                          >ضع الاختيار هنا</label
-                        >
-                      </p>
-                      <p class="flex text-neutral-500 text-opacity-70">
-                        <input
-                          type="checkbox"
-                          class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
-                          id="input5"
-                        />
-                        <label
-                          for="input5"
-                          class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
-                          >ضع الاختيار هنا</label
-                        >
-                      </p>
+                          <img
+                            src="./assets/images/icons/price.svg"
+                            class="me-2 h-3 w-3 shrink-0"
+                            alt=""
+                          />
 
-                      <button type="button" class="text-secondary-900">
-                        + مشاهدة المزيد
-                      </button>
+                          <input
+                            type="text"
+                            class="flex-1 bg-transparent p-0 text-xs text-primary-900 placeholder:text-neutral-500 placeholder:text-opacity-70 lg:text-sm dark:text-white dark:placeholder:text-neutral-400"
+                          />
+                        </div>
+                      </div>
+                      <div class="flex1">
+                        <label class="mb-1 text-xs">To</label>
+                        <div
+                          class="mb-4 flex h-10 items-center overflow-hidden rounded-xl bg-stone-50 p-3 dark:bg-[#111111]"
+                        >
+                          <img
+                            src="./assets/images/icons/price.svg"
+                            class="me-2 h-3 w-3 shrink-0"
+                            alt=""
+                          />
+
+                          <input
+                            type="text"
+                            class="flex-1 bg-transparent p-0 text-xs text-primary-900 placeholder:text-neutral-500 placeholder:text-opacity-70 lg:text-sm dark:text-white dark:placeholder:text-neutral-400"
+                          />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
