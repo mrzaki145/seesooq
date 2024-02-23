@@ -381,6 +381,7 @@ input::-ms-clear {
   --swiper-pagination-color: theme(colors.primary.900);
   --swiper-pagination-bullet-size: 14px;
   --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-inactive-color: transparent;
   border: 1px solid theme(colors.primary.900);
 }
 :is(:where(.dark) .swiper-pagination-bullet) {
