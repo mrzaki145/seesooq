@@ -470,7 +470,7 @@
                   />
                 </a>
                 <button
-                  class="h-12 rounded-2xl bg-secondary-900 px-8 py-2 text-sm font-semibold text-white transition-colors hover:bg-opacity-65 dark:text-black"
+                  class="h-12 rounded-2xl bg-secondary-900 px-8 py-2 text-sm font-semibold text-white transition-colors hover:bg-opacity-65 dark:text-black dark:text-white"
                 >
                   إضافة إعلان
                 </button>
@@ -748,11 +748,33 @@
               </svg>
             </a>
           </li>
+          <li class="inline-flex items-center">
+            <a
+              class="flex items-center text-sm text-neutral-500 text-opacity-70 hover:text-white dark:text-neutral-400"
+              href="./index.html"
+            >
+              الوظائف
+              <svg
+                class="mx-2 h-4 w-4 flex-shrink-0 overflow-visible text-neutral-400 rtl:rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </a>
+          </li>
           <li
             class="inline-flex items-center truncate text-sm font-semibold text-secondary-900"
             aria-current="page"
           >
-            الوظائف
+            تفاصيل الوظيفة
           </li>
         </ol>
 
@@ -760,7 +782,7 @@
           <header class="mb-12 flex items-start justify-between">
             <div class="">
               <h2 class="text-lg font-semibold leading-none 2xl:text-xl">
-                الوظائف
+                تفاصيل الوظيفة
               </h2>
               <span
                 class="bg-gradient-l inline-block h-px w-10 rounded-full sm:h-1 sm:w-20"
@@ -768,348 +790,252 @@
             </div>
           </header>
 
-          <div class="grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-6">
-            <div class="md:col-span-1">
+          <section class="space-y-7 pb-20 lg:pb-40">
+            <header
+              class="rounded-2xl border border-black/15 p-6 xl:p-11 dark:border-[#323335]"
+            >
               <div
-                class="hs-accordion-group divide-y divide-black divide-opacity-5 rounded-3xl border border-black dark:border-[#323335] border-opacity-5"
-                data-hs-accordion-always-open
+                class="flex flex-col max-lg:gap-10 lg:flex-row lg:items-start lg:justify-between"
               >
-                <div class="hs-accordion active" id="heading-one">
-                  <button
-                    class="hs-accordion-toggle inline-flex w-full items-center justify-between gap-x-3 p-4 text-start font-semibold md:p-6"
-                    aria-controls="collapse-one"
+                <div class="max-lg:order-2">
+                  <h1
+                    class="mb-4 text-2xl font-medium text-black lg:mb-8 lg:text-4xl dark:text-white"
                   >
-                    اسم التصنيف
-                    <svg
-                      class="block h-4 w-4 text-neutral-500 hs-accordion-active:rotate-180"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                    مصمم منتجات
+                  </h1>
+                  <p
+                    class="mb-2 text-sm font-bold text-black lg:mb-3 lg:text-base dark:text-white"
+                  >
+                    من المكتب - دوام كامل
+                  </p>
+                  <p class="text-sm text-black lg:text-base dark:text-white">
+                    تم نشرها 8 فبراير 2023
+                  </p>
+                </div>
+
+                <div class="self-start max-lg:order-1">
+                  <img
+                    src="./assets/images/zapier.png"
+                    class="w-full max-w-[200px]"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </header>
+
+            <section
+              class="rounded-2xl border border-black/15 p-6 xl:p-11 dark:border-[#323335]"
+            >
+              <h2
+                class="mb-4 text-lg font-medium text-black lg:mb-7 lg:text-xl dark:text-white"
+              >
+                تفاصيل الوظيفة
+              </h2>
+
+              <!-- <table class="table-fixed">
+                <tbody>
+                  <tr>
+                    <th
+                      class="text-neutral-600 text-opacity-70 dark:text-neutral-400 py-2 pe-6 text-start text-lg font-normal lg:pe-12 lg:text-xl"
                     >
-                      <path d="m6 9 6 6 6-6" />
-                    </svg>
-                  </button>
-                  <div
-                    id="collapse-one"
-                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-                    aria-labelledby="heading-one"
+                      الخبرة المطلوبة:
+                    </th>
+                    <td
+                      class="py-2 text-start text-lg font-medium text-black dark:text-white lg:text-xl"
+                    >
+                      من 4 إلى 7 سنوات
+                    </td>
+                  </tr>
+                  <tr>
+                    <th
+                      class="text-neutral-600 text-opacity-70 dark:text-neutral-400 py-2 pe-6 text-start text-lg font-normal lg:pe-12 lg:text-xl"
+                    >
+                      المستوى الوظيفي:
+                    </th>
+                    <td
+                      class="py-2 text-start text-lg font-medium text-black dark:text-white lg:text-xl"
+                    >
+                      ذو خبرة (غير إداري)
+                    </td>
+                  </tr>
+                  <tr>
+                    <th
+                      class="text-neutral-600 text-opacity-70 dark:text-neutral-400 py-2 pe-6 text-start text-lg font-normal lg:pe-12 lg:text-xl"
+                    >
+                      مستوى التعليم:
+                    </th>
+                    <td
+                      class="py-2 text-start text-lg font-medium text-black dark:text-white lg:text-xl"
+                    >
+                      غير محدد
+                    </td>
+                  </tr>
+                  <tr>
+                    <th
+                      class="text-neutral-600 text-opacity-70 dark:text-neutral-400 py-2 pe-6 text-start text-lg font-normal lg:pe-12 lg:text-xl"
+                    >
+                      مرتب:
+                    </th>
+                    <td
+                      class="py-2 text-start text-lg font-medium text-black dark:text-white lg:text-xl"
+                    >
+                      مؤتمن
+                    </td>
+                  </tr>
+                  <tr>
+                    <th
+                      class="text-neutral-600 text-opacity-70 dark:text-neutral-400 py-2 pe-6 text-start text-lg font-normal lg:pe-12 lg:text-xl"
+                    >
+                      مؤتمن
+                    </th>
+                    <td
+                      class="py-2 pe-6 text-start text-lg font-medium text-black dark:text-white lg:pe-12 lg:text-xl"
+                    >
+                      تصميم / ابداع
+                    </td>
+                  </tr>
+                </tbody>
+              </table> -->
+
+              <div class="lg:w-1/2 space-y-3 lg:space-x-5">
+                <div class="lg:columns-2">
+                  <p
+                    class="py-2 pe-6 text-start text-sm font-normal text-neutral-600 text-opacity-70 lg:pe-12 lg:text-lg dark:text-neutral-400"
                   >
-                    <div class="px-3 pb-3 md:px-4 md:pb-6">
-                      <form
-                        action="#"
-                        class="mb-4 flex h-10 w-full items-center overflow-hidden rounded-xl bg-stone-50 py-3 ps-5 dark:bg-[#111111]"
-                      >
-                        <img
-                          src="./assets/images/icons/search.svg"
-                          class="me-2 h-3 w-3 shrink-0"
-                          alt=""
-                        />
-
-                        <input
-                          type="text"
-                          placeholder="كلمة للبحث"
-                          class="flex-1 bg-transparent p-0 text-sm text-primary-900 placeholder:text-neutral-500 placeholder:text-opacity-70 dark:text-white dark:placeholder:text-neutral-400"
-                        />
-                      </form>
-
-                      <div class="space-y-4">
-                        <p class="flex text-neutral-500 text-opacity-70">
-                          <input
-                            type="checkbox"
-                            class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
-                            id="input1"
-                          />
-                          <label
-                            for="input1"
-                            class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
-                            >ضع الاختيار هنا</label
-                          >
-                        </p>
-                        <p class="flex text-neutral-500 text-opacity-70">
-                          <input
-                            type="checkbox"
-                            class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
-                            id="input2"
-                          />
-                          <label
-                            for="input2"
-                            class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
-                            >ضع الاختيار هنا</label
-                          >
-                        </p>
-                        <p class="flex text-neutral-500 text-opacity-70">
-                          <input
-                            type="checkbox"
-                            class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
-                            id="input3"
-                          />
-                          <label
-                            for="input3"
-                            class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
-                            >ضع الاختيار هنا</label
-                          >
-                        </p>
-                        <p class="flex text-neutral-500 text-opacity-70">
-                          <input
-                            type="checkbox"
-                            class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
-                            id="input4"
-                          />
-                          <label
-                            for="input4"
-                            class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
-                            >ضع الاختيار هنا</label
-                          >
-                        </p>
-                        <p class="flex text-neutral-500 text-opacity-70">
-                          <input
-                            type="checkbox"
-                            class="mt-0.5 h-[21px] w-[21px] shrink-0 rounded-md border border-neutral-500 border-opacity-50 checked:text-violet-900 focus:ring-primary-900"
-                            id="input5"
-                          />
-                          <label
-                            for="input5"
-                            class="ms-3 select-none text-sm text-gray-500 dark:text-gray-400"
-                            >ضع الاختيار هنا</label
-                          >
-                        </p>
-
-                        <button type="button" class="text-secondary-900">
-                          + مشاهدة المزيد
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+                    الخبرة المطلوبة:
+                  </p>
+                  <p
+                    class="py-2 text-start text-sm font-medium text-black lg:text-lg dark:text-white"
+                  >
+                    من 4 إلى 7 سنوات
+                  </p>
+                </div>
+                <div class="lg:columns-2">
+                  <p
+                    class="py-2 pe-6 text-start text-sm font-normal text-neutral-600 text-opacity-70 lg:pe-12 lg:text-lg dark:text-neutral-400"
+                  >
+                  المستوى الوظيفي:
+                  </p>
+                  <p
+                    class="py-2 text-start text-sm font-medium text-black lg:text-lg dark:text-white"
+                  >
+                  ذو خبرة (غير إداري)
+                  </p>
+                </div>
+                <div class="lg:columns-2">
+                  <p
+                    class="py-2 pe-6 text-start text-sm font-normal text-neutral-600 text-opacity-70 lg:pe-12 lg:text-lg dark:text-neutral-400"
+                  >
+                  مستوى التعليم:
+                  </p>
+                  <p
+                    class="py-2 text-start text-sm font-medium text-black lg:text-lg dark:text-white"
+                  >
+                  غير محدد
+                  </p>
                 </div>
               </div>
-            </div>
+            </section>
 
-            <div class="md:col-span-3">
-              <div
-                class="mb-10 grid grid-cols-1 gap-4 md:mb-20 md:grid-cols-3 2xl:grid-cols-4"
+            <section
+              class="rounded-2xl border border-black/15 p-6 xl:p-11 dark:border-[#323335]"
+            >
+              <h2
+                class="mb-4 text-lg font-medium text-black lg:mb-7 lg:text-xl dark:text-white"
               >
-                <div class="card">
-                  <div class="mb-4 flex items-center gap-3">
-                    <img
-                      src="./assets/images/products/chairpng.png"
-                      class="size-8 shrink-0 rounded-lg"
-                      alt=""
-                    />
-                    <p class="text-sm 2xl:text-base">اسم الشركة</p>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title text-base lg:text-lg">اسم الوظيفة</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">دوام كامل</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                    </div>
-                  </div>
+                المسمى الوظيفي
+              </h2>
+
+              <p
+                class="text-sm leading-relaxed text-black lg:text-base dark:text-white"
+              >
+                بصفتك مصمم منتج في founderdever ، ستكون مسؤولًا عن تصميم مجموعة
+                واسعة من منتجات الأثاث من مفهوم الفكرة حتى الإنتاج. سيتضمن ذلك
+                إنشاء تصاميم مفصلة باستخدام برنامج Rhino، إعداد رسوم فنية
+                باستخدام برمجيات CAD، واختيار مواد مناسبة تكون مستدامة وتلبي
+                احتياجات السوق. ستعمل عن كثب مع فريق الإنتاج لضمان أن التصاميم
+                قابلة للتنفيذ وتلبي معايير الجودة لدينا، بالإضافة إلى العمل مع
+                فريق التسويق لضمان أن المنتجات تتناسب مع العلامة التجارية
+                وتوقعات العملاء.
+              </p>
+            </section>
+
+            <section
+              class="rounded-2xl border border-black/15 p-6 xl:p-11 dark:border-[#323335]"
+            >
+              <h2
+                class="mb-4 text-lg font-medium text-black lg:mb-7 lg:text-xl dark:text-white"
+              >
+                متطلبات الوظيفة:
+              </h2>
+
+              <div class="space-y-6 lg:space-y-8">
+                <div>
+                  <p
+                    class="mb-3 text-base text-black lg:text-lg dark:text-white"
+                  >
+                    المسؤوليات:
+                  </p>
+                  <ul
+                    class="list-disc space-y-1.5 ps-8 text-sm text-black lg:text-base dark:text-white"
+                  >
+                    <li>
+                      تصميم وتطوير منتجات الأثاث باستخدام Rhino3D، ملتزمًا
+                      بتوجيهات المشروع والجداول الزمنية.
+                    </li>
+                    <li>
+                      إعداد رسوم فنية دقيقة ومواصفات للإنتاج باستخدام برامج CAD.
+                    </li>
+                    <li>
+                      البحث واختيار المواد الابتكارية والمستدامة والمتاحة في
+                      السوق.
+                    </li>
+                    <li>
+                      التعاون مع فرق الإنتاج لحل أي مشكلات تصميمية محتملة.
+                    </li>
+                    <li>
+                      العمل بشكل وثيق مع فريق التسويق لضمان تناغم تصاميم المنتج
+                      مع هوية العلامة التجارية واتجاهات السوق.
+                    </li>
+                    <li>
+                      البقاء على اطلاع دائم بآخر اتجاهات التصميم والمواد
+                      والتكنولوجيا في صناعة تصميم الأثاث.
+                    </li>
+                  </ul>
                 </div>
-                <div class="card">
-                  <div class="mb-4 flex items-center gap-3">
-                    <img
-                      src="./assets/images/products/chairpng.png"
-                      class="size-8 shrink-0 rounded-lg"
-                      alt=""
-                    />
-                    <p class="text-sm 2xl:text-base">اسم الشركة</p>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title text-base lg:text-lg">اسم الوظيفة</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">دوام كامل</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="mb-4 flex items-center gap-3">
-                    <img
-                      src="./assets/images/products/chairpng.png"
-                      class="size-8 shrink-0 rounded-lg"
-                      alt=""
-                    />
-                    <p class="text-sm 2xl:text-base">اسم الشركة</p>
-                  </div>
-                  <div class="card__body">
-                    <p class="card__title text-base lg:text-lg">اسم الوظيفة</p>
-                    <p class="card__disc">
-                      هذا مثال لنص يمكن أن يستبدل في في نفس المساحة
-                    </p>
-                    <p class="card__price">دوام كامل</p>
-                    <div class="flex items-center justify-between">
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-location"
-                          ></use>
-                        </svg>
-                        الموقع هنا
-                      </p>
-                      <p class="flex items-center gap-1">
-                        <svg
-                          class="h-4 w-4 fill-current text-neutral-500 text-opacity-70"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-clock"
-                          ></use>
-                        </svg>
-                        منذ يومين
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <button class="card__btn">
-                        <svg>
-                          <use
-                            href="./assets/images/icons/sprite.svg#card-call"
-                          ></use>
-                        </svg>
-                        اتصال
-                      </button>
-                    </div>
-                  </div>
+                <div>
+                  <p
+                    class="mb-3 text-base text-black lg:text-lg dark:text-white"
+                  >
+                    المتطلبات:
+                  </p>
+                  <ul
+                    class="list-disc space-y-1.5 ps-8 text-sm text-black lg:text-base dark:text-white"
+                  >
+                    <li>إلمام ببرنامج Rhino3D لتصميم المنتجات.</li>
+                    <li>
+                      مهارات قوية في استخدام برامج CAD لإنشاء رسوم فنية تفصيلية.
+                    </li>
+                    <li>
+                      خبرة في اختيار المواد ومعرفة بالمواد المتاحة في السوق.
+                    </li>
+                    <li>توفير عينات وخيارات مناسبة للمواد.</li>
+                    <li>
+                      فهم ممتاز لاتجاهات تصميم الأثاث، وعمليات التصنيع، والمواد.
+                    </li>
+                    <li>
+                      م portefeuille قوي يعرض مشاريع تصميم الأثاث السابقة.
+                    </li>
+                    <li>مهارات ممتازة في التواصل والتعاون.</li>
+                    <li>
+                      القدرة على العمل بشكل مستقل وإدارة مشاريع متعددة في بيئة
+                      سريعة الخطى.
+                    </li>
+                  </ul>
                 </div>
               </div>
-
-              <!-- Pagination -->
-              <nav class="flex items-center justify-center gap-x-4">
-                <button
-                  type="button"
-                  class="inline-flex min-h-10 min-w-10 items-center justify-center gap-x-2 rounded-lg bg-secondary-900/10 px-2.5 py-2 text-base text-secondary-900 transition-colors hover:bg-secondary-900/100 hover:text-white md:min-h-12 md:min-w-12"
-                >
-                  <svg
-                    class="h-6 w-6 flex-shrink-0 rtl:rotate-180"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="m15 18-6-6 6-6" />
-                  </svg>
-                  <span aria-hidden="true" class="sr-only">Previous</span>
-                </button>
-                <div class="flex items-center gap-x-4">
-                  <button
-                    type="button"
-                    class="flex min-h-10 min-w-10 items-center justify-center rounded-lg bg-secondary-900 px-3 py-2 text-base text-white hover:opacity-80 md:min-h-12 md:min-w-12"
-                    aria-current="page"
-                  >
-                    1
-                  </button>
-                  <button
-                    type="button"
-                    class="flex min-h-10 min-w-10 items-center justify-center rounded-lg bg-secondary-900/10 px-3 py-2 text-base text-secondary-900 transition-colors hover:bg-secondary-900/100 hover:text-white md:min-h-12 md:min-w-12"
-                  >
-                    2
-                  </button>
-                  <button
-                    type="button"
-                    class="flex min-h-10 min-w-10 items-center justify-center rounded-lg bg-secondary-900/10 px-3 py-2 text-base text-secondary-900 transition-colors hover:bg-secondary-900/100 hover:text-white md:min-h-12 md:min-w-12"
-                  >
-                    3
-                  </button>
-                </div>
-                <button
-                  type="button"
-                  class="inline-flex min-h-10 min-w-10 items-center justify-center gap-x-2 rounded-lg bg-secondary-900/10 px-2.5 py-2 text-base text-secondary-900 transition-colors hover:bg-secondary-900/100 hover:text-white md:min-h-12 md:min-w-12"
-                >
-                  <span aria-hidden="true" class="sr-only">Next</span>
-                  <svg
-                    class="h-6 w-6 flex-shrink-0 rtl:rotate-180"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="m9 18 6-6-6-6" />
-                  </svg>
-                </button>
-              </nav>
-              <!-- End Pagination -->
-            </div>
-          </div>
+            </section>
+          </section>
         </section>
       </main>
 
